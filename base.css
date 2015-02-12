@@ -54,7 +54,7 @@ h1 {
 	font-size:9pt;font-family:'Courier new', Courier, monospace;
     color:#bab5b5;
     background:#fff;
-	width:800px;
+	width:700px;
     height:500px;
     margin-left:auto;
 	margin-right:auto;
@@ -83,7 +83,7 @@ h1 {
 
     color: grey;
     font-weight: 100;
-        margin-right: 120px;
+        margin-right: 60px;
     text-transform: uppercase;
     font-family: sans-serif;
     letter-spacing: 2px;
@@ -95,8 +95,7 @@ h1 {
 
 #content{
     margin-top: 20px;
-    margin-right: 20px;
-    width: 400px; 
+    width: 350px; 
     clear: right;
     float: right;
     
