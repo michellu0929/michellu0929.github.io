@@ -6,12 +6,32 @@ a{
     
 }
 
+a:hover {
+    color: #5eb5af;
+}
+
+a:active {
+    color: red;
+}
+
+/*
+a:visited {
+    color:grey;
+}
+*/
+
 body{
+    margin-top: 40px;
 background: #f4f4f4;
 }
 .border{
     padding: 20px;
-border: 1px solid orange; 
+      height: 280px;
+/*
+    border: 1px solid #fad389;
+  
+    border-radius: 2px;
+*/
 }
 
 h1 {
@@ -23,6 +43,7 @@ h1 {
 }
 
 .links {
+        border-top: 1px dotted #fad389;
     color:orange;
     font-size:9pt;
     font-family:'Courier new', Courier, monospace;
@@ -33,7 +54,8 @@ h1 {
 	font-size:9pt;font-family:'Courier new', Courier, monospace;
     color:#bab5b5;
     background:#fff;
-	width:300px;
+	width:800px;
+    height:500px;
     margin-left:auto;
 	margin-right:auto;
 	padding:0px 40px 20px;
@@ -47,6 +69,41 @@ h1 {
     width:400px;
     margin-top: 5px;
     margin-left:auto;
-    Margin-right:auto;
+    margin-right:auto;
     text-align:center;
+}
+
+#header {
+    width: 258px;
+    float:left;
+     
+}
+
+#header2 {
+
+    color: grey;
+    font-weight: 100;
+        margin-right: 120px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    margin-top: 100px;
+    width: 344px; 
+    clear: right;
+    float: right;
+}
+
+#content{
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 400px; 
+    clear: right;
+    float: right;
+    
+}
+
+#sidebar{
+    width: 258px;
+    float: left;
+    clear: left;
 }
