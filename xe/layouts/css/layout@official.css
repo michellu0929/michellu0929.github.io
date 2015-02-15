@@ -1,0 +1,388 @@
+@charset "utf-8";
+
+/* NHN > UIT Center > Open UI Technology Team > Jeong Chan Myeong(dece24@nhncorp.com) */
+
+
+
+/* Skip To Content */
+
+a.skipToContent{ display:block; width:100%; position:absolute; top:0; clear:both; overflow:hidden; height:0; text-decoration:none; text-align:center;}
+
+a.skipToContent:hover,
+
+a.skipToContent:active,
+
+a.skipToContent:focus{ height:auto; margin:0 0 10px 0; padding:5px;}
+
+
+
+/* Element Reset */
+
+html,
+
+body{ height:100%;}
+
+body { margin:0; font-size:12px; background:#fff; color:#000;}
+
+address { font-style:normal;}
+
+img,
+
+fieldset{ border:0; margin:0; padding:0;}
+
+form{ margin:0;}
+
+legend{ position:absolute; width:0; height:0; overflow:hidden; font-size:0; line-height:0; visibility:hidden; z-index:-1;}
+
+hr{ display:none;}
+
+sup,
+
+sub{ font-style:normal; font-weight:normal;}
+
+
+
+/* Layout */
+
+div.black{ border-bottom:0px solid #1a1a1a;}
+
+#xe .black{ border-bottom:0;}
+
+
+
+/* 背景 */
+
+body.gradBGblack {background:url(../img/bg.jpg) fixed center;}
+
+
+
+
+#container{ margin:20px 20px;}
+
+#header{ height:100px; z-index:2;}
+
+#body{ background-color:#fff; padding-left:20px;    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    display: block;padding-top:100px; z-index:1;}
+
+.fixed .c #body{ background-color:#fff; margin-bottom:30px;}
+
+#body .extension{ margin-bottom:100px;}
+
+.fixed .ce #body #content, 
+
+.fixed .ec #body #content{ padding-bottom:60px; position:fixed center;}
+
+.fixed .ce #body .e1, 
+
+.fixed .ec #body .e1{ color:#fff; width:100px;}
+
+#footer{ padding:10px 0;  margin-bottom:60px; font-size:11px;}
+
+div.black #footer{ position:center; border:0; margin-bottom:36px; margin-top:100px;}
+
+#sitemap{ padding:15px 0; margin-bottom:15px; }
+
+div.black #sitemap{ border-bottom:0px solid #d4d4d4;}
+
+
+
+/* Header */
+
+#header a{ text-decoration:none;}
+
+#header a:hover,
+
+#header a:active,
+
+#header a:focus{ text-decoration:underline;}
+
+
+
+#header h1{ margin:0; position:relative; top:15px;}
+
+#header h1.noMargin { margin:0; position:relative; left:0; top:0; }
+
+#header h1 a{ display:block; margin:0; float:left; text-decoration:none;}
+
+div.black #header h1 a{ background-position:0 0;}
+
+#header h1 span{ position:relative; width:0; height:0; overflow:hidden; font-size:0; line-height:0; visibility:hidden; }
+
+
+
+#header .account{ position:absolute; top:40px; right:0; margin:0; padding:0; z-index:2;}
+
+#header .account li{ position:relative; float:left; list-style:none; background-image:url(../img/lineHeaderVr.gif); background-repeat:no-repeat; background-position:left 4px;}
+
+div.black #header .account li{ background-image:url(../img/lineHeaderVrBlack.gif);}
+
+#header .account li *{ vertical-align:top;}
+
+#header .account li li{ float:none; height:auto; background-image:none;}
+
+
+
+#header .account li.log{ background-image:none; font-size:0; line-height:0;}
+
+#header .account li.log a{ display:block; padding:5px 8px;}
+
+
+
+#header .account li.profile button{ border:0; padding:0; width:53px; height:15px; cursor:pointer; background-color:transparent; background-image:url(../img/buttonProfile.gif); background-repeat:no-repeat; background-position:center -10px; overflow:visible;}
+
+div.black #header .account li.profile button{ background-position:center 5px;}
+
+#header .account li.profile button span{ position:relative; width:0; height:0; overflow:hidden; font-size:0; line-height:0; visibility:hidden; z-index:-1;}
+
+
+
+#header .account li.profile .memberProfile{ display:none; position:absolute; top:15px; left:8px; padding:20px; background:#fff; border:2px solid #737373;}
+
+#header .account li.profile .memberProfile.active{ display:block;}
+
+#header .account li.profile .memberProfile .authorName{ margin:0 0 8px 0; font-size:16px; font-weight:bold; color:#333; white-space:nowrap;}
+
+#header .account li.profile .memberProfile ul{ margin:0; padding:15px 15px 5px 15px; list-style:none; border:1px solid #f2f2f2; background:#fcfcfc;}
+
+#header .account li.profile .memberProfile li{ float:none; white-space:nowrap; margin:0 0 10px 0; padding:0 0 0 10px; background:url(../img/bulletB.gif) no-repeat left center;}
+
+#header .account li.profile .memberProfile li a{ background:none; color:#333; text-decoration:none;}
+
+#header .account li.profile .memberProfile li a:hover,
+
+#header .account li.profile .memberProfile li a:active,
+
+#header .account li.profile .memberProfile li a:focus{ text-decoration:underline;}
+
+#header .account li.profile .memberProfile .close{ position:absolute; cursor:pointer; border:0; padding:0; top:0; right:0; width:27px; height:27px; background:transparent url(../img/buttonCloseX.gif) no-repeat center center;}
+
+#header .account li.profile .memberProfile .close span{ position:absolute; font-size:0; line-height:0; width:0; height:.; overflow:hidden; visibility:hidden;}
+
+
+
+#header .account li.register a{ display:block; width:43px; height:5px; padding:5px 8px; background-image:url(../img/buttonRegister.gif); background-repeat:no-repeat; background-position:center -10px;}
+
+div.black #header .account li.register a{ background-position:center 5px;}
+
+#header .account li.register a span{ position:relative; width:0; height:0; overflow:hidden; font-size:0; line-height:0; visibility:hidden; z-index:-1;}
+
+
+
+
+
+/* GNB */
+
+.gnb{ position:absolute; left:0; bottom:0; margin:0; padding:0; list-style:none;}
+
+.gnb li{ float:left; padding-right:40px;}
+
+.gnb li a{ display:block; height:32px; text-decoration:none !important; color:#fff; font-family:tahoma; float:left;}
+
+.gnb li a span{ display:inline-block; padding-top:10px;  }
+
+.gnb li.black a:hover ,
+
+.gnb li.black.selected a { color:#aaa; }
+
+
+
+
+/* Search */
+
+#header .search{ position:absolute; right:0; bottom:0; width:158px; height:32px; z-index:20;}
+
+div.black #header .search{ color:transparent; border-bottom:1px;}
+
+
+#header .search .inputText{ position:absolute; top:9px; left:20px; border:0; background:#fff; width:110px; height:15px; padding:0; font-size:12px;} 
+
+#header .search .inputSearch{ position:absolute; top:9px; left:135px;}
+
+
+
+/* Sitemap */
+
+#sitemap a{ text-decoration:none;}
+
+#sitemap a:hover,
+
+#sitemap a:active,
+
+#sitemap a:focus{ text-decoration:underline;}
+
+
+
+#sitemap .extension{ *zoom:1;}
+
+#sitemap .extension:after{ content:""; display:block; clear:both;}
+
+#sitemap .extension .section{ float:left; width:150px; margin:0; padding:0 0 0 10px; repeat-y 0 0;}
+
+#sitemap .extension .section.logo{ background:none; padding:0 10px 0 0;}
+
+#sitemap .extension .section h2{ font-size:12px; margin:0 0 10px 0;}
+
+#sitemap .extension .section a{ color:#fff;}
+
+#sitemap .extension .section ul{ margin:0; padding:0; list-style:none;}
+
+#sitemap .extension .section li{ margin-bottom:6px;}
+
+
+
+/* Footer */
+
+#footer a{ text-decoration:none;}
+
+#footer a:hover,
+
+#footer a:active,
+
+#footer a:focus{ text-decoration:underline;}
+
+
+
+#footer .rss{ float:left; margin:0;}
+
+#footer .rss a{ color:#8b8b8b; padding-left:14px; background:url(../img/iconRss.gif) no-repeat left center; font-size:11px; font-family:Tahoma;}
+
+#footer address{ float:right; color:#8b8b8b; font-size:11px; font-family:Tahoma;}
+
+
+
+/* LNB */
+
+.lnb a{ text-decoration:none;}
+
+.lnb a:hover,
+
+.lnb a:active,
+
+.lnb a:focus{ text-decoration:underline !important;}
+
+
+
+
+
+.lnb ul{ margin:0 0 20px 0; padding:0 0 0 10px; list-style:none;}
+
+.lnb ul ul{ margin:5px 0 0px 0;}
+
+.lnb li{ font-size:12px;}
+
+.lnb li a{ color:#000;}
+
+.lnb li.active a{ font-weight:bold; text-decoration:underline;}
+
+.lnb li.active li a{ font-weight:normal; text-decoration:none;}
+
+
+
+
+#body .extension .dLink{ padding:0 0 0 20px; margin-bottom:10px;}
+
+#body .extension .dLink img{ border:none; }
+
+
+
+
+
+/* modalWindow */
+
+.loginWindow{ display:none; position:fixed; left:0; top:0; _position:absolute; width:100%; height:100%; z-index:100;} 
+
+
+
+.loginWindow .modalWindow{ display:block; position:fixed; border:0; left:0; top:0; _position:absolute; width:100%; height:100%; background:#000; opacity:.3; filter:alpha(opacity:30);}
+
+.loginWindow .loginLayer{ position:absolute; width:289px; top:120px; left:50%; padding:30px; border:2px solid #737373; margin:0 0 0 -175px; background:#fff;}
+
+.loginWindow .loginLayer form{ display:none; *zoom:1; margin:0 0 29px 0;}
+
+.loginWindow .loginLayer form:after{ content:""; display:block; clear:both;}
+
+.loginWindow .loginLayer form legend{ position:absolute; width:0; height:0; overflow:hidden; font-size:0; line-height:0; visibility:hidden;}
+
+.loginWindow .loginLayer fieldset{ border:0; margin:0; padding:0;}
+
+.loginWindow .loginLayer.loginTypeA form.typeA,
+
+.loginWindow .loginLayer.loginTypeB form.typeB{ display:block;}
+
+.loginWindow .loginLayer dl{ margin:0; padding:0 0 1px 0;}
+
+.loginWindow .loginLayer dt{ font-size:12px; font-weight:bold; color:#868d95; margin:0 0 2px 0;}
+
+.loginWindow .loginLayer dd{ margin:0 0 21px 0;}
+
+.loginWindow .loginLayer .inputText{ width:269px; height:31px; padding:6px 9px 0 9px; border:1px solid #ddd; font:20px Tahoma; color:#333;}
+
+.loginWindow .loginLayer .inputText:focus{ background-color:#fbfbfb;}
+
+.loginWindow .loginLayer .inputCheck{ margin:0 3px 0 0; width:13px; height:13px; vertical-align:middle;}
+
+.loginWindow .loginLayer.loginTypeA .inputText{ background-image:url(../img/bgLoginText.gif); background-repeat:no-repeat; background-position:right top;}
+
+.loginWindow .loginLayer.loginTypeB .inputText{ background-image:url(../img/bgOpenidText.gif); background-repeat:no-repeat; background-position:right top; padding:6px 9px 0 35px; width:243px;}
+
+.loginWindow .loginLayer .keep{ margin:0; float:left; font-size:11px; line-height:normal; white-space:nowrap;}
+
+.loginWindow .loginLayer .keep label{ color:#555;}
+
+.loginWindow .loginLayer .loginButton,
+
+.loginWindow .loginLayer .loginButton input{ position:relative; border:0; color:#fff; font-size:12px; font-weight:bold; display:inline-block; height:36px; line-height:36px; background-color:transparent; background-image:url(../img/buttonLoginAction.gif); background-repeat:no-repeat; overflow:visible;}
+
+.loginWindow .loginLayer .loginButton{ float:right; background-position:0 0; right:11px;}
+
+.loginWindow .loginLayer .loginButton input{ left:11px; background-position:right 0; padding:0 30px 0 45px; cursor:pointer;}
+
+.loginWindow .loginLayer .help{ margin:0 -30px -30px -30px; padding:14px 0; list-style:none; text-align:center; background:#fafafa; border-top:1px solid #f2f2f2;}
+
+.loginWindow .loginLayer .help li{ display:inline; font-size:11px; line-height:11px; padding:0 0 0 5px;}
+
+.loginWindow .loginLayer .help li.join{ font-weight:bold;}
+
+.loginWindow .loginLayer .help li.find{ border-left:1px solid #b3b3b3;}
+
+.loginWindow .loginLayer .help li.typeA,
+
+.loginWindow .loginLayer .help li.typeB{ display:none; border-left:1px solid #b3b3b3;}
+
+.loginWindow .loginLayer.loginTypeA .help li.typeA,
+
+.loginWindow .loginLayer.loginTypeB .help li.typeB{ display:inline;}
+
+.loginWindow .loginLayer .help li a{ text-decoration:none; color:#555;}
+
+.loginWindow .loginLayer .help li a:hover,
+
+.loginWindow .loginLayer .help li a:active,
+
+.loginWindow .loginLayer .help li a:focus{ text-decoration:underline;}
+
+.loginWindow .loginLayer .close{ position:absolute; cursor:pointer; border:0; padding:0; top:0; right:0; width:27px; height:27px; background:transparent url(../img/buttonCloseX.gif) no-repeat center center;}
+
+.loginWindow .loginLayer .close span{ position:absolute; font-size:0; line-height:0; width:0; height:.; overflow:hidden; visibility:hidden;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

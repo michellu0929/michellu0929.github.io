@@ -1,0 +1,23 @@
+<!--#Meta:widgets/content/skins/default/js/content_widget.js--><!--#Meta:widgets/content/skins/default/css/widget.css--><div class="widgetContainer">
+                <ul class="widgetZineA">
+    <li>
+        <p class="thumbArea" style="width:100px;margin-right:-100px;">
+            <a href="/michellu/xe/266" class="thumb" style="width:100px;height:75px">
+                                    <img src="http://127.0.0.1/michellu/xe/files/thumbnails/266/100x75.crop.jpg" style="width:100px;height:75px" />
+                                            </a>
+        </p>
+                    <p class="titleArea" style="margin-left:120px;">
+                            <a href="/michellu/xe/page_dxbF86"><strong class="board">buzhid</strong></a>
+                                    <a href="/michellu/xe/266" class="title">
+
+
+SUN Pei Yu Michell...</a>
+                                                    <span class="icon"></span>
+                                        <span class="date">2014-06-24</span> <span class="hour">23:01</span>
+                    </p>
+                                        <p class="authorArea" style="margin-left:120px;">
+                <a href="#" onclick="return false;" class="author member_4">michellu 'ㅅ'</a>
+                    </p>
+                            </li>
+</ul>
+    </div>

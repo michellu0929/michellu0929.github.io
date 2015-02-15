@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+/* NHN > UIT Center > Open UI Technology Team > Jeong Chan Myeong(dece24@nhncorp.com) */
+
+
+
+/* Skip To Content */
+
+a.skipToContent{ display:block; width:100%; position:absolute; top:0; clear:both; overflow:hidden; height:0; text-decoration:none; text-align:center;}
+
+a.skipToContent:hover,
+
+a.skipToContent:active,
+
+a.skipToContent:focus{ height:auto; margin:0 0 10px 0; padding:5px;}
+
+
+
+/* Element Reset */
+
+html,
+
+body{ height:100%;}
+
+body { margin:0; font-size:12px; background:#fff; color:#000;}
+
+address { font-style:normal;}
+
+img,
+
+fieldset{ border:0; margin:0; padding:0;}
+
+form{ margin:0;}
+
+legend{ position:absolute; width:0; height:0; overflow:hidden; font-size:0; line-height:0; visibility:hidden; z-index:-1;}
+
+
+sup,
+
+sub{ font-style:normal; font-weight:normal;}
+
+mic{ text-align: right; color: rgba(255, 255, 255, 0.53); padding: 0 20px; position:fixed}
+
+/* Layout */
+
+div.black{ border-bottom:0px solid #1a1a1a;}
+
+#xe .black{ border-bottom:0;}
+
+
+
+/* 背景 */
+
+body.gradBGblack {background:url(../img/bg.jpg) fixed center;}
+
+
+
+
+#container{ margin:0;}
+
+#header{ height:50px; z-index:2;}
+
+#body{ margin:200px 30px 0px 30px; z-index:1;}
+
+.fixed .c #body{ background:none; margin-bottom:30px;}
+
+#body .extension{ margin-bottom:100px;}
+
+#body .e1{ color:#fff; }
+
+
+
+
+/* Header */
+
+#header a{ text-decoration:none;}
+
+#header a:hover,
+
+#header a:active,
+
+#header a:focus{ text-decoration:underline;}
+
+
+
+#header h1{ margin:0; position:relative; top:15px;}
+
+#header h1.noMargin { margin:0; position:relative; left:0; top:0; }
+
+#header h1 a{ display:block; margin:0; float:left; text-decoration:none;}
+
+div.black #header h1 a{ background-position:0 0;}
+
+#header h1 span{ position:relative; width:0; height:0; overflow:hidden; font-size:0; line-height:0; visibility:hidden; }
+
+
+
+#header .account{ position:absolute; top:40px; right:0; margin:0; padding:0; z-index:2;}
+
+#header .account li{ position:relative; float:left; list-style:none; }
+
+#header .account li *{ vertical-align:top;}
+
+#header .account li li{ float:none; height:auto; background-image:none;}
+
+
+
+#header .account li.log{ background-image:none; font-size:0; line-height:0;}
+
+#header .account li.log a{ display:block; padding:5px 8px;}
+
+
+#header .account li.profile button{ border:0; padding:0; width:53px; height:24px; cursor:pointer; background-color:transparent; background-image:url(../img/buttonProfile.gif); background-repeat:no-repeat; background-position:center -10px; overflow:visible;}
+
+div.black #header .account li.profile button{ background-position:center 5px;}
+
+#header .account li.profile button span{ position:relative; width:0; height:0; overflow:hidden; font-size:0; line-height:0; visibility:hidden; z-index:-1;}
+
+
+
+#header .account li.profile .memberProfile{ display:none; position:absolute; top:15px; left:8px; padding:20px; background:#fff; border:2px solid #737373;}
+
+#header .account li.profile .memberProfile.active{ display:block;}
+
+#header .account li.profile .memberProfile .authorName{ margin:0 0 8px 0; font-size:16px; font-weight:bold; color:#333; white-space:nowrap;}
+
+#header .account li.profile .memberProfile ul{ margin:0; padding:15px 15px 5px 15px; list-style:none; border:1px solid #f2f2f2; background:#fcfcfc;}
+
+#header .account li.profile .memberProfile li{ float:none; white-space:nowrap; margin:0 0 10px 0; padding:0 0 0 10px; background:url(../img/bulletB.gif) no-repeat left center;}
+
+#header .account li.profile .memberProfile li a{ background:none; color:#333; text-decoration:none;}
+
+#header .account li.profile .memberProfile li a:hover,
+
+#header .account li.profile .memberProfile li a:active,
+
+#header .account li.profile .memberProfile li a:focus{ text-decoration:underline;}
+
+#header .account li.profile .memberProfile .close{ position:absolute; cursor:pointer; border:0; padding:0; top:0; right:0; width:27px; height:27px; background:transparent url(../img/buttonCloseX.gif) no-repeat center center;}
+
+#header .account li.profile .memberProfile .close span{ position:absolute; font-size:0; line-height:0; width:0; height:.; overflow:hidden; visibility:hidden;}
+
+
+
+#header .account li.register a{ border:0; padding:0; width:53px; height:24px;display:block; background-image:url(../img/buttonRegister.gif); background-repeat:no-repeat; background-position:center -10px;}
+
+div.black #header .account li.register a{ background-position:center 5px;}
+
+#header .account li.register a span{ position:relative; width:0; height:0; overflow:hidden; font-size:0; line-height:0; visibility:hidden; z-index:-1;}
+
+
+
+
+
+/* GNB */
+
+.gnb{ position:absolute; left:0; bottom:0; margin:0; padding:0; list-style:none;}
+
+.gnb li{ float:left; padding-right:40px;}
+
+.gnb li a{ display:block; height:32px; text-decoration:none !important; color:#fff; font-family:tahoma; float:left;}
+
+.gnb li a span{ display:inline-block; padding-top:10px;  }
+
+.gnb li.black a:hover ,
+
+.gnb li.black.selected a { color:#aaa; }
+
+
+
+
+
+
+/* Sitemap */
+
+#sitemap a{ text-decoration:none;}
+
+#sitemap a:hover,
+
+#sitemap a:active,
+
+#sitemap a:focus{ text-decoration:underline;}
+
+
+
+#sitemap .extension{ *zoom:1;}
+
+#sitemap .extension:after{ content:""; display:block; clear:both;}
+
+#sitemap .extension .section{ float:left; width:150px; margin:0; padding:0 0 0 10px; repeat-y 0 0;}
+
+#sitemap .extension .section.logo{ background:none; padding:0 10px 0 0;}
+
+#sitemap .extension .section h2{ font-size:12px; margin:0 0 10px 0;}
+
+#sitemap .extension .section a{ color:#fff;}
+
+#sitemap .extension .section ul{ margin:0; padding:0; list-style:none;}
+
+#sitemap .extension .section li{ margin-bottom:6px;}
+
+
+
+/* Footer */
+
+
+footer{
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	width:97%;
+	padding-bottom:10px;
+	text-align:right;
+	color:rgba(255, 255, 255, 0.54);
+	font-family:trebuchet ms;
+	font-size:10px;
+	}
+
+
+/* LNB */
+
+.lnb a{ text-decoration:none;}
+
+.lnb a:hover,
+
+.lnb a:active,
+
+.lnb a:focus{ text-decoration:underline !important;}
+
+
+
+
+
+.lnb ul{ margin:0 0 20px 0; padding:0 0 0 10px; list-style:none;  background-image:url(../img/data1.png);}
+
+.lnb ul ul{ margin:5px 0 0px 0;}
+
+.lnb li{ font-size:12px;}
+
+.lnb li a{ color:#000;}
+
+.lnb li.active a{ font-weight:bold; text-decoration:underline;}
+
+.lnb li.active li a{ font-weight:normal; text-decoration:none;}
+
+
+
+
+#body .extension .dLink{ padding:0 0 0 20px; margin-bottom:10px;}
+
+#body .extension .dLink img{ border:none; }
+
