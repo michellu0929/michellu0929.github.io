@@ -7,6 +7,7 @@ span[class*="fontawesome-"]:before {
 
 body {
  color:#575756;
+transition-timing-function: ease-in-out;
 }
 
 .header {
@@ -15,6 +16,12 @@ body {
     height: 20px;
     width: 90%;
     padding:28px 5%;
+
+}
+
+p {
+    font-family: helN, 'helvetica', sans-serif;
+    color: #575756;
 
 }
 
@@ -36,6 +43,9 @@ display:none;
 .fontawesome-search {
 
     margin-left: 5px;
+}
+.fontawesome-home {
+    font-size:15pt;
 }
 
 .fontawesome-reorder {
@@ -151,7 +161,15 @@ a:hover, .navi:hover, .fontawesome-search:hover {
     src: url(font/woff/Panton-LightCaps.woff);
 }
 
+@font-face {
+    font-family: helNi;
+    src: url(font/woff/HelveticaNeue-LightItalic.woff);
+}
 
+@font-face {
+    font-family: helN;
+    src: url(font/woff/HelveticaNeue-Light.woff);
+}
 
 
 nav ul ul {
@@ -364,38 +382,67 @@ background: #faf4a7;
 }
 
 .col7 {
-width: 70%；
+width: 90%；
         height: 40px;
     margin-top: 40px;
-    margin: 1%;
-    float: left;
+    margin: 4%;
+
         height: 550px;
         color: #ada216;
-    font-family: sans-serif;
     font-size: 10pt;
     text-align: left;
     font-weight: 100;
     letter-spacing: 1px;
-    padding:5%; 
+    padding:1%; 
 }
 
 .col4  {
-    height: 500px;
-    width:44.1%;
+    overflow: hidden;
+    width:21.5%;
         color: #ada216;
     font-family: sans-serif;
     font-size: 10pt;
     text-align: left;
     font-weight: 100;
     letter-spacing: 1px;
-    padding:5px 20px; 
+    padding:1%; 
+    padding-bottom: 21.5%
+    margin: 5%;
+}
+
+footer {
+display: none;
 }
 
 
 
 
+/*grid*/
 
 
+
+.imgrid ul li {
+    
+    width: 26%;
+
+    vertical-align: top;
+    	display: inline-block;
+        margin: 3%;
+
+}
+
+.imgrid ul {
+padding: 0;
+}
+
+.imgrid ul li img {
+	max-width: 100%;
+
+	margin: 0 0 10px;
+     object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
 
 
 /* this is the slideshow*/
@@ -465,19 +512,24 @@ margin:0;
 
 figcaption{
   position: absolute;
-  font-family: sans-serif;
-  font-size: .8em;
-  bottom: .75em;
-  right: .35em;
-  padding: .25em;
+    font-family: helN, 'helvetica', sans-serif;
+  font-size: 12pt;;
+  bottom: 10%;
+  right: 5%;
+  padding: 20px 50px;
+    letter-spacing: .5pt;
   color: #fff;
-  background: rgba(0,0,0, .25);
+  background: rgba(149, 149, 149, 0.28);
   border-radius: 2px;
+
     z-index: 10000;
 }
+
 figcaption a{
+        font-family: helNi, 'helvetica', sans-serif;
   color: #fff;
 }
+
 
 
 .biglogo {
@@ -500,7 +552,7 @@ margin-bottom: -10px;
     .phone-search {
         display: inherit;
     margin-left: 0;
-        margin-top: -50px;
+        margin-top: -60px;
     float: right;
     margin-right: -20px;
     clear:both;
@@ -564,10 +616,11 @@ input {
     
     
     nav ul li a {
-	height:50px;
+	height:40px;
+        margin-top: 10px;
 }
     
-  
+
     nav ul ul {
 	position:absolute;
 	background-color:rgb(239, 239, 239);
@@ -620,6 +673,7 @@ input {
     .fontawesome-reorder {
     display:inherit;
         color:#575756;
+        margin-top: -10px;
     }
     
     .fontawesome-search {
@@ -642,19 +696,27 @@ input {
     
     
     .col7 {
-    height: 650px;
+    width: 90%;
+        padding: 0;
+        margin-right: 0;
     }
-    .col7,#download,#contact {
-        margin: 3%;
-        width: 84%;
-        padding: 5%;
-    }
+
     
-    
+    figcaption{
+  position: absolute;
+    font-family: helN, 'helvetica', sans-serif;
+  font-size: 12pt;;
+  bottom: 5%;
+  right: 5%;
+  padding: 10px 20px;
+
+}
+
     
     
     
     footer, footer a{
+        display: block;
 	position:fixed;
 	left:0px;
 	bottom:0px;
@@ -663,15 +725,35 @@ input {
     height: 7%;
 	padding-top:4%;
     padding-right: 30px;
-	text-align:center;
+text-align: center;
 	background-color:rgb(239, 239, 239);
   color:rgb(198, 211, 220);
-        font-family: panT, 'helvetica', sans-serif;
-        z-index: 9999;
-        
+        font-family: panT, 'helvetica', sans-serif;    
 }
     
 
+    .imgrid ul li {
+    
+    width: 43.1%;
+
+}
+
+.imgrid ul li img {
+	max-width: 100%;
+margin: 0;
+     object-fit: cover;
+  width: 100%;
+  height: 120px;
+}
+
+h2 {
+    margin-top: 50px;
+margin-bottom: 5px;
+}
+    .col7 .grid {
+    margin-top: 0;
+    }
+    
 }
 
 

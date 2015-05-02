@@ -120,3 +120,13 @@ $(function(){
 
 
 
+    $.getJSON('image/image.json', function(data) {
+        $.each(data.images, function(i,item) {
+            $("#imgrid ul").append("<li><a href='"+item.link+"'> <img src='"+item.src+"'/></a></li><br />");
+
+        });
+    });
+
+
+
+
