@@ -563,11 +563,11 @@ figcaption a{
 	box-shadow:none;
     color: #575756;
 
-    -webkit-animation: fadein 1s; /* Safari and Chrome */
-    -moz-animation: fadein 1s; /* Firefox */
-    -ms-animation: fadein 1s; /* Internet Explorer */
-    -o-animation: fadein 1s; /* Opera */
-    animation: fadein 1s;
+    -webkit-animation: fadein .2s; /* Safari and Chrome */
+    -moz-animation: fadein .2s; /* Firefox */
+    -ms-animation: fadein .2s; /* Internet Explorer */
+    -o-animation: fadein .2s; /* Opera */
+    animation: fadein .2s;
         z-index: 1000;
 }
     
