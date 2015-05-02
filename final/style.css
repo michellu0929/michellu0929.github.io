@@ -527,7 +527,7 @@ margin-bottom: -10px;
     
     .phone-search ul ul {
         
-right: 1%;
+right: 5%;
 	background-color:rgba(229, 19, 19, 0);
 	padding:0;
 	top: 100%;
@@ -554,13 +554,13 @@ input {
     background-color: #dfdfdf;
     padding-left: 30px;
     padding-right:35px;
-    height: 50px;
-    width: 200px;
+    height: 60px;
+    width: 320px;
     color:white;
     font-family: panT,'helvetica', arial, sans-serif;
     letter-spacing: 1pt;
     float: right;
-    margin-top: 0px;
+    margin-top: -4px;
     font-size: 12pt;
 }
     
