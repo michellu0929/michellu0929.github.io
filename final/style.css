@@ -298,12 +298,6 @@ border-bottom: 0;
     color: #ada216;
 }
 
-.wrapper {
-    max-width:1050px;
-    width: 100%;
-    margin:auto;
-
-}
 
 
 
@@ -402,54 +396,10 @@ footer{
 
 
 
-/*为了让css在一定大小下才会实现*/
-@media (max-width: 460px) {
-    .col8, .col4, .col2, .col1, .col3, #download, #contact{
-            width: 98%;
-    }
-    
-    #download img {
-        margin: 2px;
-    }
-    
-    #contact a{
-    margin: 0
-    }
-.iphone {
-    float:right;width:50%;margin-top:-10px;
-}
-    
-    .col5, .col5a {
-        width:98%;
-            height:40%;
-        text-align: center;
-    } 
-    
-    #contact {
-    height: 100px;
-    }
-    
-    
-    .col7 {
-    height: 650px;
-    }
-    .col7,#download,#contact {
-        margin: 3%;
-        width: 84%;
-        padding: 5%;
-    }
-    .imgbig {
-    width:320px;
-    }
-    h1 {
-    margin-left: 0px;
-    }
-}
 
+/* this is the slideshow*/
 
-
-
-
+/*yeyeyeye*/
 
 
 
@@ -457,7 +407,7 @@ footer{
     position: relative;
     padding-top: 450px;
     overflow: hidden;
-    width: 80%;
+    width: 90%;
     padding-bottom: -20px;
 } 
  
@@ -528,3 +478,124 @@ figcaption a{
   color: #fff;
 }
 
+
+
+
+
+
+/*为了让css在一定大小下才会实现*/
+@media (max-width: 460px) {
+
+    nav {
+    display: none;
+    }
+    
+    h1 {
+    font-size: 36pt;
+    }
+    
+    .navi{
+    display: none;
+    }
+    
+    .col5, .col5a {
+        width:98%;
+            height:40%;
+        text-align: center;
+    } 
+    
+    #contact {
+    height: 100px;
+    }
+    
+    
+    .col7 {
+    height: 650px;
+    }
+    .col7,#download,#contact {
+        margin: 3%;
+        width: 84%;
+        padding: 5%;
+    }
+
+}
+
+
+
+
+
+
+
+
+ 
+.box{
+
+  width: 300px;
+  height: 50px;
+}
+
+.container-2{
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+.container-2 input#search{
+  width: 50px;
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #262626;
+  padding-left: 35px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+ 
+  -webkit-transition: width .55s ease;
+  -moz-transition: width .55s ease;
+  -ms-transition: width .55s ease;
+  -o-transition: width .55s ease;
+  transition: width .55s ease;
+}
+
+.container-2 input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+ 
+.container-2 input#search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+ 
+.container-2 input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+ 
+.container-2 input#search:-ms-input-placeholder {  
+   color: #65737e;  
+}
+
+.container-2 .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 17px;
+  z-index: 1;
+  color: #4f5b66;
+}
+
+.container-2 input#search:focus, .container-2 input#search:active{
+  outline:none;
+  width: 300px;
+}
+ 
+.container-2:hover input#search{
+width: 300px;
+}
+ 
+.container-2:hover .icon{
+  color: #93a2ad;
+}
