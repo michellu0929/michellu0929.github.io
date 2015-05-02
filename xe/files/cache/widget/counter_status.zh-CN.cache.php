@@ -1,4 +1,0 @@
-<?php if(!defined("__XE__")) exit(); $widget_info->widget = "counter_status";$widget_info->path = "./widgets/counter_status/";$widget_info->title = "计数器";$widget_info->description = "
-        利用访问统计模块显示总访问量以及昨天，今日的访问统计流量。
-        要想使用此组件必须先安装访问统计模块且得激活访问统计插件。
-    ";$widget_info->version = "1.7";$widget_info->date = "20131127";$widget_info->homepage = "";$widget_info->license = "";$widget_info->license_link = "";$widget_info->widget_srl = $widget_srl;$widget_info->widget_title = $widget_title;$widget_info->author[0]->name = "NAVER";$widget_info->author[0]->email_address = "developers@xpressengine.com";$widget_info->author[0]->homepage = "http://xpressengine.com/"; ?>
