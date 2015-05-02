@@ -516,15 +516,9 @@ figcaption a{
     display: none;
     }
     
-    
-    a {
-       font-size: 18pt;
-    }
-    
     nav {
     margin:-10px -5%;
         float: left;
-     
     }
     
     nav ul li a {
