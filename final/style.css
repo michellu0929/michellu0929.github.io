@@ -516,9 +516,15 @@ figcaption a{
     display: none;
     }
     
+    
+    a {
+       font-size: 18pt;
+    }
+    
     nav {
     margin:-10px -5%;
         float: left;
+     
     }
     
     nav ul li a {
@@ -551,7 +557,7 @@ figcaption a{
     
     h1 {
     font-size: 20pt;
-        margin-top: -8px;
+        margin-top: 0px;
         margin-right: 10px;
         letter-spacing: 0;
     }
@@ -562,7 +568,7 @@ figcaption a{
     }
     
     .fontawesome-search {
-
+        
     }
     
     .navi{
