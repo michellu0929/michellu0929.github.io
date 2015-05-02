@@ -252,8 +252,7 @@ nav ul ul ul {
 	top:0;
 }
 
-
-
+.phone-search {display: none;}
 
 
 /*
@@ -497,7 +496,9 @@ figcaption a{
 }
 
 
-
+.biglogo {
+margin-bottom: -10px;
+}
 
 
 
@@ -509,28 +510,65 @@ figcaption a{
     }
     
     .search {
+    display:none;
+    }
+    
+    .phone-search {
+        display: inherit;
     margin-left: 0;
-        margin-top: -33px;
+        margin-top: -50px;
+    float: right;
+    margin-right: -20px;
+    clear:both;
+    color:white;
 }
 
+
+    
+    .phone-search ul ul {
+        
+right: 1%;
+	background-color:rgba(229, 19, 19, 0);
+	padding:0;
+	top: 100%;
+        width: 1000px;;
+	border-radius:0px;
+}
+    
+    .svg {
+    display: none;
+    }
     
     .navv {
     display: none;
     }
     
     
-    a .fontawesome-search, a .fontawesome-reorder {
+    a .fontawesome-reorder, a .fontawesome-search {
        font-size: 18pt;
     }
     
-    a {
-        
-    }
+input {
+    border-radius: 0;
+    border-width: 0;
+    background-color: #dfdfdf;
+    padding-left: 30px;
+    padding-right:35px;
+    height: 50px;
+    width: 200px;
+    color:white;
+    font-family: panT,'helvetica', arial, sans-serif;
+    letter-spacing: 1pt;
+    float: right;
+    margin-top: 0px;
+    font-size: 12pt;
+}
+    
+ 
     
     nav {
     margin:-18px -5%;
         float: left;
-     
     }
     
     
@@ -627,6 +665,8 @@ figcaption a{
 
 
 
-
+*{
+  transition: all 0.2s ease-in-out;
+}
 
 
