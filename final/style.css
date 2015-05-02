@@ -550,9 +550,10 @@ figcaption a{
     }
     
     h1 {
-    font-size: 30pt;
+    font-size: 20pt;
         margin-top: -8px;
         margin-right: 10px;
+        letter-spacing: 0;
     }
     
     .fontawesome-reorder {
