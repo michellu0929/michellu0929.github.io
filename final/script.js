@@ -146,3 +146,81 @@ function hideMe(obj) {
     obj.style.visibility = 'hidden';
 }
 
+
+
+
+
+//
+//========================
+
+
+
+// $(document).ready(function () {
+//     $("button").click(function () {
+//         $(".pop").fadeIn(300);
+//        
+//     });
+//
+//     $(".pop > span, .pop").click(function () {
+//         $(".pop").fadeOut(300);
+//     });
+// });
+
+
+$(document).ready(function() {
+setTimeout(popup, 500);
+function popup() {
+$("#pop").css("display", "block");
+}
+    
+$("#pop span").click(function() {
+$("#pop").hide();
+})
+
+ $("#send").click(function () {
+         $(".pop2").fadeIn(1);
+        
+     });
+
+     $(".pop2 > span, .pop2").click(function () {
+         $(".pop2").hide();
+         $("#pop").hide();
+     });
+});
+
+
+
+
+//
+//=======================
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function() {
+  	  $('body').addClass('js');
+		  var $menu = $('#menu'),
+		  	  $menulink = $('.fontawesome-reorder'),
+		  	  $menuTrigger = $('.has-subnav > a');
+		
+		$menulink.click(function(e) {
+			e.preventDefault();
+			$menulink.toggleClass('active');
+			$menu.toggleClass('active');
+		});
+		
+		$menuTrigger.click(function(e) {
+			e.preventDefault();
+			var $this = $(this);
+			$this.toggleClass('active').next('ul').toggleClass('active');
+		});
+		
+		});
+
