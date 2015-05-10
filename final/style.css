@@ -1339,7 +1339,7 @@ font-size: 16pt;
 
 .menu ul {
     list-style-type: none;
-
+  -webkit-padding-start: 20px;
 }
 .menu {
     font-family: panT, "helvetica", sans-serif;
@@ -1351,7 +1351,7 @@ font-size: 16pt;
     transition:none;
 }
 .js .menu, .js .menu > ul ul {
-	background: rgba(233, 233, 233, 0.88);
+	background: rgb(233, 233, 233);
     transition:none;
 }
 .menu.active, .js .menu > ul ul.active {
@@ -1370,7 +1370,7 @@ color: #cecece;
 .menu li a {
 	color: #575756;
 	display: block;
-	padding: 0.8em;
+	padding: 0.5em;
 	border-bottom: 1px solid rgb(239, 239, 239);
 	position: relative;
     transition:none;
