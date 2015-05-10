@@ -771,24 +771,13 @@ margin-bottom: -10px;
 
 
 
-#nophoto {
+.title3 {
 display: inherit;
 }
 
 
 @media (max-width: 460px) {
-.article.title3 {
-background-attachment: fixed;
-    height: 300px;
-    background-size: 100px 100px;
-    background-position:right;
-}
-
-    .article a.title3:hover {
-background-size: 300px 300px;
-    }
-    
-#nophoto {
+.title3 {
 display: none;
 }
     
