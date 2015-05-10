@@ -742,6 +742,8 @@ margin-bottom: -10px;
 @media (max-width: 780px) {
 .article p {width:100%;}
     
+    
+    
     iframe {width:100%;}
     
     .menuu .menu ul {
@@ -773,9 +775,14 @@ margin-bottom: -10px;
 
 
 @media (max-width: 460px) {
+.title3 {
+background-attachment: fixed;
+    height: 300px;
+    background-size: 20%;
+    background-position:right;
+}
 
-        .col8, .col4, .col2, .col1, .col3 {
-            width: 98%;}
+
     
 .pin ul {
 -webkit-column-count:none;
