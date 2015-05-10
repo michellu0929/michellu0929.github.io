@@ -206,7 +206,7 @@ $(document).ready(function() {
 
 $(window).scroll(function(){
     var toplocation = $(window).scrollTop();
-    if(toplocation < 172)
+    if(toplocation < 220)
         $("body").removeClass("scrolled");
     else
     {

@@ -5,9 +5,19 @@ span[class*="fontawesome-"]:before {
   font-family: 'FontAwesome', sans-serif;
 }
 
+html{ height:100%; }
+
+
 body {
+    
+ font-family: 'Muli', 'helvetica', sans-serif;
+    font-weight: 100;
     background-color: rgb(244, 244, 244);
  color:#575756;
+    min-height:100%; 
+    padding:0; 
+    margin:0; 
+    position:relative;
 transition-timing-function: ease-in-out;
 }
 
@@ -94,7 +104,7 @@ h3 {
 }
 
 h5 {
-    font-family: helT,'helvetica',sans-serif;
+    font-family: 'Muli', 'helvetica', sans-serif;
     letter-spacing: .5pt;
     color: #888886;
     font-size: 10pt;
@@ -164,9 +174,9 @@ margin-bottom: -20px;
 
 header {
         background-color: rgba(233, 233, 233, 0);
-    position: absolute;
+    position: relative;
     height: 5px;
-    width: 90%;
+    width: 93%;
     padding:28px 5%;
     margin-top: -20px;
     margin-left: -10px;
@@ -216,7 +226,7 @@ display: block;
 }
 
 p {
-    font-family: helN, 'helvetica', sans-serif;
+    font-family: 'Muli', 'helvetica', sans-serif;
     color: #575756;
     font-size: 11pt;
 
@@ -353,7 +363,7 @@ text-align:left;
 h4 a {
     color:#9d9d9d;
     font-size: 10pt;
-    font-family: helN,'helvetica', arial, sans-serif;
+font-family: 'Muli', 'helvetica', sans-serif;
     font-weight: 100;
     letter-spacing: 1.5 pt;
 
@@ -428,15 +438,8 @@ a:hover, .navi:hover, .fontawesome-search:hover {
     src: url(font/woff/Panton-LightCaps.woff);
 }
 
-@font-face {
-    font-family: helNi;
-    src: url(font/woff/HelveticaNeue-LightItalic.woff);
-}
 
-@font-face {
-    font-family: helN;
-    src: url(font/woff/HelveticaNeue-Light.woff);
-}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600);
 
 
 
@@ -507,48 +510,8 @@ border-bottom: 0;
 }
 
 
-.h401 {
-    margin-top: -50px;
-    text-transform: uppercase;
-    font-family: 'helvetica', arial, sans-serif;
-    font-weight: 100;
-    letter-spacing: 1pt;
-    color: #ada216;
-}
-
-.h40 {
-    text-transform: uppercase;
-    font-family: 'helvetica', arial, sans-serif;
-    font-weight: 100;
-    letter-spacing: 1pt;
-    color: #ada216;
-}
-
-.h402 {
-
-    text-transform: uppercase;
-    font-family: 'helvetica', arial, sans-serif;
-    font-weight: 100;
-    letter-spacing: 1pt;
-    color: #ada216;
-}
 
 
-
-
-.bg1 {
-    background-color:#e5d50a; 
-    height: 700px;
-    width: 100%;
-    
-}
-
-.big {
-    padding-top: 100px;
-    height: 1000px;
-background: #faf4a7;
-    margin-top: -20px;
-}
 
 
 
@@ -601,22 +564,37 @@ width: 80%;
 
 
 footer {
+color: rgb(239, 239, 239);
+    background: #575756;
+clear: both;
+  position:relative;
+  bottom:0%; 
+  height:100%; 
+width:100%;
     
-   display: none;
 }
 
+/*
 .footer-outer {
-    width:100%;margin: 0;
-    bottom: 100%;
+  clear: both;
+padding-right: 15px;
+  padding-left: 15px;
+    padding-bottom: -150px;
+  margin-right: auto;
+  margin-left: auto;
+    margin-bottom: auto;
+    width: 87.6%;
+    
 }
 
 div .copyright {
-background-color: #e9e9e9;
+background-color: #575756;
     height: 150px;
-    width: 100%;
-    padding:28px 6%;
+    padding:6%;
+    
     margin: 0 -6%;
 }
+*/
 
 
 
@@ -736,7 +714,7 @@ margin:0;
 
 figcaption{
   position: absolute;
-    font-family: helN, 'helvetica', sans-serif;
+    font-family: 'Muli', 'helvetica', sans-serif;
   font-size: 12pt;;
   bottom: 10%;
   right: 5%;
@@ -750,7 +728,8 @@ figcaption{
 }
 
 figcaption a{
-        font-family: helNi, 'helvetica', sans-serif;
+        font-family: 'Mul', 'helvetica', sans-serif;
+   font-style: italic;
   color: #fff;
 }
 
@@ -779,6 +758,9 @@ margin-bottom: -10px;
     
     iframe {width:100%;}
     
+    .menuu .menu ul {
+    margin-top: 25px;
+    }
     .sidebar {
     float: right;
         position: fixed;
@@ -795,6 +777,8 @@ margin-bottom: -10px;
         .sidebar h3,.sidebar h5, .sidebar img {
     display: none;
     }  
+    
+
 }
 
 
@@ -810,7 +794,9 @@ margin-bottom: -10px;
 .pin ul {
 -webkit-column-count:none;
 }
-    
+            div.navi{
+    display: none;
+    }
 
     header {
     position: fixed;
@@ -951,9 +937,7 @@ input {
     
 
     
-    div.navi{
-    display: none;
-    }
+
     
     .col5, .col5a {
         width:98%;
@@ -975,7 +959,6 @@ input {
     
     figcaption{
   position: absolute;
-    font-family: helN, 'helvetica', sans-serif;
   font-size: 10pt;;
   bottom: 5%;
   right: 5%;
@@ -983,6 +966,7 @@ input {
 
 }
  
+/*
     footer, footer a{
         display: block;
 	position:fixed;
@@ -999,6 +983,7 @@ text-align: center;
         font-family: panT, 'helvetica', sans-serif;    
 }
     
+*/
 
     .imgrid ul li {
     
@@ -1072,7 +1057,7 @@ top:50%;
 
     width:100%;
     padding:30% 0 0 0 ;
-    font-family: helN, 'helvetica', sans-serif;
+font-family: 'Muli', 'helvetica', sans-serif;
     font-size: 12pt;
    letter-spacing: .5pt;
 /*    background-color:rgba(0, 0, 0, 0.3);*/
@@ -1088,7 +1073,6 @@ top:50%;
     width:0;
     width:100%;
     height:auto;
-    font-family: helN, 'helvetica', sans-serif;
     font-size: 36pt;
    letter-spacing: .5pt;
     display:none;
@@ -1404,7 +1388,7 @@ display: inherit;
 	.menuu {
 		overflow: visible;
         width: 100%;
-        margin-top: 150px;
+        margin-top: 200px;
 	}
 	.menu-link {
 	  display: none;
@@ -1420,6 +1404,7 @@ display: inherit;
 	}
 	.js .menu > ul ul {
 		background: #e9e9e9;
+        margin-top: -15px;
     margin-left: -7px;
 		display: none;
           -webkit-animation: fadein .2s; /* Safari and Chrome */
@@ -1438,10 +1423,16 @@ display: inherit;
     animation: fadein .2s;
         z-index: 1000;
 	}
+    
+    .js .menu, .js .menu > ul ul a:hover {
+color: #575756;
+}
 	.menu ul {
 		margin: 0 0 0 -0.25em;
 		border: 0;
            padding:0;
+        
+        
 	}
 	.menu li a {
 		border: 0;
@@ -1454,12 +1445,15 @@ display: inherit;
            padding:0;
 		font-size: 1em;
 		padding: 0.8em 0.5em;
+        
 	}
 .menu li.has-subnav > a.active:after{	
     padding:0;
     content: none;}
 	.menu > ul li {
 		margin: 0 0.25em;
+        
+        
 	}
 	.menu > ul > li {
 		display: inline-block;
@@ -1473,6 +1467,7 @@ display: inherit;
 	}
 	.menu > ul ul li {
 		position: relative;
+        
 	}
 	.menu > ul ul.level-2 {
 		top: 3em;
