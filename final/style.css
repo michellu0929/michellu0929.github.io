@@ -1330,6 +1330,7 @@ font-size: 16pt;
   text-align: left;
     margin-top: -60px;
     margin-left: -5px;
+    transition:none;
 }
 
 .menu-link:focus{
@@ -1347,9 +1348,11 @@ font-size: 16pt;
 .menu, .menu > ul ul {
   clear: both;
         margin-top: -3px;
+    transition:none;
 }
 .js .menu, .js .menu > ul ul {
 	background: rgba(233, 233, 233, 0.88);
+    transition:none;
 }
 .menu.active, .js .menu > ul ul.active {
 	max-height: 55em;
@@ -1370,6 +1373,7 @@ color: #cecece;
 	padding: 0.8em;
 	border-bottom: 1px solid rgb(239, 239, 239);
 	position: relative;
+    transition:none;
 }
 .menu li.has-subnav > a:after {
 	content: '+';
@@ -1379,6 +1383,7 @@ color: #cecece;
 	display: block;
 	font-size: 1.5em;
 	padding: 0.25em 0.25em;
+    transition:none;
 }
 .menu li.has-subnav > a.active:after {
 	content: "-";
