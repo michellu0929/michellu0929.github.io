@@ -120,63 +120,24 @@ $(function(){
 
 
 
-    $.getJSON('image/image.json', function(data) {
-        $.each(data.images, function(i,item) {
-            $("#imgrid ul").append("<li><a href='"+item.link+"'> <img src='"+item.src+"'/></a></li><br/>");
-
-        });
-    });
-
-
-
-
-function showImage(imgName) {
-    document.getElementById('largeImg').src = imgName;
-    showLargeImagePanel();
-    unselectAll();
-}
-function showLargeImagePanel() {
-    document.getElementById('largeImgPanel').style.visibility = 'visible';
-}
-function unselectAll() {
-    if(document.selection) document.selection.empty();
-    if(window.getSelection) window.getSelection().removeAllRanges();
-}
-function hideMe(obj) {
-    obj.style.visibility = 'hidden';
-}
-
-
-
 
 
 //
-//========================
-
-
-
-// $(document).ready(function () {
-//     $("button").click(function () {
-//         $(".pop").fadeIn(300);
-//        
-//     });
 //
-//     $(".pop > span, .pop").click(function () {
-//         $(".pop").fadeOut(300);
-//     });
-// });
+//
+//$(document).ready(function () {
+//    $.getJSON('image/image.json', function(data) {
+//        $.each(data.images, function(i,item) {
+//            $("#pin3 ul").append("<li><a href='"+item.link+"'> <img src='"+item.src+"'/></a></li><br/>");
+//
+//        });
+//    });
+//});
+//
+
 
 
 $(document).ready(function() {
-setTimeout(popup, 500);
-function popup() {
-$("#pop").css("display", "block");
-}
-    
-$("#pop span").click(function() {
-$("#pop").hide();
-})
-
  $("#send").click(function () {
          $(".pop2").fadeIn(1);
         
@@ -189,16 +150,31 @@ $("#pop").hide();
 });
 
 
-
-
-//
 //=======================
 
 
+$(document).ready(function() {
+$('#menuu').on('click','.menu-link', function() {
+  $('.menu').slideToggle('fast', function() {
 
+	});
+});
 
+$('.menu').on('click', '.has-subnav a', function() {
+	if ($(window).width() < 772 || $('html').hasClass('touch')) {
+		if ($(this).next('ul').is(':visible')) {
+			$(this).next('ul').slideUp('fast');
+			$(this).removeClass('active');
+		} else {
+			$(this).closest('ul').find('.active').next('ul').slideUp('fast');
+			$(this).closest('ul').find('.active').removeClass('active');
+			$(this).next().slideToggle('fast');
+			$(this).addClass('active');
+		}
+	}
+});
 
-
+});
 
 
 
@@ -228,5 +204,88 @@ $(document).ready(function() {
 
 
 
+$(window).scroll(function(){
+    var toplocation = $(window).scrollTop();
+    if(toplocation < 172)
+        $("body").removeClass("scrolled");
+    else
+    {
+        if(!$("body").hasClass("scrolled"))
+            $("body").addClass("scrolled");
+    }
+    
+        if(toplocation < 750)
+        $("body").removeClass("pho");
+    else
+    {
+        if(!$("body").hasClass("pho"))
+            $("body").addClass("pho");
+    }
+    
+    if(toplocation > 1600)
+        $("body").removeClass("pho");
 
 
+    if(toplocation < 1680)
+        $("body").removeClass("art");
+    else
+    {
+        if(!$("body").hasClass("art"))
+            $("body").addClass("art");
+    }
+
+    if(toplocation > 2880)
+        $("body").removeClass("art");
+    
+    
+    
+        if(toplocation < 2900)
+        $("body").removeClass("fa");
+    else
+    {
+        if(!$("body").hasClass("fa"))
+            $("body").addClass("fa");
+    }
+    
+    if(toplocation > 3500)
+        $("body").removeClass("fa");
+
+    
+    
+        if(toplocation < 3550)
+        $("body").removeClass("c");
+    else
+    {
+        if(!$("body").hasClass("c"))
+            $("body").addClass("c");
+    }
+    
+    if(toplocation > 3850)
+        $("body").removeClass("c");
+
+    
+            if(toplocation < 3900)
+        $("body").removeClass("pro");
+    else
+    {
+        if(!$("body").hasClass("pro"))
+            $("body").addClass("pro");
+    }
+    
+    if(toplocation > 4200)
+        $("body").removeClass("pro");
+    
+    
+    
+                if(toplocation < 4300)
+        $("body").removeClass("pack");
+    else
+    {
+        if(!$("body").hasClass("pack"))
+            $("body").addClass("pack");
+    }
+    
+    if(toplocation > 4700)
+        $("body").removeClass("pack");
+
+});

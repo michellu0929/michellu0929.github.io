@@ -26,6 +26,7 @@
     }
         .pin ul{
 padding: 0;
+
         margin-top:50px;
   -webkit-column-count: 2;
   -webkit-column-gap: 20px;
@@ -50,76 +51,22 @@ padding: 0;
       
     </head>
     <body>
-           <div class="header">
+           <header>
 
 
-                     <a href="#subscribe"> 
-                         <span class="navi" >
+                     
+                 <a href="#subscribe"> 
+                         <div class="navi" >
                              NEWSLETTER
-                         </span>
+                         </div>
                      </a>
-                 
-                 
-                 
-                 <nav>
-                    <ul>
-                       
-                        <li>
-                            <a href="#"> 
-                                     <span class="fontawesome-reorder"></span>
-                                
-                            </a>
-                                <ul>
-                                    <li><a href="index.html"><span class="fontawesome-home"></span></a>
-                                    </li>
-                                
-                                    <li><a href="blog.html">BLog</a>
-                                    </li>
-                                    <li><a href="portfolio.html">Portfolios</a>
 
-                                        <ul>
-                                            <li><a href="portfolio.html#photography">Photography</a>
-                                            </li>
-                                            <li><a href="portfolio.html#fine-arts">Illustration & Fine Arts</a>
-                                            </li>
-                                            <li><a href="portfolio.html#design">Design<span class="fontawesome-angle-right" style="margin-right:-20%;margin-left:13%;"> </span></a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    
-                                    <li><a href="about.html">About</a>
-                                    </li>
-                                    <li><a href="shop.html">shop</a>
-                                    </li>
-                                    
-                                </ul>
-                        </li>
+                 
 
-                        
-                    </ul>
-                </nav>
                  
-                 
-                 
-                 
-                 
-                 
-                 <div class="search" >
-                     <input placeholder="search" type="text" id="search">  <a href="#"><span class="fontawesome-search"></span></a>
-                 </div>
  
                  
-<nav class="phone-search">
-    <ul>
-        <li>                       
-            <a href="#"><span class="fontawesome-search"></span></a>
-                                
-                                <ul>
-                                    <li><input placeholder="search" type="text" style="display: block">
-                                    </li>
-                    </ul>
-            </ul>
-                </nav>
+
                 
 
                      
@@ -127,7 +74,60 @@ padding: 0;
                     <span class="h1color">UN</span> <span style="margin-left:-3%;">TITLED</span>
                 </h1></div>
                 
-            </div>  
+               
+               <!--Begin Pattern HTML-->
+               <div id="menuu" class="menuu">
+    <button class="menu-link"><span class="fontawesome-reorder"></span></button>
+		<nav id="menu" class="menu" role="navigation">
+			<ul class="level-1">
+				<!--Parent #1-->
+				<li>
+                    <a href="home.html"><span class="fontawesome-home"></span> <span class="texthome">Home</span></a>
+				</li>
+				
+                <li>
+					<a href="blog.html">Blog</a>
+				</li>
+                
+				<!--Parent #2-->
+				<li class="has-subnav">
+					<a href="portfolio.html">Portfolios</a>
+					<ul class="level-2">
+						<li>
+							<a href="portfolio.html#photography">Photography</a>
+						</li>
+                        <li>
+							<a href="portfolio.html#fine-arts">Illustration & Fine Arts</a>
+						</li>
+						<li class="has-subnav">
+							<a href="#">Design</a>
+							<ul class="level-3">
+								<li><a href="portfolio.html#fashion">Fashion</a></li>
+								<li><a href="portfolio.html#cd">Communication</a></li>
+								<li>
+									<a href="portfolio.html#product">product</a>
+								</li>
+                                <li>
+									<a href="portfolio.html#package">package</a>
+								</li>
+							</ul>	
+						</li>
+						
+					</ul>
+				</li>
+                <li>
+					<a href="shop.html">Shop</a>
+				</li>
+                <li>
+					<a href="about.html">About</a>
+				</li>
+                
+
+			</ul>
+		</nav>
+	</div>
+	<!--End Pattern HTML-->
+            </header>  
         
         
         
@@ -143,69 +143,7 @@ padding: 0;
 
                 <img class="svg" width="500px" src="image/chineselogo.svg"></img>
                 
-                <nav class="navv">
-                    <ul>
-                        <li><a href="index.html"> 
-                                     <span class="nav" id="on">
-                                         Home
-                                     </span>
-                            </a>
-                        </li>
-                            
-                        <li>
-                            <a href="blog.html"> 
-                                     <span class="nav" >
-                                         BLOG
-                                     </span>
-                            </a>
-                        </li>
-                        
-                        <li>
-                            <a href="portfolio.html"> 
-                                     <span class="nav"    >
-                                         portfolios
-                                     </span>
-                            </a>
-                                <ul>
-                                    <li><a href="portfolio.html#photography">Photography</a>
-                                    </li>
-                                    <li><a href="portfolio.html#fine-arts">Illustration & Fine Arts</a>
-                                    </li>
-                                    <li><a href="portfolio.html#design">Design<span class="fontawesome-angle-right" style="margin-right:-20%;margin-left:13%;"> </span></a>
-
-                                        <ul>
-                                            <li><a href="portfolio.html#fashion">Fashion</a>
-                                            </li>
-                                            <li><a href="portfolio.html#cd">Communication</a>
-                                            </li>
-                                            <li><a href="portfolio.html#product">Product</a>
-                                            </li>
-                                            <li><a href="portfolio.html#package">Package</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                        </li>
-                        
-                        
-                        <li>
-                            <a href="shop.html"> 
-                                     <span class="nav" >
-                                         shop
-                                     </span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="about.html"> 
-                                     <span class="nav" >
-                                         about
-                                     </span>
-                            </a>
-                        </li>
-                        
-                    </ul>
-                </nav>
+               
             </center>
         </div>
         
@@ -253,12 +191,12 @@ padding: 0;
      
    
 
-                 <div class="pin"> 
+                 <div class="pinx"> 
                    
 
 <ul>
                         
- <li><div class="texthover"><a href="article.html"><img src="image/jenny.svg" style=""/><div class="overlay">
+ <li><div class="texthover"><a href="article.html#go"><img src="image/jenny.svg" style=""/><div class="overlay">
  <span style="font-size:18pt;">"Leaving the Nest: <br>
 The Fantasy vs. The Reality"</span><br>──<br/>Analysis on Jennybird Alcantara's art piece<br/><span class="scap">Michelle Sun / May 12, 2014</span></div>
                                 </a></div></li>
@@ -283,7 +221,7 @@ The Fantasy vs. The Reality"</span><br>──<br/>Analysis on Jennybird Alcantar
                    <center>
                           <h2>Recent posts</h2>                      
 </center> 
-
+<div class="imgpin" id="pin3">
                         
                         <div class="pin3">
                         <ul>
@@ -327,13 +265,22 @@ The Fantasy vs. The Reality"</span><br>──<br/>Analysis on Jennybird Alcantar
                             </ul>
 
             </div>
-    
-
-<!--
-    <div class="footer-outer">
-    <div class="copyright"><a>© 2015 Untitled | Help</a></div>
     </div>
--->
+
+    <div class="footer-outer">
+    <div class="copyright"><a>© 2015 Untitled | Powered by Untitled</a>          
+  <h2>Subscribe Now!</h2>
+  <input type="text" id="email" placeholder="email adress here"/>
+                      
+                      <input type="button" id="send" value="Subscribe"/></p>
+                
+</div> 
+                    <div id="pop2" class="pop2">
+  <span>✖</span><br/><center>
+  <h2>Thank You!</h2>
+                        </center>
+</div>  </div>
+    </div>
  <footer><a href="#subscribe">NEWSLETTER</a> </footer>
 
                                        
