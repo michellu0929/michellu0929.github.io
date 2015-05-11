@@ -756,6 +756,8 @@ margin-bottom: -10px;
         padding: 0;
     }
     
+
+    
     .sidebar .dp {
     width: 70px;
         height: 70px;
@@ -798,6 +800,9 @@ background-image: url(image/jenny.jpg);        background-size:contain;
 .title3, .title301 {
 display: none;
 }
+    
+    
+ 
     
     .fullsize {
     display: inherit;
@@ -1161,21 +1166,21 @@ display: none;
 }
 }
 
-.pop, .pop2 {
+.pop2 {
   display:none;
   position:fixed;
   top:25%;
-  left:25%;
-  width:50%;
+  left:10%;
+  width:80%;
   height:200px;
   background:white;
     border-radius: 5px;
-  .rounded;
+
   outline:10px solid @link;  
     z-index: 99999;
 }
 
-.pop > h2, .pop2 h2 {
+.pop2 h2 {
     margin-top: -18px;
     margin-bottom: 50px;
         border-radius: 5px 5px 0 0;
@@ -1183,14 +1188,14 @@ display: none;
     
 }
 
-.pop > p, .pop2 p {
+.pop2 p {
     letter-spacing: .5pt;
 }
 
 
 
 
-#send {
+ #send {
 background-color: #e9e9e9;  
     width: 90px;
  color: #575756;
@@ -1238,7 +1243,7 @@ background-color: white;
     color:#989895;
 }
 
-.pop > span, .pop2 span {
+ .pop2 span {
   cursor:pointer;
   position:absolute;
   top:4%;
@@ -1392,7 +1397,7 @@ color: #cecece;
 .menu li a {
 	color: #575756;
 	display: block;
-	padding: 0.8em;
+	padding: 0.65em;
 	border-bottom: 1px solid rgb(239, 239, 239);
 	position: relative;
     transition:none;
@@ -1516,6 +1521,15 @@ color: #575756;
 }
 .fontawesome-home {
 display: none;
+}
+    
+    
+           .pop2 {
+
+  top:25%;
+  left:25%;
+  width:50%;
+
 }
 }
 
