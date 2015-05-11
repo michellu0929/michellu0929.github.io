@@ -6,6 +6,22 @@ span[class*="fontawesome-"]:before {
 }
 
 
+.go .too {
+    float: right;
+        position: fixed;
+        right: 3%;
+        bottom: 3%;
+        padding: 0;
+    
+    }
+
+.fontawesome-arrow-up {
+
+font-size: 16pt;
+    
+}
+
+
 body {
     
  font-family: 'Muli', 'helvetica', sans-serif;
@@ -22,7 +38,7 @@ transition-timing-function: ease-in-out;
 .title {
 
 display: block;
-    margin-top: 250px;
+    margin-top: 0;
 background-image: url(image/what.svg);
     width: 90%;
     height: 250px;
@@ -72,6 +88,10 @@ color:#3a80c6;
 
 .fontawesome-share:hover {
 color:#939aaa;
+}
+
+span.fontawesome-paper-clip {
+display: none;
 }
 
 
@@ -180,11 +200,7 @@ display: block;
     
 }
 
-.fontawesome-paper-clip
-{display: block;
-    float: right;
-font-size: 16pt;
-}
+
 
 .scrolled header {
         background-color: #e9e9e9;
@@ -327,7 +343,8 @@ h2 {
     font-family: panT,'helvetica', arial, sans-serif;
     font-weight: 100;
         clear: both;
-        margin-top: 30px;
+        margin-top: 50px;
+
 }
 
 h4 {
@@ -529,7 +546,8 @@ color: rgb(239, 239, 239);
     font-family: "Muli", 'helvetica',sans-serif;
     font-size: 10pt;
     letter-spacing: 1pt;
-    background: white;
+ background: url(image/ad/bg.jpg);
+        background-size: 50%;
 clear: both;
   position:relative;
   bottom:0%; 
@@ -544,7 +562,7 @@ footer h3 a {
 color:#6f6f6f;
 }
 footer h3 a:hover {
-color:#e9e9e9;
+color:#a2a2a2;
 }
 .subscribe, .follow{
     display: block;
@@ -572,7 +590,8 @@ margin-top: 1050px;
 }
 
 div .footer2 {
-background-color: #575756;
+/*background-color: #575756;*/
+    background: url(image/ad/bg2.jpg);
     width: 100%;
     padding: 20px 0 20px 0;
 
@@ -730,7 +749,12 @@ margin-bottom: -10px;
 }
 
 
+.tagg {
 
+width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
@@ -748,16 +772,21 @@ margin-bottom: -10px;
     .menuu .menu ul {
     margin-top: 0;
     }
-    .sidebar {
+   
+    
+    .port {
+width: 90%;
+    height: auto;
+}
+
+
+     .sidebar {
     float: right;
         position: fixed;
         right: 1%;
         bottom: 1%;
         padding: 0;
     }
-    
-
-    
     .sidebar .dp {
     width: 70px;
         height: 70px;
@@ -796,12 +825,40 @@ background-image: url(image/jenny.jpg);        background-size:contain;
        background-position: 25% top;
 }
 
+th, td {
+    padding: 15px;
+}
+
+.titlemi {
+
+border-radius: 10%;
+    box-shadow: 0px 0px 1px rgba(136, 136, 136, 0.61);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    background-image: url(image/me/DSC_9404-2.jpg);
+ background-size: 100%;
+width:150px;
+    height: 150px;
+    background-position: center;
+}
+
+.titleme:hover {
+background-size: 110%;
+    background-position: center;
+}
+
+
 @media (max-width: 460px) {
 .title3, .title301 {
 display: none;
 }
     
-    
+    span.fontawesome-paper-clip
+{display: block;
+    float: right;
+font-size: 16pt;
+}
  
     
     .fullsize {
@@ -859,10 +916,10 @@ display: none;
     
     
  .imgpin {
- width: 100%;
-        margin-top:0;
+ width: 90.1%;
+        margin-top:0px;
         margin-left: auto;
-    margin-left: 0%;
+margin-right: auto;
 clear: both;
     height: 100%;
 }
@@ -937,11 +994,15 @@ input {
 
     }
     
+ h2 {
+ font-size: 21px;
+     padding-top: 20px;
 
+ }
     
     h1 {
     font-size: 21pt;
-        margin-top: 0px;
+        margin-top: 2px;
         letter-spacing: 0;
     }
     
@@ -1095,6 +1156,11 @@ font-family: 'Muli', 'helvetica', sans-serif;
     z-index: 10;
 }
 
+a div#tags:hover, a div#tagss:hover {
+background:#575756;
+    color: white;
+}
+
 .fontawesome-heart:hover, .fontawesome-heart:active {
 color:red;
     font-size: 20pt;
@@ -1203,6 +1269,26 @@ background-color: #e9e9e9;
     border-radius: 0 2px 2px 0;
 }
 
+#tags, #tagss {
+    display: block;
+
+ 
+background-color: white;  
+    width: auto;
+ color: #575756;
+    height: auto;
+    font-size: 14px;
+    padding: 10px;
+    margin: 3px;
+    font-family: panT, 'helvetica',sans-serif;
+}
+
+#tags {   float: left;}
+
+.port {
+width: 80%;
+    height: auto;
+}
 
 input {
 
@@ -1262,6 +1348,7 @@ background-color: white;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+   
 }
 
 .list li {
@@ -1270,6 +1357,7 @@ background-color: white;
   display: table;
   border-collapse: collapse;
   width: 100%;
+     margin-bottom: 40px;
 }
 .inner {
   display: table-row;

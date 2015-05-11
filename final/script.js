@@ -138,7 +138,6 @@ $(function(){
 
 
 
-
 $(document).ready(function() {
  $("#send").click(function () {
      
@@ -151,6 +150,8 @@ $(document).ready(function() {
          $("#pop").hide();
      });
 });
+
+
 
 
 $(function () {
@@ -179,13 +180,44 @@ $(function () {
         
     })
     
-      
+    
     
 });
 
+
+
+
+
 //=======================
 
+$(function() {
+ $(".fontawesome-heart").click(function(){
+   $(this).css("color","red"); 
+        
+    }); });
 
+
+$(document).ready(function() {
+ $("#tagss").click(function () {
+     
+         $(".pop2").fadeIn(1);
+        
+     });
+
+     $(".pop2 > span, .pop2").click(function () {
+         $(".pop2").hide();
+         $("#pop").hide();
+     });
+});
+
+$(function () {
+ $("#tagss").click(function(){
+     $(".pop2").css("height","400px");
+$("#null").html("Success!");
+$("#message").html("<input type='button' id='tagss' value='Continue Shopping'/><input type='button' id='tagss' value='Go to cart'/><br><br><img style='padding-left:5px;width:100px;'src='image/ad/1.gif'/><img style='padding-left:5px;width:100px;'src='image/ad/4.gif'/><img style='padding-left:5px;width:100px;'src='image/ad/5.gif'/>");
+});});
+
+                  
 $(document).ready(function() {
 $('#menuu').on('click','.menu-link', function() {
   $('.menu').slideToggle('fast', function() {
@@ -247,6 +279,14 @@ $(window).scroll(function(){
             $("body").addClass("scrolled");
     }
     
+    if(toplocation < 520)
+        $("body").removeClass("go");
+    else
+    {
+        if(!$("body").hasClass("go"))
+            $("body").addClass("go");
+    }
+    
         if(toplocation < 750)
         $("body").removeClass("pho");
     else
@@ -293,11 +333,11 @@ $(window).scroll(function(){
             $("body").addClass("c");
     }
     
-    if(toplocation > 3850)
+    if(toplocation > 3900)
         $("body").removeClass("c");
 
     
-            if(toplocation < 3900)
+            if(toplocation < 4050)
         $("body").removeClass("pro");
     else
     {
@@ -305,12 +345,12 @@ $(window).scroll(function(){
             $("body").addClass("pro");
     }
     
-    if(toplocation > 4200)
+    if(toplocation > 4350)
         $("body").removeClass("pro");
     
     
     
-                if(toplocation < 4300)
+                if(toplocation < 4450)
         $("body").removeClass("pack");
     else
     {
@@ -318,7 +358,7 @@ $(window).scroll(function(){
             $("body").addClass("pack");
     }
     
-    if(toplocation > 4700)
+    if(toplocation > 4900)
         $("body").removeClass("pack");
 
 });
