@@ -137,8 +137,11 @@ $(function(){
 
 
 
+
+
 $(document).ready(function() {
  $("#send").click(function () {
+     
          $(".pop2").fadeIn(1);
         
      });
@@ -149,6 +152,36 @@ $(document).ready(function() {
      });
 });
 
+
+$(function () {
+
+    $("#send").click(function(){
+//        var content = $("#ajaxcontainer").html();
+//        $("#ajaxcontainer").html(content + "hello");
+
+        $.ajax(
+            {
+                cache:false,
+                success: function(data){
+                           if ($.trim($('#email').val()) == '') {
+                        $("#null").html("Warning:");
+                               $("#message").html("Email can not be left blank!");
+                        $(".pop2 h2").css("background","rgb(245, 103, 103)");
+                        } else {
+                         $("#null").html("Thank You!");
+                            $("#message").html("<a href='#'>Continue to explore more!<a>");
+                            $(".pop2 h2").css("background","rgb(201, 229, 225)");
+                        }
+                }
+            }
+        );
+        
+        
+    })
+    
+      
+    
+});
 
 //=======================
 

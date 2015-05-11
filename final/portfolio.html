@@ -13,13 +13,22 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.js"></script>
        <script src='script.js'></script>
 <style>
-     
+     .footer-outer {
+margin-top: 800px;
+    
+}
         h3 {
         display: none;
         background: #797979;
             padding-left: 5px;
             padding-right: 5px;
         }
+    
+    div.footer-outer h3 {
+    display: inherit;
+        background: none;
+        padding: 0;
+    }
 @media (min-width: 460px)  {     
     .art .fine {
     display: block;
@@ -61,7 +70,7 @@
                      
                  <a href="#subscribe"> 
                          <div class="navi" >
-                             NEWSLETTER
+                             Follow us
                          </div>
                      </a>
 
@@ -182,7 +191,7 @@
 
                         </center>
                     
-                    
+            </div>
                     
                     
                     
@@ -490,29 +499,35 @@ Untitled<br/><span class="scap">── Kazumi</span></div>
                         
                         </div>
     
-    
-
-    
                </div>              
-   
-<!--
+            </div>
     
-    <li><img src="image/stef/zhoup257_07.jpg" style="cursor:pointer" 
-      onclick="showImage('./image/stef/zhoup257_07.jpg');show"/>
-                            </li>
-    <div id="largeImgPanel" onclick="hideMe(this);">
-<img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
- 
--->
-    
-    <section id="subscribe">
-    
-    
-    
-    </section>
-    
-    
-<!--            <footer>                        <a href="#subscribe">NEWSLETTER</a></footer>-->
-        </div>
+    <div class="footer-outer" id="subscribe">
+    <footer>
+<center><h3 style="font-size:15px;">Contact us >> <a href=""> untitled@untitled.com</h3></a>
+ </center>
+    </footer>
+
+      <div class="footer2"> 
+          <div class="follow"> <h2 style="color:#fff;margin:0;font-size:25px;">Follow us</h2><br><a href=""><span class="fontawesome-facebook-sign"></span> </a><a href=""> <span class="fontawesome-twitter-sign"></span> </a><a href=""> <span class="fontawesome-google-plus-sign"></span> </a><a href=""> <span class="fontawesome-pinterest-sign"></span> </a><a href=""> <span class="fontawesome-linkedin-sign"></span> </a>
+</div>
+         <div class="subscribe"> <h2 style="color:#fff;margin:0;font-size:25px;">Subscribe!</h2><h3 style="font-size:15px;">Get our most recent updates for free!</h3>
+  <input type="text" id="email" placeholder="email adress here"/>
+                      
+                      <input type="button" id="send" value="Subscribe"/></p>
+
+                    
+<div id="pop2" class="pop2">
+  <span>✖</span><br/><center>
+  <h2 id="null"></h2><p id="message"></p>
+                        </center>
+    </div>
+</div>
+       <div class="copyright">
+© 2015 | Powered by Untitled    
+      
+      </div>
+    </div>          
+           
     </body>
 </html>
