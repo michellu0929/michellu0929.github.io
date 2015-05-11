@@ -1369,7 +1369,7 @@ font-size: 16pt;
 }
 .menu, .menu > ul ul {
   clear: both;
-        margin-top: -3px;
+        margin-top: -2px;
     transition:none;
 }
 .js .menu, .js .menu > ul ul {
@@ -1392,7 +1392,7 @@ color: #cecece;
 .menu li a {
 	color: #575756;
 	display: block;
-	padding: 0.5em;
+	padding: 0.8em;
 	border-bottom: 1px solid rgb(239, 239, 239);
 	position: relative;
     transition:none;
