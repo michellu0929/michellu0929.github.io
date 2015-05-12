@@ -18,10 +18,10 @@
         
 <style>
     
-h4 {padding-left: 10%;margin-bottom: -20px;}
+h4 a{display: inherit; padding-left: 10%;margin-bottom: -20px;}
     .grid {width:50%;float: left;padding-left: 5%;}
     
-    .shopp {width30%;float: left}
+    .shopp {width:30%;float: left}
     .footer-outer {
     margin-top: 400px;
     }
@@ -31,6 +31,14 @@ h4 {padding-left: 10%;margin-bottom: -20px;}
         margin-top: 500px;
     }
     
+    @media (max-width: 460px) {
+    .grid {width:100%;float: left;padding-left:0;}
+    
+    .shopp {width:90%;float: left;padding-left: 5%;margin-top: -30px;margin-bottom: 50px;}
+        
+        h4 a {display: none;}
+
+    }
 
         </style>
         
