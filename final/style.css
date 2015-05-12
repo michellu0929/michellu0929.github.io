@@ -54,6 +54,21 @@ header {
     z-index: 9999;
 }
 
+ .crazy {
+    width:50%;
+margin-top: 50px;
+
+        margin-left:auto;
+        margin-right: auto;
+background: url(image/ad/bg.jpg);
+        background-size: 50%;
+        padding: 1px 25% 1px 25%;
+    }
+    
+
+    
+    .crazy h3 {padding-top: 0;}
+
 .scrolled header {
     background-color: #e9e9e9;
     display: inherit;
@@ -1199,7 +1214,18 @@ display: none;
     .menuu .menu ul {
     margin-top: 0;
     }
-   
+    
+        .crazy {
+    width:80%;
+margin-top: 50px;
+
+        margin-left:auto;
+        margin-right: auto;
+background: url(image/ad/bg.jpg);
+        background-size: 50%;
+        padding: 1px 10% 1px 10%;
+    }
+    
     
     .port {
 width: 90%;
@@ -1239,6 +1265,23 @@ display: none;
     float: right;
 font-size: 16pt;
 }
+    
+     .crazy {
+    width:90%;
+margin-top: 50px;
+
+        margin-left:auto;
+        margin-right: auto;
+background: url(image/ad/bg.jpg);
+        background-size: 50%;
+        padding: -10px 5% 50px 5%;
+         
+    }
+    
+.crazy h2 {padding-top: 0;}
+    
+    .crazy h3 {padding-top: 0;
+    font-size: 15px;}
  
     
     .fullsize {
