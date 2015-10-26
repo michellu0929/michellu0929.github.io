@@ -22,7 +22,7 @@ a:visited {
 
 body{
     margin-top: 40px;
-background: #f4f4f4;
+background-image: url(bg.jpg);
 }
 .border{
     padding: 20px;
