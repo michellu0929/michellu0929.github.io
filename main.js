@@ -20,10 +20,12 @@ $(document).ready(function () {
     })
       $("#ajaxrequest2").click(function(){
         requestFile("code.html");
-//         $.get("about.html",function(data){
-//                $("#content").append(data);
-//         })
-    })
+        })
+      
+            $("#ajaxrequest3").click(function(){
+        requestFile("design.html");
+        })
+      
     })
     
 

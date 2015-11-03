@@ -6,7 +6,7 @@
     text-transform: uppercase;
 
     letter-spacing: 2px;
-    width: 344px; 
+ 
     clear: left;
     float: left;
     
@@ -95,6 +95,8 @@ h1 {
 }
 
 #sidebar{
+    margin-top: 100px;
+    position: fixed;
     width: 18%;
     padding: 1px;
     float: left;
