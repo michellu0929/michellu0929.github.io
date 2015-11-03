@@ -13,9 +13,9 @@ $(document).ready(function () {
         
 
     $("#ajaxrequest1").click(function(){
-//        requestFile("about.html");
-         $.get("about.html",function(data){
-                $("#content").load(data);
+        requestFile("about.html");
+//         $.get("about.html",function(data){
+//                $("#content").append(data);
          })
     })
     })
