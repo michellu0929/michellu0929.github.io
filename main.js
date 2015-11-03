@@ -1,8 +1,7 @@
 $(document).ready(function () {
     $(window).load(function(){
-        funtion requestFile(url){
-                $.ajax(
-            {
+        function requestFile(url){
+                $.ajax({
                 url:url,
                 cache:false,
                 success: function(data){
@@ -14,7 +13,11 @@ $(document).ready(function () {
         
 
     $("#ajaxrequest1").click(function(){
-        requestFile("about.html");   
+//        requestFile("about.html");
+         $.get("about.html",function(data){
+                $("#content").append(data);
+         })
+    })
     })
     
 
