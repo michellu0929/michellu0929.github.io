@@ -16,7 +16,7 @@ $(document).ready(function () {
         requestFile("about.html");
 //         $.get("about.html",function(data){
 //                $("#content").append(data);
-         })
+//         })
     })
     })
     
