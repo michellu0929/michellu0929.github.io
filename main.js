@@ -18,6 +18,12 @@ $(document).ready(function () {
 //                $("#content").append(data);
 //         })
     })
+      $("#ajaxrequest2").click(function(){
+        requestFile("code.html");
+//         $.get("about.html",function(data){
+//                $("#content").append(data);
+//         })
+    })
     })
     
 
