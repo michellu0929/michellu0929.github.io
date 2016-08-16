@@ -16,15 +16,13 @@ height: 90px;     font-family: "Arial",sans-serif;
 div#heart p {line-height: 15px; z-index: 100; text-align: center;font-size: 10pt;}
 
 
-/*
 #heart2:hover:before, #heart2:hover:after,
 #heart3:hover:before, #heart3:hover:after,
 #heart4:hover:before, #heart4:hover:after {
-    background: #ffe8ec;
+    background: pink;
     transition: all 350ms;    
     
 }
-*/
 
 /*
 
@@ -178,7 +176,7 @@ transform-origin :100% 100%;
 
     width:100%;
     height: 50%;
-    margin-top: 2000px;
+    margin-top: 3000px;
     position: relative;
 /*    background: #efefef;*/
    
@@ -259,7 +257,7 @@ margin: 0 auto;
 
 }
 */
-    #words {transform: scale(5,5);
+    #words {transform: scale(8,8);
     }
 
     
