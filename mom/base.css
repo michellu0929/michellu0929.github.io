@@ -174,20 +174,20 @@ transform-origin :100% 100%;
 
     width:100%;
     height: 50%;
-    margin-top: 400px;
+    margin-top: 1000px;
     position: relative;
 /*    background: #efefef;*/
    
 }
 
 #words2 {
-         border:1px dashed #efefef;
+
 margin: 0 auto;
     width:80%;
     height: auto;
     margin-top: 20%;
     position: relative;
-    background: #ffa8b7;
+    background: #fff;
     padding-top: 10px;
     padding-bottom: 10px;
    
@@ -200,6 +200,10 @@ margin: 0 auto;
     opacity: 1;
     animation-name: fadein;
     animation-duration: 1s;
+        font-size: 30pt;
+    line-height: 50pt;
+    color: #ffe8ec;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
  
 }
 
@@ -215,6 +219,22 @@ margin: 0 auto;
 }
 }
 
+@keyframes color {
+    0% {background: aliceblue;}
+    25% {background: beige;}
+    50% {background: antiquewhite;}
+    75% {background: azure;}
+    100% {background: aliceblue;}
+    
+}
+
+@keyframes colorr {
+    0% {background: pink;}
+    80% {background: #ffe8ec;}
+    100% {background: pink;}
+    
+}
+
 #hbd { 
             width: 100%;
     text-align: center;
@@ -224,13 +244,24 @@ margin: 0 auto;
     animation-duration: 2s;
     font-size: 30pt;
     line-height: 50pt;
-    color: #fff;
+    color: pink;
     font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
 }
 
 
-    
-    #words {transform: scale(2,2);
+/*
+.wrap {
+    animation: color 3s infinite linear;
+
+}
+*/
+    #words {transform: scale(4,4);
     }
+
     
+/*
+#heart2:before, #heart2:after {animation: colorr 1s infinite linear;animation-delay: 3s;}
+#heart3:before, #heart3:after {animation: colorr 1s infinite linear;animation-delay: 4s;}
+#heart4:before, #heart4:after {animation: colorr 1s infinite linear;}
+*/
 
