@@ -11,9 +11,11 @@ margin:0;
 position: relative; 
 width: 100px;     margin: 0 auto;
 height: 90px;     font-family: "Arial",sans-serif;
+
 } 
 
 div#heart p {line-height: 15px; z-index: 100; text-align: center;font-size: 10pt;}
+
 
 
 /*
@@ -176,9 +178,7 @@ transform-origin :100% 100%;
 #words {
 /*         border:1px dashed #b5b5b5;*/
 
-
-
-    margin-top: 3000px;margin-left: 10px;
+margin-top: 40%;
     position: relative;
 /*    background: #efefef;*/
    
@@ -259,13 +259,10 @@ margin: 0 auto;
 
 }
 */
-    #words {transform: scale(8,8);
-    }
 
-    
-/*
-#heart2:before, #heart2:after {animation: colorr 1s infinite linear;animation-delay: 3s;}
-#heart3:before, #heart3:after {animation: colorr 1s infinite linear;animation-delay: 4s;}
-#heart4:before, #heart4:after {animation: colorr 1s infinite linear;}
-*/
-
+#words {margin-left: 250px;}
+#heart, #heart2,#heart3, #heart4 {    transform: scale(6,6);}
+#heart {    top:100px;}
+#heart2 {    top:550px;}
+#heart3 {    top:1000px;}
+#heart4 {    top:1450px;}
