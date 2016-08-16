@@ -73,7 +73,7 @@ transform-origin :100% 100%;
 position: absolute; 
 content: ""; 
 left: 45px; 
-top: -85px; 
+top: -56px; 
 width: 50px; 
 height: 80px; 
 background: pink; 
@@ -107,7 +107,7 @@ transform-origin :100% 100%;
 position: absolute; 
 content: ""; 
 left: 55px; 
-top: -175px; 
+top: -116px; 
 width: 50px; 
 height: 80px; 
 background: pink; 
@@ -141,7 +141,7 @@ transform-origin :100% 100%;
 position: absolute; 
 content: ""; 
 left: 71px; 
-top: -168px; 
+top: -80px; 
 width: 50px; 
 height: 80px; 
 background: pink; 
@@ -222,7 +222,14 @@ margin: 0 auto;
     animation-fill-mode:forwards;
     animation-name: fadein;
     animation-duration: 2s;
-    font-size: 12pt;
+    font-size: 24pt;
     color: #fff;
     font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+@media (max-width: 460px) {
+    
+    #heart, #heart2, #heart3, #heart4 {transform: scale(1.5,1.5);
+    }
+    
 }
