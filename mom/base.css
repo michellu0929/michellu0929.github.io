@@ -3,7 +3,7 @@ margin:0;
     padding: 0;
     width: 100%;
     height: 100%;
-line-height: 25px;
+
         color: pink;
 
 }
@@ -15,7 +15,7 @@ height: 90px;     font-family: "Arial",sans-serif;
 
 div#heart p {line-height: 15px; z-index: 100; text-align: center;font-size: 10pt;}
 
-#heart:hover:before, #heart:hover:after,
+
 #heart2:hover:before, #heart2:hover:after,
 #heart3:hover:before, #heart3:hover:after,
 #heart4:hover:before, #heart4:hover:after {
@@ -37,7 +37,7 @@ left: 50px;
 top: 0; 
 width: 50px; 
 height: 80px; 
-background: pink; 
+background: #ffe8ec; 
 -moz-border-radius: 50px 50px 0 0; 
 border-radius: 50px 50px 0 0; 
 -webkit-transform: rotate(-45deg); 
@@ -73,7 +73,7 @@ transform-origin :100% 100%;
 position: absolute; 
 content: ""; 
 left: 45px; 
-top: -56px; 
+top: -85px; 
 width: 50px; 
 height: 80px; 
 background: pink; 
@@ -107,7 +107,7 @@ transform-origin :100% 100%;
 position: absolute; 
 content: ""; 
 left: 55px; 
-top: -116px; 
+top: -175px; 
 width: 50px; 
 height: 80px; 
 background: pink; 
@@ -141,7 +141,7 @@ transform-origin :100% 100%;
 position: absolute; 
 content: ""; 
 left: 71px; 
-top: -80px; 
+top: -168px; 
 width: 50px; 
 height: 80px; 
 background: pink; 
@@ -223,13 +223,15 @@ margin: 0 auto;
     animation-name: fadein;
     animation-duration: 2s;
     font-size: 24pt;
+    line-height: 40pt;
     color: #fff;
     font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
 }
 
+/*
 @media (max-width: 460px) {
     
-    #heart, #heart2, #heart3, #heart4 {transform: scale(1.5,1.5);
+    #heart, #heart2, #heart3, #heart4 {transform: scale(1,1.5);
     }
     
-}
+}*/
