@@ -174,7 +174,7 @@ transform-origin :100% 100%;
 
     width:100%;
     height: 50%;
-    margin-top: 20%;
+    margin-top: 400px;
     position: relative;
 /*    background: #efefef;*/
    
@@ -222,16 +222,15 @@ margin: 0 auto;
     animation-fill-mode:forwards;
     animation-name: fadein;
     animation-duration: 2s;
-    font-size: 24pt;
-    line-height: 40pt;
+    font-size: 30pt;
+    line-height: 50pt;
     color: #fff;
     font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
 }
 
-/*
-@media (max-width: 460px) {
+
     
-    #heart, #heart2, #heart3, #heart4 {transform: scale(1,1.5);
+    #words {transform: scale(2,2);
     }
     
-}*/
+
