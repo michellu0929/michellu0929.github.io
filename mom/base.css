@@ -16,6 +16,7 @@ height: 90px;     font-family: "Arial",sans-serif;
 div#heart p {line-height: 15px; z-index: 100; text-align: center;font-size: 10pt;}
 
 
+/*
 #heart2:hover:before, #heart2:hover:after,
 #heart3:hover:before, #heart3:hover:after,
 #heart4:hover:before, #heart4:hover:after {
@@ -23,11 +24,14 @@ div#heart p {line-height: 15px; z-index: 100; text-align: center;font-size: 10pt
     transition: all 350ms;    
     
 }
+*/
 
+/*
 
 #heart2:hover:after {content: "Pei";}
 #heart3:hover:before {content: "Hao";}
 #heart4:hover:after {content: "Dad";}
+*/
 
 #heart:before, 
 #heart:after { z-index: -1;
