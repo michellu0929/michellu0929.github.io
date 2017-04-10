@@ -38,3 +38,4 @@ function UpdateScreen(operator){
 $(window).resize(function(){
 	Init();
 });
+

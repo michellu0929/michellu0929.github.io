@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <link rel="stylesheet" href="style.css" type="text/css">
         <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.js"></script>
+        
         <script src='script.js'></script>
         <link rel="stylesheet" href="font-awesome.min.css">
 
@@ -17,19 +17,37 @@
         
         
 <style>
-   
+    .menu ul li a:hover {
+background-color:#8bbdd2; 
+color: #fff;
+}
+    .js .menu, .js .menu > ul ul a:hover{color: #fff;}
+    
+    #send{color: rgb(177, 177, 177);
+        border-color: rgb(177, 177, 177);  }
+   input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+color: rgb(177, 177, 177);
+letter-spacing: 2pt;font-size: 7pt;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+color: rgb(177, 177, 177);
+letter-spacing: 2pt;font-size: 7pt;
+}
 </style>
    
     </head>
     
-    <body id="hovers"> 
+    <body> 
         
 <!--        NAVIbar     -->
                 <div class="subscribe"> 
-        <input type="text" id="email" placeholder="YOUR EMAIL HERE"/>
+        <input style="border-color: rgb(177, 177, 177); color: white; "type="text" id="email" placeholder="YOUR EMAIL HERE"/>
                       
                       <input type="button" id="send" value="SUBSCRIBE"/></p>
-<div id="pop2" class="pop2">
+<div id="pop2" style="color:rgb(177, 177, 177);"class="pop2">
 <p id="message" style="color:rgb(177, 177, 177);">THANK YOU FOR JOINING US!</p>
 
     </div>
@@ -41,10 +59,10 @@
                 <ul class="level-1">
 
                     <li class="has-subnav">
-                        <a onclick="location.href='#1'" id="zero">ZERO STUDIES +</a>
+                        <a class="smoothScroll" href="#1" id="zero">ZERO STUDIES +</a>
                         <ul class="level-2">
                             <li>
-                                <a href="#" id="agar">AGAR</a>
+                                <a href="agar.html" id="agar">AGAR</a>
                             </li>
                             <li>
                                 <a href="#" id="lotus">LOTUS</a>
@@ -61,47 +79,73 @@
 
 
                     <li>
-                        <a onclick="location.href='#2'" id="about">ABOUT</a>
+                        <a class="smoothScroll" href="#2" id="about">ABOUT</a>
                     </li>
 
                     <li>
-                        <a onclick="location.href='#3'" id="ppl">PEOPLE</a>
+                        <a class="smoothScroll" href="#3" id="ppl">PEOPLE</a>
                     </li>
 
                     <li>
-                        <a onclick="location.href='#4'" id="contact">CONTACT</a>
+                        <a class="smoothScroll" href="#4" id="contact">CONTACT</a>
                     </li>
 
 
                 </ul>
             </nav>
         </div>
-        
-        
-
-
-
-
-
-        <div class="scr pane prt" style="background-image:url(img/webpage-new-new-nu.jpg);background-size:100%;" data-id="Welcome"><div class="ct"><p ><br><br><br><br><br><br><span style="font-size:12pt;">ZERO IS MORE</span>THEREFORE ZERO</p></div><div class="scrolldown"><i class="fa fa-arrow-down" aria-hidden="true"></i></div></div>	
     
-	<div id="1" class="scr pane prt an" style="background-image:url(img/webpage-new-new-nu01.jpg);background-size:100%;" data-id="scr02" ><div class="ct"></div></div>
+    <div class="headd">
+    <a href="#top" class="smoothScroll"><img src="img/Untitled-1.svg" style="width:60px;"></a>
+    </div>
         
+        
+
+
+
+
+    <div id="top" class="scr pane prt" style="background-image:url(img/webpage-new-new-nu.jpg);background-size:100%;" data-id="Welcome"><div class="title"><p><span style="font-size:10pt;">ZERO IS MORE</span>THEREFORE ZERO</p></div><div class="scrolldown"><a href="#1" class="smoothScroll"><img class="arrow" src="img/down.svg"></a></div></div>	
+    
+<!--    zero studies-->
+	<div id="1" class="scr pane prt an"  data-id="scr02" ><div class="ct"><p>USE LESS UNSUSTAINALE MATERIALS<span class="highlite">WE HAVE BETTER ONES FOR OUR TOMORROW</span><span class="detail">We believe that zero-waste materials has more potential than imagined.
+
+These are all researches that we had been working on.</span></p>
+        <div class="zeroimg">
+            <a href="#" id="bioimg" class="imgcp">
+                <img src="img/boiplastic.png">
+                <figcaption>BIOPLASTIC</figcaption>
+            </a>
+            <a href="#" id="bamimg" class="imgcp">
+                <img src="img/bamboo.png">
+                <figcaption>BAMBOO</figcaption>
+            </a>
+            <a href="agar.html" id="agarimg" class="imgcp">
+                <img src="img/agar.png">
+                <figcaption>AGAR</figcaption>
+            </a>
+            <a href="#" id="lotusimg" class="imgcp">
+                <img src="img/lotus.png">
+                <figcaption>LOTUS</figcaption>
+            </a>
+        </div></div></div>
+        
+<!--    about -->
 	<div id="2" class="scr prt horiz">
-        
 		<div class="spane">
+			<div class="pane an" style="background-image:url(img/webpage-new-new-nu02.jpg);background-size:100%;" data-id="Horizontal01"><div class="ct">
+                </div></div>
             
-			<div class="pane an" style="background-image:url(img/webpage-new-new-nu02.jpg);background-size:100%;" data-id="Horizontal01"><div class="ct"><span>LIVE A ZERO-WASTE LIFE</span></div></div>
+			<div class="pane an" style="background-image:url(img/01.jpg);background-size:100%;" data-id="Horizontal02"><div class="ct"></div></div>
             
-			<div class="pane an" style="background-image:url(img/webpage-new-new-nu03.jpg);background-size:100%;" data-id="Horizontal02"><div class="ct"><span>Horizontal<br><b>Slide B</b></span></div></div>
-            
-			<div class="pane an" style="background-image:url(img/webpage-new-new-nu.jpg);background-size:100%;" data-id="Horizontal03"><div class="ct"><span>Horizontal<br><b>Slide C</b></span></div></div>
-            
-		</div>
+			<div class="pane an" style="background-image:url(img/02.jpg);background-size:100%;" data-id="Horizontal03"><div class="ct"></div></div>
+        </div>
 	</div>
-    
-    <div id="3" class="scr pane prt an" style="background-image:url(img/webpage-new-new-nu.jpg);background-size:100%;" data-id="scr03"><div class="ct"><b>Fullscreen</b></div></div>	
-    
+
+    <!--    people -->
+    <div id="3" class="scr pane prt an" style="background-image:url(img/webpage-new-new-nu03.jpg);background-size:100%;" data-id="scr03"><div class="ct"><button id="button"></button>
+       
+        </div></div>	
+    <!--    contact -->
     <div id="4" class="scr pane prt an" style="background-image:url(img/webpage-new-new-nu.jpg);background-size:100%;" data-id="scr04"><div class="ct"><b>Fullscreen</b></div></div>
         
         
@@ -114,20 +158,9 @@
         
         <script> 
             
-jQuery('#about a.link').hover(function() 
-{ 
-    jQuery('body').css("background-color", "#c0dbd8"); 
-    jQuery('p').css("color", "rgba(0, 0, 0, 0.31)"); 
-    jQuery('#about a.link').css("color", "#575756");
-    jQuery('img').css("opacity", "0");
-}).mouseleave(function()
-              {
-    jQuery('body').css("background-color", "rgb(244, 244, 244)"); 
-    jQuery('p').css("color", "#575756");
-     jQuery('#about a.link').css("color", "#575756");
-    jQuery('img').css("opacity", "1");
-});
+            
 </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
            
         
 <!--
