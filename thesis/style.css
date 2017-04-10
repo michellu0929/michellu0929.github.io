@@ -257,6 +257,11 @@ opacity: .4;
     border-radius: 50%;
     background: white;
 }
+
+.yourclass::-webkit-input-placeholder {
+    color: #c9e9ea
+}
+
 .agarinfo{
     padding-top: 50px;
     font-family: 'helvetica', sans-serif;

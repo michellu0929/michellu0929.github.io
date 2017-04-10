@@ -122,9 +122,11 @@ $(window).scroll(function(){
     }
     
     if(toplocation > 2428)
-       $("#ppl").css("color","rgb(177, 177, 177)"), 
-        $("#contact").css("color","#8bbdd2"), 
-        
+       $("#ppl, #about, #zero, #send, input").css("color","#c9e9ea"), 
+        $("#contact").css("color","#fff"), 
+        $("input ").css("border-color","#c9e9ea"),
+        $("input").addClass("yourclass"),
+           
         $("#contact").mouseover(function(){
         $("#contact").css("color", "white")}),
         
@@ -138,13 +140,15 @@ $(window).scroll(function(){
         $("#zero").css("color", "white")}),
         
         $("#ppl, #zero, #about").mouseout(function(){
-        $("#ppl, #zero, #about").css("color", "rgb(177, 177, 177)")}),
+        $("#ppl, #zero, #about").css("color", "#c9e9ea")}),
 
         $("#contact").mouseout(function(){
-        $("#contact").css("color", "#8bbdd2")}) ;
+        $("#contact").css("color", "#fff")}) ;
        else {
         if(toplocation < 2428)
-        $("#contact").css("color","rgb(177, 177, 177)");
+             $("input").removeClass("yourclass"),
+                 $("input ").css("border-color",""),
+        $("#contact, #about, #zero, #send, input").css("color","rgb(177, 177, 177)");
     }
 
     
