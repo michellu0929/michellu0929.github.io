@@ -28,6 +28,141 @@ body{
 background-image: url(bg.jpg);
 }
 
+ul {
+    list-style-type: none;
+}
+
+#subnav li{
+    margin-left: -30px;
+    margin-top: 30px;
+}
+
+#subnav a{
+    text-transform: capitalize;
+
+}
+
+
+
+div.grid h2, div.grida h2 {
+text-align: center;
+    margin-top: 50px;
+    width: 100%;
+    clear: both;
+}
+.pin3 ul {
+padding: 0;
+    list-style-type: none;
+       height: auto;
+}
+
+
+.pin3 ul li {
+  width:33.3%;
+
+    float: left;
+
+       height: auto;
+}
+
+.pin3 ul li img {
+  width: 100%;
+ object-fit: cover;
+  height: 250px;
+}
+.texthover a {
+top:50%;
+}
+
+
+.imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility opacity 0.2s;
+
+}
+.texthover a {
+top:50%;
+}
+
+.texthover {
+    width:100%;
+    display:block;
+    position:relative;
+    height: auto;
+    text-align: center!important;
+}
+
+.texthover .overlay {
+    position:absolute;
+    color:rgba(247, 29, 29, 0.71);
+    height: 29.3%;
+    top:0%;
+    width:100%;
+    padding:70% 0 0 0 ;
+    font-size: 10pt;
+    letter-spacing: .5pt;
+/*    background-color:rgba(0, 0, 0, 0.3);*/
+    background: rgba(204, 40, 40, 0.79) ;
+    display:none;
+}
+
+
+
+a div#tags:hover, a div#tagss:hover {
+background:#575756;
+    color: white;
+}
+
+
+
+.overlay .scap {
+    color: rgba(255, 255, 255, 0.64);
+    font-size: 6pt;
+
+}
+
+.texthover:hover .overlay, .texthover:hover .heart {
+    color: #FFF;
+    display:block;
+}
+
+
+.imgpin {
+ width: 100%;
+clear: both;
+    height: auto;
+}
+
+
+
+.has #subnav {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity .5s max-height .5s overflow 1s ease;
+}
+
+.has:hover #subnav{
+    opacity: 1;
+    max-height: 9999px;
+
+}
+
+
+
+
+*{   -webkit-transition: all .5s, text-shadow 1ms, margin-left 1ms ease; 
+    -moz-transition: all .5s, text-shadow 1ms, margin-left 1ms ease;
+    -ms-transition:all .5s, text-shadow 1ms, margin-left 1ms ease; 
+    -o-transition: all .5s, text-shadow 1ms, margin-left 1ms ease;
+    transition: all .5s, text-shadow 1ms, margin-left 1ms ease;}
 
 h1 {
 	font-family:'Trebuchet MS', Helvetica, sans-serif;
@@ -37,8 +172,11 @@ h1 {
 
 }
 
+
+
+
 .navi {
-    margin-top: 20px;
+
     color:orange;
     font-size:10pt;
     line-height: 150%;
@@ -47,8 +185,8 @@ h1 {
 
 .pa {
     display: block;
-	font-size:8.5pt;
-    font-family: 'Baskerville', times, serif;
+	font-size:10pt;
+    font-family: futura, san-serif;
     letter-spacing: .6px;
     font-weight: 100;
     color:#414141;
@@ -62,9 +200,10 @@ h1 {
 
 
 #header {
-    margin-left: -15px;
+    margin-left: 25px;
     width: 50px;
     float:left;
+    position: fixed;
      
 }
 
