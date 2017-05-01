@@ -32,3 +32,34 @@ $(document).ready(function () {
     
 });
 
+$(document).ready(function () {
+   $('#me').hover(function() 
+{   
+  $("#hi").text("Name on passport is Pei Yu, but I do born with this English name, Michelle.");
+}).mouseleave(function()
+              {
+       $("#hi").text("");
+});
+    
+    
+       $('#designer').hover(function() 
+{   
+  $("#hi").text("BFA Degree in CD at Parsons, and minoring Fashion Communication. I also do photographs and paintings.");
+}).mouseleave(function()
+              {
+       $("#hi").text("");
+});
+    
+       
+       $('#nyc').hover(function() 
+{   
+  $("#hi").text("Born in Beijing. Raised in Shanghai. A Taiwanese passport holder.");
+}).mouseleave(function()
+              {
+       $("#hi").text("");
+});
+    
+});
+
+
+
