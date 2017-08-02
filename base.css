@@ -262,10 +262,107 @@ h1 {
 
   
 
+
+
+
+
+
+
+/*ipad*/
+@media (max-width: 770px) {
+     
+    .texthover .overlay {
+
+        width: 90%;
+        padding: 56% 5% 30% 5%;
+    font-size: 10pt;
+
+}
+    
+      .intro {
+        margin-top: 50px;
+        height: 100px;
+
+    }
+    
+  
+    #spacer{background: black;}
+
+ 
+.grid, .fader, .col7, .pin3 ul, .grida {
+    width:100%;
+
+}
+    
+.imgpin {
+ width: 100%;
+        margin-top:0px;
+        margin-left: auto;
+margin-right: auto;
+clear: both;
+    height: 100%;
+}
+    
+    
+    
+.pin3 ul {
+padding: 0;
+    list-style-type: none;
+       height: auto;   
+}
+
+
+    
+.pin3 ul li {
+  width:50%;
+    float: left;
+       height: auto;
+}
+
+.pin3 ul li img {
+  width: 100%;
+ object-fit: cover;
+  height: 200px;
+    
+}
+ 
+    figcaption{
+  position: absolute;
+  font-size: 8pt;;
+  bottom: 1%;
+}
+ 
+
+.imgrid ul li img {
+	max-width: 100%;
+margin: 0;
+     object-fit: cover;
+  width: 100%;
+  height: 120px;
+}
+
+    
+}
+
+/*iphone*/
 @media (max-width: 460px) {
             div.navi, #sidebar{
     display: none;
     }
+    
+      
+    .pa{
+        width: 100%;
+        padding:0;
+    }
+
+    #content{
+        width: 100%;
+        margin-left: 0px;
+        padding-left: 0px;
+        margin-top: 0px;
+    }
+    
     
     #sidemenu{display: block;}
     
@@ -466,105 +563,13 @@ h1 {
     z-index: 3;
 }
     
-    
-    .texthover .overlay {
 
-        width: 90%;
-        padding: 56% 5% 30% 5%;
-    font-size: 10pt;
-
-}
 
 
     #header {
 display: none;
     }
     
-    .intro {
-        margin-top: 50px;
-        height: 100px;
-
-    }
-    
-    
-    .pa{
-        width: 100%;
-        padding: 0;
-    }
-
-    #content{
-        width: 100%;
-        margin-left: 0px;
-        padding-left: 0px;
-        margin-top: 0px;
-    }
-    
-    #spacer{background: black;}
-
- 
-.grid, .fader, .col7, .pin3 ul, .grida {
-    width:100%;
-
-}
-    
-.imgpin {
- width: 100%;
-        margin-top:0px;
-        margin-left: auto;
-margin-right: auto;
-clear: both;
-    height: 100%;
-}
-    
-    
-    
-.pin3 ul {
-padding: 0;
-    list-style-type: none;
-       height: auto;   
-}
-
-
-    
-.pin3 ul li {
-  width:50%;
-    float: left;
-       height: auto;
-}
-
-.pin3 ul li img {
-  width: 100%;
- object-fit: cover;
-  height: 200px;
-    
-}
-    .overlay {
-        padding-top: 140px;
-    }
- 
-    
   
-
-
-
-    
-    figcaption{
-  position: absolute;
-  font-size: 8pt;;
-  bottom: 1%;
-
-
-
-}
- 
-
-.imgrid ul li img {
-	max-width: 100%;
-margin: 0;
-     object-fit: cover;
-  width: 100%;
-  height: 120px;
-}
-
 
 }
