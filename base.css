@@ -1,4 +1,4 @@
-.navi a, #sidemenu a{
+.navi a {
     
     
     font-weight: 100;
@@ -299,14 +299,26 @@ h1 {
 
 .drawer-menu li a {
     display: block;
-    height: 30px;
-    line-height: 20px;
-    font-size: 14px;
+    height: 50px;
+    line-height: 10px;
+
     color: #b4b4b4;
     -webkit-transition: all .8s;
     transition: all .8s;
+        
+    font-weight: 100;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    clear: left;
+    float: left; color: #c6c6c6;
 }
 
+.drawer-menu #subnav li{
+
+    margin-top: 100px;
+}
+    
 .drawer-menu li a:hover {
     color: #000000;
     background: #fff;
