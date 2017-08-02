@@ -299,8 +299,9 @@ h1 {
 
 .drawer-menu li a {
     display: block;
-    height: 50px;
-    line-height: 10px;
+    height: 10px;
+    margin-bottom: 50px;
+
 
     color: #b4b4b4;
     -webkit-transition: all .8s;
@@ -316,7 +317,7 @@ h1 {
 
 .drawer-menu #subnav li{
 
-    margin-top: 100px;
+    margin-top: 200px;
 }
     
 .drawer-menu li a:hover {
