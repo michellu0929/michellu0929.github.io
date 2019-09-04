@@ -1,3 +1,14 @@
+#about-text {
+    margin-top: 242px;
+background: #fff;
+     border: 1px solid #27f0c2;
+    width: 50%;
+    display:block;
+
+    padding: 10px 30px;
+}
+
+
 #sidebar .navi a {
     font-size:10pt;
 	transform: rotate(-90deg);
@@ -55,6 +66,7 @@ color: #9a3636;
 
 
 body{
+    
     margin-top: 40px;
 background-image: url(bg.jpg);
 }
@@ -180,18 +192,7 @@ clear: both;
 
 
 
-.has #subnav {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: opacity .5s max-height .5s overflow 1s ease;
-}
 
-.has:hover #subnav{
-    opacity: 1;
-    max-height: 9999px;
-
-}
 
 
 
@@ -235,7 +236,7 @@ h1 {
     width: 100 px;
     float:left;
     z-index: 999;
-    position: fixed;
+
     letter-spacing: 2px;
 
      font-weight: 600;
@@ -283,7 +284,7 @@ h1 {
     margin-top: 40px;
     position: fixed;
  
-    margin-left: 162px;
+    margin-left: 72px;
     left: 0;
 }
 
@@ -338,6 +339,7 @@ body {
   background: rgba(255, 255, 255, 0.47);
   background-image: radial-gradient(hsla(151, 100%, 47%, 1.00) 5%, transparent 0);
   background-size: 30px 30px;
+
 }
 
 
@@ -351,6 +353,20 @@ body {
     height: 630px;
     z-index: -10000;
     opacity: 0;
+    color: black;
+
+}
+
+#bg1 {
+        border: 1px solid #27f0c2;
+    padding: 30px;
+    position: fixed;
+    top: 44px;
+    left: 224px;
+ width: 600px;
+    height: 630px;
+    z-index: -10000;
+    opacity: 1;
     color: black;
 
 }
@@ -372,7 +388,7 @@ body {
 
 /*ipad*/
 @media (max-width: 770px) {
-     #bg{ left: 284px;
+     #bg, #bg1{ left: 224px;
             width: 300px;
     height: 660px;
          }
@@ -404,7 +420,7 @@ body {
     .resume {margin-top: -40px;}
     .talk{	margin-top:-100px; }
     
-           #bg{ left: 14px;
+           #bg, #bg1{ left: 14px;
                top: 195px;
             width: 300px;
     height: 509px;
@@ -426,7 +442,7 @@ body {
 
 
 @media screen and (min-width: 1500px){
-        #bg{
+        #bg, #bg1{
             width: 900px;
     height: 690px;
          }
@@ -456,3 +472,4 @@ margin-right: 60px;
 #footer{   width: 100%; position: fixed;
     bottom: 45px;
     left: 33px;}
+
