@@ -33,14 +33,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-   $('#me').hover(function() 
-{   
-  $("#hi").text("Name on passport is Pei Yu, but I do born with this English name, Michelle.");
-}).mouseleave(function()
-              {
-       $("#hi").text("");
-});
-    
+
     
        $('#designer').hover(function() 
 {   
