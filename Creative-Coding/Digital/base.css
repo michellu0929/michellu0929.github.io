@@ -1,0 +1,170 @@
+body{
+margin: 0;
+background: black;
+-webkit-user-select: none;  /* Chrome all / Safari all */
+-moz-user-select: none;     /* Firefox all */
+-ms-user-select: none;      /* IE 10+ */
+user-select: none;  
+
+}
+
+@keyframes current {
+
+    0% {  
+      opacity: 0.3;
+      color: white;
+    font-size:10pt;}
+    35% {  
+      opacity: .3;
+      font-size:10pt;
+        color: white;}
+    100% {
+      opacity: 1;
+    font-size:20px;}
+}
+
+
+@keyframes prev {
+
+    0% {  
+      opacity: 1;font-size:20px;
+      color: white;}
+    35% {  
+      opacity: 1;
+      color: white;font-size:20px;}
+    100% {
+      opacity: .3;font-size:10pt;}
+}
+
+div p, div #tool-status, #run-tools{
+    text-align: center;
+    font-family: futura;
+    text-transform: uppercase;
+    font-size: 10pt;
+    letter-spacing: 5pt;
+    position: fixed;
+    transition: linear;
+
+}
+#run-tools{
+    color:white;
+    width: 5%;
+    right: 10px;
+    top: 30px;
+
+}
+
+@keyframes color {
+    0% {color: rgba(255,255,255,.67);}
+    50% {color:rgba(255,255,0,.67);}
+    100% {color: rgba(255,255,255,.67);}
+}
+
+/*
+@keyframes go-up {
+0% {top: 40%}
+    50% {top: 20%}
+    100% {top:-100px}
+}
+*/
+
+div p {
+    height: 100%;
+    color: #f4ff6b;
+    top: 20%;
+    display: inline-block;
+    width: 100%;
+    line-height: 30pt;
+    animation: color .2s infinite linear;
+}
+/*
+
+div span#current{
+
+    bottom: 50px;
+    width: 100%;
+    visibility: hidden;
+    animation-name: name;
+    animation-duration: 1s;
+}
+*/
+
+a {
+    color: white;
+    opacity: .7;
+    font-size: 10pt;
+    text-transform: uppercase;
+    letter-spacing: 5pt;
+    text-decoration: none;
+
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+#tool-status {
+    bottom: 50px;
+    width: 100%;
+    /*    pointer-events: none;*/
+
+}
+
+/*
+canvas {  
+    z-index:1
+}
+*/
+
+tag:not(canvas) {
+    display: none;
+}
+
+#current {
+    font-size: 20px;
+    color:white;
+
+    clear: both;
+    width: 20%;
+    /*
+    animation-name: current;
+    animation-duration: 1s;
+    -webkit-transition-delay: 2s;  
+    transition-delay: 2s;
+    */
+}
+
+#prev, #next {
+    opacity: 0.3;
+    width: 30%;
+    color:white;
+    /*
+    animation-name: prev;
+    animation-duration: 1s; 
+    */
+}
+
+#arrows {
+    width:10%;
+    color:white;
+    animation: none;
+    clear: both;
+    font-size:20px;
+}
+
+#tool-status:last-of-type {
+    pointer-events: none;
+}
+
+
+#prev{
+    float: left;
+    clear: both;
+}    
+
+#next{
+    float: right;
+    clear: both;
+}   
