@@ -12,7 +12,9 @@
     
 	<link type="text/css" href="base.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
        		<script src='main.js'></script>
+    <script src="Creative-Coding/Digital/suite.js"></script>
 
 	<body>
 
@@ -191,6 +193,27 @@ Luisa Pereira | luisa.ph@nyu.edu </p></div></div></a>
   <br>A webpage design based<br>on smog (pm2.5) value.<br>To increase the awareness<br>of air pollution in China.</a>
 </div>
 -->
+            <canvas id="canvas"></canvas>
+                    <script>
+        var rgba_rand = function(hue) {
+            hue = hue || {};
+            if(hue.r === undefined){hue.r = Math.random();}
+            if(hue.g === undefined){hue.g = Math.random();}
+            if(hue.b === undefined){hue.b = Math.random();}
+            if(hue.a === undefined){hue.a = Math.floor(Math.random() +.8);}              
+
+            var text = 'rgba(';
+            text += Math.round(hue.r*255) + ',';
+            text += Math.round(hue.g*255) + ',';
+            text += Math.round(hue.b*255) + ',';
+            text += hue.a;
+            text +=')';
+
+            return text;
+        };
+        </script>
+            
+            <script src="Creative-Coding/Digital/drawstar.js"></script>
     
 	</body>
 
