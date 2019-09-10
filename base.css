@@ -343,7 +343,30 @@ padding: 0;
     width: 100%;
     }
     
+     .flexbox {   
+  display: block;
+         overflow-y: auto;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+
+    flex: 0 0 auto;
+   flex-shrink: 0;
+}   
+    
 }
+
+
+
+
+
+
+
+.intro {
+    height:200px;
+}
+
+
 
 
 @media screen and (min-width: 1500px){
