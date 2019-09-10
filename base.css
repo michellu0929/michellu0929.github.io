@@ -50,7 +50,7 @@ a:hover {
 
 
 
-
+b {font-size: 8pt;}
 
 
 
@@ -186,6 +186,11 @@ background-image: url(bg.jpg);
 }
 
 h6 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h5 {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
