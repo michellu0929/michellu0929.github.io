@@ -321,7 +321,9 @@ height: 448px;
            #bg1{ left: 14px;
                top: 195px;
             width: 300px;
-    height: 309px;
+    height: auto;
+               overflow: visible;
+               
          }
         
         .crop{
@@ -337,21 +339,21 @@ padding: 0;
         padding-left:30px;
         top: 48px;
     }
+    .paragraph {padding: 0;margin: 0;width: 100%;}
     
     
     #horiscroll {margin: 0;
     width: 100%;
+        padding-top: 185px; 
+        height: 500px;
+overflow-y: scroll;
     }
     
-     .flexbox {   
+     .flexbox {  overflow-y: scroll;
   display: block;
-         overflow-y: auto;
-  flex-wrap: nowrap;
+
   overflow-x: auto;
 
-
-    flex: 0 0 auto;
-   flex-shrink: 0;
 }   
     
 }
