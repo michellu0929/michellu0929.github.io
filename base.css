@@ -301,18 +301,19 @@ height: 448px;
 .talk {margin-top: 9px;margin-left: 60px;}
 /*iphone*/
 @media (max-width: 460px) {
+
     #rightbar {margin-top: 10px;}
     .talk h2 {display: none;
        }
     .aboutmi {margin-top: -30px;}
-    #sidebar, #header {margin-left: -60px;}
-    #header {margin-top: -30px;}
-    #footer {top:30px;height: 10px;margin-left:-30px;}
+    #sidebar, #header {margin-left: -30px;}
+    #header {margin: -30px;}
+    #footer {top:40px;height: 10px;margin-left:0px;}
     #footer a{margin-left: -30px;}
     .resume {margin-top: -40px;}
     .talk{	margin-top:-100px; }
     
-           #bg, #bg1{ left: 14px;
+           #bg1{ left: 14px;
                top: 195px;
             width: 300px;
     height: 309px;
@@ -324,11 +325,18 @@ height: 448px;
         
         .paragraph{
         
-    width: 100%;
-    padding-left:0;
-    padding-top: 0;
-            padding-right: 0;
+padding: 0;
         } 
+    
+    #bg {
+        padding-left:30px;
+        top: 48px;
+    }
+    
+    
+    #horiscroll {margin: 0;
+    width: 100%;
+    }
     
 }
 
