@@ -153,7 +153,11 @@ background-image: url(bg.jpg);
     
 }
 
-
+figcaption {
+    font-size: 9pt;
+    letter-spacing: .5pt;
+    text-align: right;
+}
 
 
 
