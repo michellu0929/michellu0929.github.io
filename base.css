@@ -1,7 +1,9 @@
-#canvas {
-    height: 100%;
-    width: 100%;
+canvas {
+    margin: 0;
+  display: block;
+    z-index: -9999;
 }
+
 
 #about-text {
     margin-top: 242px;
@@ -57,7 +59,7 @@ b {font-size: 8pt;}
 body{
     
     margin-top: 40px;
-background-image: url(bg.jpg);
+
 }
 
 #marmar {margin-top: 14px;}
@@ -226,6 +228,20 @@ h5 {
 }
 
 
+#dotbg
+{
+    font-size: 8pt;
+        letter-spacing: 2px;
+     font-weight: 600;
+    text-transform: uppercase;
+    color: #ff00d8;
+position: absolute;
+opacity: 0;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */     
+}
 
 
 
