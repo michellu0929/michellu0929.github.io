@@ -1,5 +1,5 @@
 $(document).bind('mousemove', function(e){
-    $("#dotbg").text("STAR DRAWING")
+    $("#dotbg").text("START DRAWING")
 $("#dotbg").css("opacity", "1");
     $('#dotbg').css({
         left: e.pageX + 5,
@@ -16,6 +16,23 @@ $(document).bind('mousedown', function(e){
 
 
 
-$(document).bind('click', function(e){
+$(document).bind('click', function(e)  {
   $("#dotbg").css("display", "none");
 });
+
+
+$(function()
+ {
+    $("#header").mouseenter(function () {
+        $("#bg").css("visibility", "visible");
+    }).mouseleave(function ()
+                 {
+        $("#header").mouseover(function () {
+    $("#bg").hide());
+});
+
+    })
+
+})
+
+

@@ -145,15 +145,27 @@ body{
 
 /*Hover*/
 
+/*
 #dothover:hover  ~ #bg{
     background-size:cover;
     background-position: center;
     visibility: visible;
      z-index: -1;
     background-color: #fff;
-     width: 300px;
-    
+     width: 300px; 
 }
+*/
+
+#bg{
+        background-size:cover;
+    background-position: center;
+    visibility: hidden;
+     z-index: -1;
+    background-color: #fff;
+     width: 300px; 
+}
+
+
 
 figcaption {
     font-size: 9pt;
@@ -249,6 +261,7 @@ body {
   background: rgba(255, 255, 255, 0.47);
   background-image: radial-gradient(hsla(151, 100%, 47%, 1.00) 5%, transparent 0);
   background-size: 30px 30px;
+    background-attachment: fixed;
 
 }
 
