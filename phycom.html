@@ -16,8 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
        		<script src='main.js'></script>
-    <script src='sketch.js'></script>
-
+    
 	<body>
 
 
@@ -96,11 +95,16 @@
                         
                         
                  <a href="fabri.html">
-                           <span id="dothover" class="dot" ></span>
-                        <div id="bg" >
-                            <div class="paragraph" ><h6>Intro to Fabrication</h6><p> Fall 2019, NYU ITP<br><br>Instructor | 
-
-                                Luisa Pereira | luisa.ph@nyu.edu </p></div></div></a>
+                         <span id="dothover" class="dot"></span>
+                            <div id="bg" >
+                            <div class="paragraph" >
+                                <h6>Intro to Fabrication</h6>
+                                <p> Fall 2019, NYU ITP
+                                    <br><br>Instructor | Ben Light | bl1236@nyu.edu
+                                </p>
+                            </div>
+                            </div>
+                        </a>
                     
                     
                     </li>
@@ -133,33 +137,44 @@
                   <li><a href="phycom.html">
                         <span id="dothover" class="dot"></span>
                         <div id="bg" >
-                            <div class="paragraph" ><h6>Physical Computing</h6><p> Fall 2019, NYU ITP<br><br>Instructor
-
-                                    | Danny Rozin | danny.rozin@nyu.edu </p></div></div></a>
+                            <div class="paragraph" >
+                                <h6>Physical Computing</h6>
+                                <p> Fall 2019, NYU ITP
+                                    <br><br>
+                                Instructor | Danny Rozin | danny.rozin@nyu.edu 
+                                </p>
+                            </div>
+                        </div>
+                      </a>
                        
                         
                         <a href="#">
                          <span id="dothover" class="dot"></span>
                         <div id="bg">
-                            <div class="paragraph" ><h6>Code of Music</h6><p> Fall 2019, NYU ITP<br><br>Instructor
+                            <div class="paragraph" >
+                                <h6>Code of Music</h6><p> Fall 2019, NYU ITP<br><br>Instructor
                                 
-                                | Luisa Pereira | luisa.ph@nyu.edu </p></div></div></a>
+                                | Luisa Pereira | luisa.ph@nyu.edu 
+                                </p>
+                            </div>
+                            </div>
+                      </a>
                            
                         
-                 <a href="fabri.html">
+                        <a href="fabri.html">
                          <span id="dothover" class="dot"></span>
-                        <div id="bg" >
-                            <div class="paragraph" ><h6>Intro to Fabrication</h6><p> Fall 2019, NYU ITP<br><br>Instructor | 
-
-                                Luisa Pereira | luisa.ph@nyu.edu </p></div></div></a>
-                    
-                    
-                    </li>
- 
-                    
+                            <div id="bg" >
+                            <div class="paragraph" >
+                                <h6>Intro to Fabrication</h6>
+                                <p> Fall 2019, NYU ITP
+                                    <br><br>Instructor | Ben Light | bl1236@nyu.edu
+                                </p>
+                            </div>
+                            </div>
+                        </a>
+    
+                    </li>       
                 </ul>
-
-                 
                 </div>
 
 			
@@ -191,52 +206,330 @@
         
             
         </div>
-         <div id="horiscroll">
+        
+        
+        
+        
+        <div id="horiscroll">
                 <div class="flexbox">
-                <div id="bg1">
-  <img class="crop" alt="A image of a lady standing infront of the mirror seeing it reflecting two of her own. This is a scene from the immersive show called then she fell." src="ITP/phy/thenshefell5-photo-by-chad-heird.jpg">
-  <figcaption>Immersive Show - <i>Then She Fell</i></figcaption>
+                    
+                    
+                    <div id="bg1" >
+                   
+                   <iframe class="crop" src="https://www.youtube.com/embed/tSUepDJcGNE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   <figcaption><i>Controlling LED Lights using a Potentiometer</i></figcaption>
+                   
+                                <div class="paragraph" id="top">
+                                    <h5>Week 3 - <a href="#dInput">Brightness Control</a>, <a href="#aInput">Analog Input</a> and <a href="#servo">Servo</a></h5>
+                                    
+                                    <p> <hr id="dInput">
+                                        <h6>Digital Input</h6>
+                                        As I am playing with the LEDs, I feel anxious to see them being constantly lighted up so brightly--I want to make them dimmer--inspired me to look for a way to control the brightness level. I tried by playing with <i id="codetext1">digitalWrite</i> 0.5 and figured that this wont happen since it is still the digital signal (since there is no in between values, values under 0.5 will always be 0 and above will always be 1.) So to make it analog I watched a tutorial on generating analog signals and the solution is <i id="codetext1">analogWrite</i>! (yeah! changing the word from 'digital' to 'analog' took me so long!) But to make it loop in different brightness level, the code looks like this:<br><br>
+                                    
+                                    <i id="codetext">
+                                    #define whiteLEDPin 5<br>
+                                            <br>
+                                    void setup() {<br>
+                                      pinMode(whiteLEDPin, OUTPUT);<br><br>
 
-                                <div class="paragraph" ><h5>Week 1</h5><p> 
-<br>
-                                    <h6 id="week-1-taotd">The Art of Interactive Design: A Euphonious and Illuminating Guide to Building Successful Software</h6>
+                                    }<br><br>
+
+                                    void loop() {<br>
+                                       for(int value = 0; value<=255; value++){<br>
+                                        analogWrite(whiteLEDPin, value);<br>
+                                        delay(30);<br>
+                                        }<br><br>
+
+                                        delay(50);<br><br>
+
+                                        for(int value = 255; value>=0; value--){<br>
+                                        analogWrite(whiteLEDPin, value);<br>
+                                        delay(30);<br>
+                                        }<br><br>
+
+                                        delay(50); <br><br>
+
+                                    }
 
 
 
-Chris gives his definition of interactivity, that is interactivity involves the an alternately process of listening, thinking and speaking of two actors. It’s very interesting how he deny the ‘activities’ (such as reading, dancing, watching movies and etc.) that people tend to mention as interactivity to be interactivity. Also, as an interaction (not interactivity) designer, how he differentiate Human-Factor Design, UI design and Interactivity Design really gives me an idea but I feel I still need to read more on this to learn his idea more solidly.
-<br><br>
-After reading the first chapter made me tend to rethink about the immersive shows: Sleep No More and Then She Fell. <br><br>
-                                    <img class="crop" alt="A image of two performers performing infront of a crowd of audience with masks on. This is a scene from the immersive show called sleep no more." src="ITP/phy/origin.jpg">
-  <figcaption>Immersive Show - <i>Sleep No More</i></figcaption><br><br>
-                                    Whereas people mention them as the ineractive shows. Whether they are truly interactive or they are just an audience-participative show. My experience at Sleep No More is definitely a participation, never a interaction. Where you get to step into the performing area (since the entire building is their stage) and have little touches with the performers. Some lucky audience might be selected for 1 on 1 performances, but rather than “two actors alternatively listen, think and speak”, it’s more likely the performer do the speaking (only to you, with set lines), and the audience react. But my experience in Then She Fell could be in the degree of interactivity, a low to medium interactivity happened. The scale of the audience is way smaller than the one mentioned previously, that might also be what he mentioned in the first chapter “as audience size shrinks, the statistical factors become less adamant.” For every show there will only be 15 audience, with the similar (or maybe more) amount of performer. Most of the scenes I experienced in this show are 1 on 1 or two audiences with four of the performers. The most memorable part in the entire show, also, the part I considered as a medium interaction happening, is when I’m having a 1 on 1 scene with the heroine and we had a conversation about relationship. Her opening question might be a set line, but whatever comes after that involved both of our listening, thinking and speaking. Yet, I call it a low-to-medium interactivity is because we were strangers and it is hard to give good feedback for such personal topics, so it was not an useless (cliche) conversation (but it was still fun as it appeared in the show).<br><br>
-                                    In the next chapter he mentioned the relationship of computer and interactivity, which he suggested that the main "selling point" of a computer is its interactivity, by giving the example of ViSiCalc--the very first spreadsheet software on personal computers that allows the user to see the result/output directly on screen. This high efficiency indicates a sucessful, productive interactivity that a computer can provide. Thus, interactivity surely is the competitive advantage for computers.
+                                    </i>
+                                    
                                     <br><br>
-                                    <hr>
                                     
-                                    <a href="http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/"><h6>A Brief Rant on the Future of Interaction Design</h6></a>
+                                        So first thing first, connect to the LED pin, always. In the loop section, I created a interger called <i id="codetext1">value</i>, <br><br>
                                     
-                                    Victor talked about how our activity had been limited down to Pictures Under Glass. He start by defining a  good tool is designed to fit both sides (capability vs. need). Talking about human capability, the thing that we use to interact with future technologies will be our hands. Our hands receive feedbacks from almost everything in this world—we notice when we grabbed two pages at once when we are reading and trying to slip apart by rubbing them; we feel the change in weight of a glass of water when it’s getting lesser and lesser; we feel the different texture of tissue papers and select each for different usages. However, our technology devices nowadays, which we spend most of our tactile experience with, are all so-called the Pictures Under Glass. Victor deny the saying of touchscreen devices to be the future of interaction, instead, sort of a backward in interaction (I felt it actually sounded too esthetically when he mentioned black and white in photography. I like film and black and white <3 ). 
-<br><br>
-Now, almost every services had been shrinken down to the size of the “glass brick” we carry in hand. The “User-Friendly” we mentioned nowadays are also only up to the extend of how hands handle this glass, but not about our hands. After reading this, I really feel even though these digital products provide us conveniency to almost every service just by clicking on this glass, but it limits the potential interaction that our hand can have to things in the world. Also, this concept of smart device generation limits our capability as a designer. We thought that accessibility lives in that tiny glass brick, and ignored the subject that we are doing this for—us.<br><br>
-                                    <img style="width: 100%;" src="ITP/phy/2017-02-01-21-03-36-740x1029.jpg">
-                                    <figcaption>Get your glass brick today!</figcaption>
-</p></div>
-                </div>
+                                    <i id="codetext">for(int value){<br>}</i>
+                                    
+                                    <br><br>which the initial value of 'value' will be 0 (LED turned off) 
+                                    <br><br>
+                                    
+                                    <i id="codetext">
+                                        for(int value = 0;){
+                                        <br>}
+                                    
+                                    </i>
+                                    
+                                    <br><br>
+                                    and when <i id="codetext1">value</i> is smaller or equals to 255 (bits), the <i id="codetext1">value</i> increases:
+                                    <br><br>
+                                    
+                                    <i id="codetext">
+                                        for(int value = 0; value<==255; value++){
+                                        <br>}
+                                    
+                                    </i>
+                                    <br><br>
+                                    After that, use analogWrite to light up the LED:
+                                    
+                                    <br><br>
+                                    
+                                    <i id="codetext">
+                                        for(int value = 0; value<=255; value++){<br>
+                                        analogWrite(whiteLEDPin, value);<br>
+                                        delay(30);<br>
+                                        }
+                                    
+                                    </i>
+                                    <br><br>
+                                    This will light up the LED with a smooth gradient in brightness, but to make it a loop back to off, we will need this:
+                                    <br><br>
+                                    
+                                    <i id="codetext">
+                                        for(int value = 255; value>=0; value--){<br>
+                                        analogWrite(whiteLEDPin, value);<br>
+                                        delay(30);<br>
+                                        }
+                                    
+                                    </i>
+                                    <br><br>
+                                    and now it is a smooth looping in brightness, yay!
+                                        <br><br> 
+                                       <iframe class="crop" src="https://www.youtube.com/embed/VVLfR5bgzvo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+                                    <hr id="aInput"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
+                                    
+                                    <h6 >Analog Input   </h6>
+                                        
+                                        The first try I had with analog input was the sensor. I saw it and always wanted to use it, but the connection wasn't challenging at all (cocky), I just connect the sensor to the board and it worked with the same code we did in class.
+                                    
+                                        <br><br> 
+                                       <iframe class="crop" src="https://www.youtube.com/embed/UqJicdXblnM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <br id="ledparty"><br>
+                                    
+                                    And so my attention goes to the potentiometer instead--I want to create a LED party--being able to control more than one LED with the potentiometer. Knowing that LED has 255bits, to detect a analog signal, I will also need to set integer for the bits of a potentialmeter. But before that, define the pin of the LEDs: there are more than one LED, so set a integer that states the initial output pin as the first LED that you want to light up.In my case it is Pin 2:
+                                    <br><br>
+                                    
+                                    <i id="codetext">
+                                    
+                                    void setup() {<br>
+                                      for(int i=2;){}<br>
+                                        }
+
+                                    </i>
+                                    <br><br>
+                                    Then, like the <i id="codetext1">value</i> integer from the previous application, we tell it to increase when it is smaller and equals to 7. And we have the LEDs connected:
+                                    
+                                    <br><br>
+                                    
+                                    <i id="codetext">
+                                    
+                                    void setup() {<br>
+                                      for(int i=2;i<=7;i++)<br>
+                                      {<br>
+                                        pinMode(i,OUTPUT);}<br>
+                                    }
+
+                                    </i>
+                                    <br><br>
+                                    
+                                    Next, by knowing that the value for a potentiometer is 0-1023, we need some sort of 'translation' to make 0-1023 = 2-7. And this can be done by the <i id="codetext1">map()</i>. I set an ineger for this value:
+                                    
+                                    
+                                    <br><br>
+                                    
+                                    <i id="codetext">
+                                    
+                                   
+                                    void loop() {<br>
+                                      int pot = map();<br>
+                                    }
+
+                                    </i>
+                                    <br><br>
+                                    
+                                    Afterwards, we tell map about where to read, translate what 'low and max' value into what 'low and max' value. 
+                                    
+                                    
+                                    
+                                     <br><br>
+                                    <i id="codetext">
+                                    void loop() {<br>
+                                      int pot = map(analogRead(A5), 0, 1023, 2, 7);<br>
+                                      
+                                    }
+                                    </i>
+                                    <br><br>
+                                    
+                                    Now, set integer<i id="codetext1"> i</i> as off, and when<i id="codetext1"> i</i> is increasing when it is smaller and equals to pot, <i id="codetext1">i</i> is HIGH (on). And then set the<i id="codetext1"> i</i> as 'just bypassed' the LED to make a turning off loop.
+                                    
+                                     <br><br>
+                                    <i id="codetext">
+                                    void loop() {<br>
+                                      int pot = map(analogRead(A5), 0, 1023, 2, 7);<br>
+                                      for (int i=0;i<=pot;i++)<br>
+                                      {<br>
+                                       digitalWrite(i,HIGH); <br>
+                                       }<br><br>
+
+                                         for (int i=pot+1;i<=7;i++)<br>
+                                      {<br>
+                                       digitalWrite(i,LOW ); <br>
+                                       }<br>
+                                    }
+                                    </i>
+                                    <br><br>
+                                    
+                                    So the entire code looks like this:
+                                    <br><br>
+                                    
+                                    <i id="codetext">
+                                    
+                                    void setup() {<br>
+                                      for(int i=2;i<=7;i++)<br>
+                                      {<br>
+                                        pinMode(i,OUTPUT);
+                                        }<br>
+
+                                    }<br><br>
+
+                                    void loop() {<br>
+                                      int pot = map(analogRead(A5), 0, 1023, 2, 7);<br>
+                                      for (int i=0;i<=pot;i++)<br>
+                                      {<br>
+                                       digitalWrite(i,HIGH); <br>
+                                       }<br><br>
+
+                                         for (int i=pot+1;i<=7;i++)<br>
+                                      {<br>
+                                       digitalWrite(i,LOW ); <br>
+                                       }<br>
+
+                                    }
+
+                                    </i>
+                                    <br><br>
+                                    And work like this:
+                                    <br><br>
+                                    <iframe class="crop" src="https://www.youtube.com/embed/khuKSggrovE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <figcaption><i>Controlling LED Lights using a Potentiometer</i></figcaption>
+                                    <br><br>
+                                    In the cover video, I change the value of the initial LED pin to that is one before the initial LED, so that all lights can be off at the initial and when switched off.<br><br>
+                                    <hr id="servo"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
+                                        <h6>Servo</h6>
+                                    
+                                    Now, I know how to use a potentiometer, I know how to connect it to a servo! I THINK!
+                                    <br><br>
+                                    First, I tell it the existence of my servo, name my servo as <i id="codetext1">myservo</i>, and have it setted up to pin 9:
+                                    <br><br>
+                                    
+                                    <i id="codetext">
+                                    
+                                    #include <Servo.h><br><br>
+
+                                    Servo myservo;<br><br>
+                                        
+                                        void setup() {<br>
+                                        myservo.attach(9);<br>
+                                    }
+
+
+                                    </i>
+                                    <br><br>
+                                        
+                                        
+                                        Then, like what I have did in the <a href="#ledparty">LED party</a> application, translate the signals of servo and the potentiometer using the <i id="codetext1">map()</i> function. In this case, I heard that it is better to set the initial of servo as 4 and highest at 176 even though the value is 0-180, because servo kind of vibrates even when you turn the potentiometer to 0. But this value still didn't stop my servo from vibrating. However, this is how the code looks like:
+                                        
+                                        <br><br>
+                                    
+                                    <i id="codetext">
+                                    
+                                    #include <Servo.h><br><br>
+
+                                    Servo myservo;
+                                        <br><br>
+                                        void setup() {<br>
+                                        myservo.attach(9);<br>
+                                    }<br><br>
+
+                                    void loop() {<br>
+                                     int val = analogRead(A5);<br>
+                                     int i = map(val, 1, 1023, 4, 176);<br>
+                                     myservo.write(i);<br>
+                                     delay(15);<br><br>
+
+                                    }
+
+                                    </i>
+                                    <br><br>
+                                    
+                                    And here is my beautiful servo controlled by the potentiometer:
+                                        <br><br>
+                                        
+                                        
+                                     <iframe class="crop" src="https://www.youtube.com/embed/tTrzpR4nQFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    
+                                    
+                                    </p>
+                                    
+                                </div>
+                    </div>
+                    
+                    
+                    
              
-             
-             <div id="bg1"><iframe class="crop" src="https://www.youtube.com/embed/MaC0gVSMOZ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><figcaption><i>Welcome to Hogwarts</i></figcaption>
-                                <div class="paragraph" ><h5>Week 2 - Lumos Maxima Switch</h5><p> <i>Led Light Switch on Arduino</i><br><br><br><br>It is all done by Magic.<br><br>Try:<br>Lumos Maxima...<br>Lumos MaxiMa...<br>Lumos MAXIMA!!<br><br><br><br><br><br><br><br>Hi... So the inspiration came from the material--magnet, which I intend to get it for another class, that also conduct electricity. I wanted to make a switch that happen to looks like:<br><br><img class="crop" src="ITP/phy/w2/light.jpg"><br><br>
-                                    Yet, when I was trying to connect the thin wire to the magnet, I figured that, unlike the on ein the image, every material need to be nude and touching each other inorder to have the current flow. However, when magnet are touching each other, their force are too big to have the circuit open again. Facing the truth of my lack of knowledge in this field (only for now), I need to think of another way since I do not want to give up on the material.<br><br>
-                                    So, instead of having the magnet as one of the connections, I used the ability of magnet as the force to close the circuit. By using a material that can be attracted to magnet and one that only conduct electricity but not attracted to magnet. I had some help with google, and I had this <br><br>
+             <div id="bg1">
+                 <iframe class="crop" src="https://www.youtube.com/embed/MaC0gVSMOZ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                 <figcaption><i>Welcome to Hogwarts</i></figcaption>
+                                <div class="paragraph" >
+                                    
+                                    <h5>Week 2 - Lumos Maxima Switch</h5>
+                                    
+                                    <p> <i>Led Light Switch on Arduino</i>
+                                        <br><br><br><br>
+                                        It is all done by Magic.
+                                        <br><br>Try:<br>Lumos Maxima...<br>Lumos MaxiMa...<br>Lumos MAXIMA!!
+                                        <br><br><br><br><br><br><br><br>
+                                        
+                                        Hi... So the inspiration came from the material--magnet, which I intend to get it for another class, that also conduct electricity. I wanted to make a switch that happen to looks like:
+                                        
+                                        <br><br>       
+                                    <img class="crop" src="ITP/phy/w2/light.jpg">
+                                    
+                                    <br><br>
+                                    
+                                    Yet, when I was trying to connect the thin wire to the magnet, I figured that, unlike the on ein the image, every material need to be nude and touching each other inorder to have the current flow. However, when magnet are touching each other, their force are too big to have the circuit open again. Facing the truth of my lack of knowledge in this field (only for now), I need to think of another way since I do not want to give up on the material.
+                                    <br><br>
+                                    So, instead of having the magnet as one of the connections, I used the ability of magnet as the force to close the circuit. By using a material that can be attracted to magnet and one that only conduct electricity but not attracted to magnet. I had some help with google, and I had this 
+                                    <br><br>
+                                    
                                     <video class="crop" width="320" height="240" controls>
-  <source src="ITP/phy/w2/try1.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video><br><br>
+                                    <source src="ITP/phy/w2/try1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                    </video>
+                                    
+                                    <br><br>
                                     After the first try, I made a new, cleaner version of the system:
                                     <br><br>
-                                     <img style="width: 33.3%;float: left;" src="ITP/phy/w2/1.jpg"> <img style="width: 33.3%;" src="ITP/phy/w2/2.jpg"> <img style="width: 33.3%;float: left;" src="ITP/phy/w2/3.jpg"> 
-                                    <br><br>And then, I want to hide the magic so I covered up everything with a film case, with a wand that has hidden magnets at the tip of it:<br><br>
-                                     <img style="width: 50%;float: left;" src="ITP/phy/w2/a.jpg"> <img style="width: 50%;" src="ITP/phy/w2/b.jpg">
+                                    
+                                    <img style="width: 33.3%;float: left;" src="ITP/phy/w2/1.jpg">
+                                    <img style="width: 33.3%;" src="ITP/phy/w2/2.jpg">
+                                    <img style="width: 33.3%;float: left;" src="ITP/phy/w2/3.jpg"> 
+                                    
+                                    <br><br>
+                                    And then, I want to hide the magic so I covered up everything with a film case, with a wand that has hidden magnets at the tip of it:
+                                    <br><br>
+                                    
+                                    <img style="width: 50%;float: left;" src="ITP/phy/w2/a.jpg"> <img style="width: 50%;" src="ITP/phy/w2/b.jpg">
 <!--
                                     <br><br>And here, is a 2 min video of me practicing my spell (though I stil have it pronouced as luMINOs maxima...):<br><br>
                                     <video class="crop" width="320" height="240" controls>
@@ -244,8 +537,52 @@ Your browser does not support the video tag.
 Your browser does not support the video tag.
 </video><br><br>
 -->
-                                    </p></div>
+                                    </p>
+                                </div>
                 </div>
+             
+             
+               
+                    <div id="bg1">
+                            <img class="crop" alt="A image of a lady standing infront of the mirror seeing it reflecting two of her own. This is a scene from the immersive show called then she fell." src="ITP/phy/thenshefell5-photo-by-chad-heird.jpg">
+                            <figcaption>Immersive Show - <i>Then She Fell</i></figcaption>
+
+                                <div class="paragraph" ><h5>Week 1 - <a href="#art-of-interactive-design">art-of-interactive-design</a> and <a href="#the-future">the future</a> of it</h5><p> 
+                                    <br>
+                                    <hr id="art-of-interactive-design"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
+                                    <h6 >The Art of Interactive Design: A Euphonious and Illuminating Guide to Building Successful Software</h6>
+
+
+
+                                    Chris gives his definition of interactivity, that is interactivity involves the an alternately process of listening, thinking and speaking of two actors. It’s very interesting how he deny the ‘activities’ (such as reading, dancing, watching movies and etc.) that people tend to mention as interactivity to be interactivity. Also, as an interaction (not interactivity) designer, how he differentiate Human-Factor Design, UI design and Interactivity Design really gives me an idea but I feel I still need to read more on this to learn his idea more solidly.
+                                    <br><br>
+                                    After reading the first chapter made me tend to rethink about the immersive shows: Sleep No More and Then She Fell.
+                                    <br><br>
+                                    
+                                    <img class="crop" alt="A image of two performers performing infront of a crowd of audience with masks on. This is a scene from the immersive show called sleep no more." src="ITP/phy/origin.jpg">
+                                    <figcaption>Immersive Show - <i>Sleep No More</i></figcaption>
+                                    <br><br>
+                                    
+                                    Whereas people mention them as the ineractive shows. Whether they are truly interactive or they are just an audience-participative show. My experience at Sleep No More is definitely a participation, never a interaction. Where you get to step into the performing area (since the entire building is their stage) and have little touches with the performers. Some lucky audience might be selected for 1 on 1 performances, but rather than “two actors alternatively listen, think and speak”, it’s more likely the performer do the speaking (only to you, with set lines), and the audience react. But my experience in Then She Fell could be in the degree of interactivity, a low to medium interactivity happened. The scale of the audience is way smaller than the one mentioned previously, that might also be what he mentioned in the first chapter “as audience size shrinks, the statistical factors become less adamant.” For every show there will only be 15 audience, with the similar (or maybe more) amount of performer. Most of the scenes I experienced in this show are 1 on 1 or two audiences with four of the performers. The most memorable part in the entire show, also, the part I considered as a medium interaction happening, is when I’m having a 1 on 1 scene with the heroine and we had a conversation about relationship. Her opening question might be a set line, but whatever comes after that involved both of our listening, thinking and speaking. Yet, I call it a low-to-medium interactivity is because we were strangers and it is hard to give good feedback for such personal topics, so it was not an useless (cliche) conversation (but it was still fun as it appeared in the show).
+                                    <br><br>
+                                    
+                                    In the next chapter he mentioned the relationship of computer and interactivity, which he suggested that the main "selling point" of a computer is its interactivity, by giving the example of ViSiCalc--the very first spreadsheet software on personal computers that allows the user to see the result/output directly on screen. This high efficiency indicates a sucessful, productive interactivity that a computer can provide. Thus, interactivity surely is the competitive advantage for computers.
+                                    
+                                    <br><br>
+                                    <hr id="the-future"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
+                                    
+                                    <a href="http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/">    
+                                    <h6>A Brief Rant on the Future of Interaction Design</h6></a>
+                                    
+                                    Victor talked about how our activity had been limited down to Pictures Under Glass. He start by defining a  good tool is designed to fit both sides (capability vs. need). Talking about human capability, the thing that we use to interact with future technologies will be our hands. Our hands receive feedbacks from almost everything in this world—we notice when we grabbed two pages at once when we are reading and trying to slip apart by rubbing them; we feel the change in weight of a glass of water when it’s getting lesser and lesser; we feel the different texture of tissue papers and select each for different usages. However, our technology devices nowadays, which we spend most of our tactile experience with, are all so-called the Pictures Under Glass. Victor deny the saying of touchscreen devices to be the future of interaction, instead, sort of a backward in interaction (I felt it actually sounded too esthetically when he mentioned black and white in photography. I like film and black and white <3 ). 
+                                    <br><br>
+                                    Now, almost every services had been shrinken down to the size of the “glass brick” we carry in hand. The “User-Friendly” we mentioned nowadays are also only up to the extend of how hands handle this glass, but not about our hands. After reading this, I really feel even though these digital products provide us conveniency to almost every service just by clicking on this glass, but it limits the potential interaction that our hand can have to things in the world. Also, this concept of smart device generation limits our capability as a designer. We thought that accessibility lives in that tiny glass brick, and ignored the subject that we are doing this for—us.<br><br>
+                                    <img style="width: 100%;" src="ITP/phy/2017-02-01-21-03-36-740x1029.jpg">
+                                    <figcaption>Get your glass brick today!</figcaption>
+                                    </p>
+                            </div>
+            </div>
+             
              
 <!--
                     <div id="bg1"><img class="crop" src="design/img/23.png">

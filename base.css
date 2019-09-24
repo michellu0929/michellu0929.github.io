@@ -143,23 +143,16 @@ body{
 }
 
 
+.twoinrow{
+    object-fit:cover;width: 50%; height: 250px; float: left
+}
+
 /*Hover*/
 
-/*
 #dothover:hover  ~ #bg{
     background-size:cover;
     background-position: center;
     visibility: visible;
-     z-index: -1;
-    background-color: #fff;
-     width: 300px; 
-}
-*/
-
-#bg{
-        background-size:cover;
-    background-position: center;
-    visibility: hidden;
      z-index: -1;
     background-color: #fff;
      width: 300px; 
@@ -172,7 +165,6 @@ figcaption {
     letter-spacing: .5pt;
     text-align: right;
 }
-
 
 
 /*
@@ -239,6 +231,26 @@ h5 {
     padding-top: 30px;
 }
 
+#codetext, #codetext1 {
+    text-align: left; 
+
+    color: darkblue;
+    font-family: monospace;
+}
+
+.bktop{
+    text-transform: uppercase;
+  font-weight: 400;
+}
+
+#codetext {
+    display: block;
+    width: 50%;
+    margin-left: 10%;
+}
+
+a, a:active, a:visited {color: #ff00d8;}
+a:hover {color: black;}
 
 #dotbg
 {
@@ -323,6 +335,11 @@ height: 448px;
     height: 80%;
          }
         
+    .twoinrow{
+        height: 250px;
+        width: 100%;
+        float: none;
+    }
         .crop {
             height: 280px;
         }
@@ -339,7 +356,11 @@ height: 448px;
 .talk {margin-top: 9px;margin-left: 60px;}
 /*iphone*/
 @media (max-width: 460px) {
-
+ .twoinrow{
+        height: 250px;
+        width: 100%;
+        float: none;
+    }
     #rightbar {margin-top: 10px;}
     .talk h2 {display: none;
        }
