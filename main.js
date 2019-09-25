@@ -21,18 +21,4 @@ $(document).bind('click', function(e)  {
 });
 
 
-$(function()
- {
-    $("#header").mouseenter(function () {
-        $("#bg").css("visibility", "visible");
-    }).mouseleave(function ()
-                 {
-        $("#header").mouseover(function () {
-    $("#bg").hide());
-});
-
-    })
-
-})
-
 
