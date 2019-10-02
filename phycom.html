@@ -213,6 +213,48 @@
         <div id="horiscroll">
                 <div class="flexbox">
                     
+                     <div id="bg1">
+                         <iframe class="crop" src="https://www.youtube.com/embed/oZif-pCt91Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   <figcaption><i>Jo Malone Speaker (Please be aware of the noise)</i></figcaption>
+                                        
+                        <div class="paragraph" >
+                            <h5>Week 4 - Tone Output in a Box</h5>
+                            <br id="tonebox">
+                            <p> 
+                                For this week's project, I combined with my fabrication <a href="fabri.html#enclosure">box project</a>! 
+                                <br><br>
+                                
+                                <br><br>
+                                <img width="100%" src="ITP/phy/w4/Untitled%20Sketch_bb.png"> <br><br>
+                                And the code for this: 
+                                <br><br><i id="codetext">void setup() {<br>
+                                          pinMode(5, OUTPUT);<br>
+                                        Serial.begin(9600);<br>
+                                        }<br><br><br>
+
+                                        void loop() {<br><br>
+
+                                          int potValue = analogRead(A7);<br>
+                                          Serial.println(potValue);<br><br>
+
+                                          int brightness = map(potValue, 0, 1023, 0, 255);<br>
+                                          analogWrite(5, brightness);<br><br>
+
+                                          int frequency = map(potValue, 0, 1023, 100, 4000);<br>
+                                          tone(6, frequency);<br>
+                                delay(100);<br><br>
+                                }</i><br><br>
+                                
+                                <img class="twoinrow" src="ITP/fab/w4/a.jpg"> <img class="twoinrow" src="ITP/fab/w4/b.jpg"><img class="twoinrow" src="ITP/fab/w4/4.jpg"> <img class="twoinrow" src="ITP/fab/w4/3.jpg"><figcaption><i>Details</i></figcaption><br><br><br><br>
+                                
+                            <br><br><br><br>
+                            <div class="powr-comments" id="844e3f0f_1569430797"></div>
+                            <br><br>
+                            
+
+                            </p>
+                        </div>
+                    </div>
                     
                     <div id="bg1" >
                    
