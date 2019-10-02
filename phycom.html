@@ -218,7 +218,7 @@
                    <figcaption><i>Jo Malone Speaker (Please be aware of the noise)</i></figcaption>
                                         
                         <div class="paragraph" >
-                            <h5>Week 4 - Tone Output in a Box</h5>
+                            <h5>Week 4 - Tone Output in a Box and <a href="#piano1">Piano Wannabe</a></h5>
                             <br id="tonebox">
                             <p> 
                                 For this week's project, I combined with my fabrication <a href="fabri.html#enclosure">box project</a>! 
@@ -246,6 +246,56 @@
                                 }</i><br><br>
                                 
                                 <img class="twoinrow" src="ITP/fab/w4/a.jpg"> <img class="twoinrow" src="ITP/fab/w4/b.jpg"><img class="twoinrow" src="ITP/fab/w4/4.jpg"> <img class="twoinrow" src="ITP/fab/w4/3.jpg"><figcaption><i>Details</i></figcaption><br><br><br><br>
+                                
+                                <hr id="piano1"><figcaption> <a class="bktop" href="#tonebox">^Top</a></figcaption>
+                            After this, I wanted to make a small piano with basic "Do, Re, Mi" using three buttons. I have the set up like this:<br><br>
+                            <img width="100%" src="ITP/phy/w4/piano1.png"> <br><br>
+                            And the code looked like this: 
+                                <br><br>
+                            <i id="codetext">
+                            #define MI_PIN 4<br>
+                            #define RE_PIN 3<br>
+                            #define DO_PIN 2<br>
+                            #define soundPin 6<br><br>
+
+                            void setup() {<br>
+                               pinMode(DO_PIN, INPUT);<br>
+                              digitalWrite(DO_PIN, 0);<br>
+                               pinMode(RE_PIN, INPUT);<br>
+                              digitalWrite(RE_PIN, 0);<br>
+                               pinMode(MI_PIN, INPUT);<br>
+                              digitalWrite(MI_PIN, 0);<br>
+                                Serial.begin(9600);<br>
+                            }<br><br>
+
+                            void loop() {<br>
+                            Serial.println( digitalRead(DO_PIN) ); <br><br>
+
+
+                             while(digitalRead(DO_PIN) ==1 ) { <br>
+
+                                tone(soundPin, 262);<br>
+
+                                 } <br>
+                            while(digitalRead(RE_PIN) ==1 ){<br>
+                                    <br>
+                                tone(soundPin, 294);<br>
+
+                              } <br>
+                            while(digitalRead(MI_PIN) ==1 ){<br>
+                                    <br>   
+                                tone(soundPin, 330);<br>
+                                <br>
+                              } <br>
+                              noTone(6);<br>
+
+
+
+                            }
+                            </i><br><br>
+                                HOWEVER! It didn't work... The push button pins isn't even sending back 0 and 1s while another application with the same programming for the button pins works.
+
+                                
                                 
                             <br><br><br><br>
                             <div class="powr-comments" id="844e3f0f_1569430797"></div>
