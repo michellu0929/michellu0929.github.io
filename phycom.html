@@ -214,6 +214,146 @@
                 <div class="flexbox">
                     
                     
+                    <div id="bg1">
+                         <iframe class="crop" src="https://www.youtube.com/embed/scdiTL0pfO4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            
+                   <figcaption><i>"Pumpkin, UR BFF" Interactive Halloween Candy Bucket</i></figcaption>
+                                        
+                        <div class="paragraph" >
+                            <h5>Midterm - "Pumpkin, UR BFF": <a href="#mt-doc">Documentation</a> and <a href="https://editor.p5js.org/michellu0929/sketches/y-d-dBMmg">Code</a></h5>
+                            <br id="mt-doc">
+                            
+                            <p> 
+                                <h6><a href="#mt-i">Inspiration</a> / <a href="#mt-d">Design</a> / <a href="#mt-p">P and Comp</a> / <a href="#mt-f">Finally</a></h6>
+                            
+                            <hr id="mt-i"><figcaption> <a class="bktop" href="#mt-doc">^Top</a></figcaption>
+                            
+                            <h6>Inspiration</h6>
+                                I remembered when I was young I often go trick or treating with my younger brother and my friends during halloweens. There was an unofficial rule for that day, which was the houses that will be offering treats will  tied a ribbon to the door handle, so that other families who does want to get involved can avoid from this event. When I first moved there, I didn't know the 'rule' on that day, and remembering the 12-year-old Michelle Sun and 'her crew' being yelled by a young married couple after ringing the bell with a harmonized "Trick or Treat!"... We were so upset that we were planing for a water balloon trick, though we ended up forgetting the water ballwoon plan after the hyperness of received candies from other families, I still think a harmless but naughty trick is always what a kid wants during halloween.<br><br>
+                            So what if, a water spraying candie bucket?
+                            <br><br>
+                            
+                            
+                            
+                            <h6>Inspiration</h6>
+                                I remembered when I was young I often go trick or treating with my younger brother and my friends during halloweens. There was an unofficial rule for that day, which was the houses that will be offering treats will  tied a ribbon to the door handle, so that other families who does want to get involved can avoid from this event. When I first moved there, I didn't know the 'rule' on that day, and remembering the 12-year-old Michelle Sun and 'her crew' being yelled by a young married couple after ringing the bell with a harmonized "Trick or Treat!"... We were so upset that we were planing for a water balloon trick, though we ended up forgetting the water ballwoon plan after the hyperness of received candies from other families, I still think a harmless but naughty trick is always what a kid wants during halloween.<br><br>
+                            So what if, a water spraying candie bucket?
+                            <br><br>
+                            
+                            <iframe class="crop" src="https://www.youtube.com/embed/ZA3Ez68WpUE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            
+                            After fullfilled my 'light sensor dream', which I want to continue work on my piano project, decide to use other input as the keyboard instead of light sensors.
+                            
+                            
+                            
+                            <hr id="w5-pencil"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
+                            <h6>CapacitiveSensor Library with Pencil</h6>
+                            
+                           I somehow remembered from my middle school science class that the led in our pencil also is conductive for electricity. So I searched on it to see if it will also work for arduino and how can I use it. Then, this <a href="https://playground.arduino.cc/Main/CapacitiveSensor/">'CapacitiveSensor'</a> library grabbed my attention. 
+                            With the example that the page gaves, I did a little try on it:
+                            
+                            <br><br>
+                            
+                            <iframe class="crop" src="https://www.youtube.com/embed/M7X_yS5Kqn8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+                            
+                            This is how to include the library:
+                            <br><br><i id="codetext">#include <CapacitiveSensor.h>
+
+                                CapacitiveSensor   cs_4_8 = CapacitiveSensor(4,8); <br><br>
+                                void setup()                    
+                                {<br>
+                                   cs_4_8.set_CS_AutocaL_Millis(0xFFFFFFFF);<br>
+                                   Serial.begin(9600);<br>
+                                   pinMode(2,OUTPUT);<br>
+                                }<br><br>
+
+                                void loop()                    
+                                {<br>
+                                long sensor1 =  cs_4_8.capacitiveSensor(50);<br>
+                                    Serial.println(sensor1);  // print sensor output <br>
+                                    if(sensor1 >= 49)<br>
+                                   {<br>
+                                      digitalWrite(2,HIGH);<br>
+                           
+                                   }<br>
+                                   else {<br>
+
+                                    digitalWrite(2,LOW);<br>
+                                   }  <br>
+                                }
+                                </i><br><br>
+                            
+                            
+                            WOohoo! It is so interesting! I'm gonna make a piano out of it..... WAIT! Someone on youtube already did it and it was super good looking... hmmmmm... maybe something else.
+                            
+                            <hr id="w5-coin"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
+                            <h6>CapacitiveSensor Library with Coin</h6>
+                            
+                            So, I looked around my room, and for someone like me who never carries around cash, has a lot of coins at home... Since they conduct electricity, I played around with them:
+                            
+                            <br><br>
+                            
+                            <iframe class="crop" src="https://www.youtube.com/embed/\z-D55PF71IY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <figcaption><i>High-end, High Tech Sercurity System - "Marry has a Little Lamp"</i></figcaption>
+                            <br><br>
+                            Last week when I was trying to make a piano, the tone didn't play as expected. This time, I made each note into a void function with a delay and noTone in each:
+                            
+                            
+                            <br><br><i id="codetext">#include <CapacitiveSensor.h>
+
+                                void loop()                    
+                                {<br>
+                                 long sensor1 =  cs_3_7.capacitiveSensor(50);<br>
+                                long sensor2 =  cs_4_8.capacitiveSensor(50);<br><br>
+                                    
+                                    if(sensor1 >= 49)
+                                   {<br>
+                                      digitalWrite(2,HIGH);<br>
+                                  doPlay();<br>
+                                   }
+                                   else if(sensor2 >= 49)
+                                   {<br>
+                                      digitalWrite(2,HIGH);<br>
+                                  rePlay();<br>
+                                   }
+
+                                   
+                                   else{<br>
+
+                                    digitalWrite(2,LOW);<br>
+                                   }  <br>
+                                }<br><br>
+
+
+                                void doPlay() {<br>
+                                   tone(12, 262);<br>
+                                  delay(250);<br>
+                                noTone(12);<br>
+                                <br>
+                                  }<br><br>
+
+                                void rePlay() {<br>
+                                   tone(12, 294);<br>
+                                  delay(250);<br>
+                                noTone(12);<br>
+                                <br>
+                                  }
+                                </i><br><br>
+                            And then, this inspired me to make my "Where's My Dollar" Piano. The concept is, the coins on it is not even a dollar when it adds up...
+                            <br><br>
+                            
+                            <img class="twoinrow" src="ITP/phy/w5/IMG_4037.jpg" ><img class="twoinrow" src="ITP/phy/w5/IMG_4039.jpg" ><img class="twoinrow" src="ITP/phy/w5/IMG_4043.jpg" ><img class="twoinrow" src="ITP/phy/w5/IMG_4047.jpg" ><figcaption><i>Yeahhh</i></figcaption><br><br> The video:<br><br>
+                            
+                            <iframe class="crop" src="https://www.youtube.com/embed/oVewvaD1Kk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            
+                            
+                            
+                            
+
+                            </p>
+                        </div>
+                    </div>
+                    
                     
                      <div id="bg1">
                          <iframe class="crop" src="https://www.youtube.com/embed/oVewvaD1Kk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
