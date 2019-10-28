@@ -223,8 +223,10 @@
                             <h5>Midterm - "Pumpkin, UR BFF": <a href="#mt-doc">Documentation</a> and <a href="https://editor.p5js.org/michellu0929/sketches/y-d-dBMmg">Code</a></h5>
                             <br id="mt-doc">
                             
-                            <p> 
-                                <h6><a href="#mt-i">Inspiration</a> / <a href="#mt-d">Design</a> / <a href="#mt-p">P and Comp</a> / <a href="#mt-f">Finally</a></h6>
+                            <p> <br><br>
+                                <h6>Links to</h6>
+                                <br>
+                                <h6><a href="#mt-i">Inspiration</a> / <br><br><a href="#mt-d">Design</a> /<br><br> <a href="#mt-p">P and Comp</a> / <br><br><a href="#mt-f">Final Look</a></h6><br><br>
                             
                             <hr id="mt-i"><figcaption> <a class="bktop" href="#mt-doc">^Top</a></figcaption>
                             
@@ -235,118 +237,118 @@
                             
                             
                             
-                            <h6>Inspiration</h6>
-                                I remembered when I was young I often go trick or treating with my younger brother and my friends during halloweens. There was an unofficial rule for that day, which was the houses that will be offering treats will  tied a ribbon to the door handle, so that other families who does want to get involved can avoid from this event. When I first moved there, I didn't know the 'rule' on that day, and remembering the 12-year-old Michelle Sun and 'her crew' being yelled by a young married couple after ringing the bell with a harmonized "Trick or Treat!"... We were so upset that we were planing for a water balloon trick, though we ended up forgetting the water ballwoon plan after the hyperness of received candies from other families, I still think a harmless but naughty trick is always what a kid wants during halloween.<br><br>
-                            So what if, a water spraying candie bucket?
+                           <hr id="mt-d"><figcaption> <a class="bktop" href="#mt-doc">^Top</a></figcaption>
+                            
+                            <h6>Design</h6>
+                             For this project, I want to connected to P5JS to play around with the serial communication between web and arduino. There are several parts that I think should be added for the interactive experience--<br><br>
+                            <b>Physical Parts:</b><br>
+                            1. Spraying water (the main output)<br>
+                            2. Sensor for the candie - light sensor (input)<br>
+                            3. LED for the sensor (the input data will be low since it will be dark in the bucket)<br>
+                            4. Alerting LEDs (output - blinking)
+                            5. A box to hide the sensing part (to hide 2 and 3)<br>
                             <br><br>
                             
-                            <iframe class="crop" src="https://www.youtube.com/embed/ZA3Ez68WpUE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <b>P5JS Parts:</b><br>
+                            1. A 'Start' action (input)<br>
+                            2. Timer (input/output?)<br>
+                            3. Showing successful sensing from light sensor (output)<br><br>
                             
-                            After fullfilled my 'light sensor dream', which I want to continue work on my piano project, decide to use other input as the keyboard instead of light sensors.
+                            
+                            <img class="crop" src="ITP/phy/midterm/design.png" ><figcaption><i>Planning</i></figcaption><br><br>
                             
                             
+                           <hr id="mt-p"><figcaption> <a class="bktop" href="#mt-doc">^Top</a></figcaption>
                             
-                            <hr id="w5-pencil"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
-                            <h6>CapacitiveSensor Library with Pencil</h6>
+                            <h6>P and Comp</h6>
+                            At first, I wanted to 3D print a bucket that has customized following parts:
+                            <br><br>
+                            1. two holes at the bottom for LED and Sensor. <br>
+                            2. a mouth with a hole and mount for water pump.<br>
+                            3. a rather thin layer for the eyes and two holders for blinking LEDs.<br>
+                            4. a thick layer at the bottom to hide and organize the wires.<br><br>
                             
-                           I somehow remembered from my middle school science class that the led in our pencil also is conductive for electricity. So I searched on it to see if it will also work for arduino and how can I use it. Then, this <a href="https://playground.arduino.cc/Main/CapacitiveSensor/">'CapacitiveSensor'</a> library grabbed my attention. 
-                            With the example that the page gaves, I did a little try on it:
+                            However, as I asked for help on 3D printing, I noticed it will take almost a day to print a bucket and which might not even be working, also with a limited time on this project. So I decided to just save my time for the interactive part instead of the design for the bucket.<br><br>
                             
+                            I made a wooden base at the bottom to hide all the wires, and drilled several holes inside that looks like this:
                             <br><br>
                             
-                            <iframe class="crop" src="https://www.youtube.com/embed/M7X_yS5Kqn8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+                            <img class="crop" src="ITP/phy/midterm/IMG_4478.jpg" ><figcaption><i>three holes for the main components</i></figcaption><br><br>
                             
-                            This is how to include the library:
-                            <br><br><i id="codetext">#include <CapacitiveSensor.h>
+                            <img class="crop" src="ITP/phy/midterm/IMG_4560.jpg" ><figcaption><i>the wooden base</i></figcaption><br><br>
+                            
+                            Before I mount everything, I need to make sure my 'comp' part works. I spent most of my time figuring out which data will be sent from p5 to Arduino and from Aruino to p5, and to make it clear I did this:<br><br>
+                            
+                            
+                            <img width="100%" src="ITP/phy/midterm/2.png" ><figcaption><i>planning</i></figcaption><br><br>
+                            
+                            My story with water pump was sort of a nightmare... Not only because of I spent sometime setting up DC Motor driver and give up then go to the TIP120 transistor, but also playing with water wasn't a good choice... <br><br>
+                            However, here's my documentation of the treat:<br><br>
+                        
+                            
+                            <iframe class="crop" src="https://www.youtube.com/embed/O_Kb7fJl_cU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+                            
+                            And trick (the response takes 14s... but it is working):<br><br>
+                            
+                            <iframe class="crop" src="https://www.youtube.com/embed/DKqY8J_YMeg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+                            
+                             <hr id="mt-f"><figcaption> <a class="bktop" href="#mt-doc">^Top</a></figcaption>
+                            
+                            <h6>Final Look</h6>
+                            
+                            Last but not least, the code in my <a href="https://editor.p5js.org/michellu0929/sketches/y-d-dBMmg">p5 page</a> and arduino code could be find <a href="#mt-ar">below</a> or in the p5 page as well. And I will end here with some documentary photography. Thank you!<br><br>
+                            
+                            <img width="100%" src="ITP/phy/midterm/DSC_6478.jpg" ><br>
+                            <img width="100%" src="ITP/phy/midterm/DSC_6480.jpg" ><br>
+                            
+                            <img width="100%" src="ITP/phy/midterm/DSC_6483.jpg" ><br>
+                            
+                            
+                            <h6 id="mt-ar">Arduino Code</h6>
+                            <br><br><i id="codetext">
+                            #define lightSensor A0<br>
+                            #define sensorLED1 2<br>
+                            #define sensorLED2 3<br>
+                            #define waterPump 6<br><br>
 
-                                CapacitiveSensor   cs_4_8 = CapacitiveSensor(4,8); <br><br>
-                                void setup()                    
-                                {<br>
-                                   cs_4_8.set_CS_AutocaL_Millis(0xFFFFFFFF);<br>
-                                   Serial.begin(9600);<br>
-                                   pinMode(2,OUTPUT);<br>
-                                }<br><br>
+                            void setup() {<br>
+                              Serial.begin(9600);<br>
+                              pinMode(sensorLED1, OUTPUT);<br>
+                              pinMode(sensorLED2, OUTPUT);<br>
+                              pinMode(lightSensor, OUTPUT);<br>
+                              pinMode(waterPump, OUTPUT);<br>
+                            }<br><br>
 
-                                void loop()                    
-                                {<br>
-                                long sensor1 =  cs_4_8.capacitiveSensor(50);<br>
-                                    Serial.println(sensor1);  // print sensor output <br>
-                                    if(sensor1 >= 49)<br>
-                                   {<br>
-                                      digitalWrite(2,HIGH);<br>
-                           
-                                   }<br>
-                                   else {<br>
+                            void loop() {<br>
+                              // analogWrite(waterPump, 0);<br>
+                              if(Serial.available() > 0 ){<br>
+                              int byteFromSerial = Serial.read();<br><br>
 
-                                    digitalWrite(2,LOW);<br>
-                                   }  <br>
-                                }
+                              analogWrite(sensorLED1, 255);<br>
+                              analogWrite(sensorLED2, 255);<br><br>
+
+                              if (byteFromSerial == 1){<br><br>
+
+                                analogWrite(waterPump, 255);<br>
+                                delay(500);<br>
+                                analogWrite(waterPump, 0);<br>
+                                delay(5000000);<br><br>
+                            
+                                } else if (byteFromSerial == 2) {<br><br>
+
+                                 analogWrite(waterPump, 0); <br><br>
+
+                                }<br>
+
+                              }<br><br>
+
+                              int lightLevel = analogRead(lightSensor);<br>
+
+                              Serial.println(lightLevel);<br>
+                              delay(50);<br><br>
+
+                            }
                                 </i><br><br>
-                            
-                            
-                            WOohoo! It is so interesting! I'm gonna make a piano out of it..... WAIT! Someone on youtube already did it and it was super good looking... hmmmmm... maybe something else.
-                            
-                            <hr id="w5-coin"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
-                            <h6>CapacitiveSensor Library with Coin</h6>
-                            
-                            So, I looked around my room, and for someone like me who never carries around cash, has a lot of coins at home... Since they conduct electricity, I played around with them:
-                            
-                            <br><br>
-                            
-                            <iframe class="crop" src="https://www.youtube.com/embed/\z-D55PF71IY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <figcaption><i>High-end, High Tech Sercurity System - "Marry has a Little Lamp"</i></figcaption>
-                            <br><br>
-                            Last week when I was trying to make a piano, the tone didn't play as expected. This time, I made each note into a void function with a delay and noTone in each:
-                            
-                            
-                            <br><br><i id="codetext">#include <CapacitiveSensor.h>
-
-                                void loop()                    
-                                {<br>
-                                 long sensor1 =  cs_3_7.capacitiveSensor(50);<br>
-                                long sensor2 =  cs_4_8.capacitiveSensor(50);<br><br>
-                                    
-                                    if(sensor1 >= 49)
-                                   {<br>
-                                      digitalWrite(2,HIGH);<br>
-                                  doPlay();<br>
-                                   }
-                                   else if(sensor2 >= 49)
-                                   {<br>
-                                      digitalWrite(2,HIGH);<br>
-                                  rePlay();<br>
-                                   }
-
-                                   
-                                   else{<br>
-
-                                    digitalWrite(2,LOW);<br>
-                                   }  <br>
-                                }<br><br>
-
-
-                                void doPlay() {<br>
-                                   tone(12, 262);<br>
-                                  delay(250);<br>
-                                noTone(12);<br>
-                                <br>
-                                  }<br><br>
-
-                                void rePlay() {<br>
-                                   tone(12, 294);<br>
-                                  delay(250);<br>
-                                noTone(12);<br>
-                                <br>
-                                  }
-                                </i><br><br>
-                            And then, this inspired me to make my "Where's My Dollar" Piano. The concept is, the coins on it is not even a dollar when it adds up...
-                            <br><br>
-                            
-                            <img class="twoinrow" src="ITP/phy/w5/IMG_4037.jpg" ><img class="twoinrow" src="ITP/phy/w5/IMG_4039.jpg" ><img class="twoinrow" src="ITP/phy/w5/IMG_4043.jpg" ><img class="twoinrow" src="ITP/phy/w5/IMG_4047.jpg" ><figcaption><i>Yeahhh</i></figcaption><br><br> The video:<br><br>
-                            
-                            <iframe class="crop" src="https://www.youtube.com/embed/oVewvaD1Kk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            
-                            
                             
                             
 

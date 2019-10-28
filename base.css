@@ -223,8 +223,31 @@ h5 {
     padding-right:30px;
 
 
-    overflow-x: hidden;
-    overflow-y: scroll;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+    height: 2px;
+    
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #27f0c2;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff00d8;
+    
 }
 
 #horiscroll .paragraph {    
