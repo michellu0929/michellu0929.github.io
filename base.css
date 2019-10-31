@@ -29,6 +29,7 @@ text-align: right;
     clear: left;
     float: left; 
     color: #ff00d8;
+
 }
 
 
@@ -121,7 +122,7 @@ body{
     width: 150px;
     float: left;
     clear: left;
-    z-index: 555;
+    
 }
 
 #rightbar{
