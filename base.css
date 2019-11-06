@@ -151,12 +151,22 @@ body{
 /*Hover*/
 
 #dothover:hover  ~ #bg{
+/*
     background-size:cover;
     background-position: center;
+*/
     visibility: visible;
      z-index: -1;
     background-color: #fff;
-     width: 300px; 
+     width: 300px;
+    height: auto;
+}
+
+.current{
+
+    visibility: visible;
+   
+
 }
 
 
@@ -269,8 +279,9 @@ h5 {
 
 #codetext {
     display: block;
-    width: 50%;
-    margin-left: 10%;
+    white-space: pre;
+    width: 70%;
+    margin-left: 5%;
 }
 
 a, a:active, a:visited {color: #ff00d8;}
@@ -509,4 +520,15 @@ margin-right: 60px;
       color: white;font-size:20px;}
     100% {
       opacity: .3;font-size:10pt;}
+}
+
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #ff00d8;
+}
+
+::selection {
+  color: white;
+  background: #ff00d8;
 }
