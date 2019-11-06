@@ -532,3 +532,14 @@ margin-right: 60px;
   color: white;
   background: #ff00d8;
 }
+
+::-webkit-selection {
+  color: white;
+  background: #ff00d8;
+}
+
+ * {
+     -webkit-user-select: text;
+     -moz-user-select: text;
+     -ms-user-select: text; 
+    }
