@@ -22,3 +22,11 @@ $(document).bind('click', function(e)  {
 
 
 
+$(function(){
+  $("#sidebar").load("sidebar.html");
+});
+
+
+$(function(){
+  $("#rightbar").load("navi.html");
+});
