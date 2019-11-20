@@ -16,7 +16,7 @@ background: #fff;
 }
 
 
-#sidebar .navi a {
+.rotate a {
     font-size:10pt;
 	transform: rotate(-90deg);
 	transform-origin: left top 0;
@@ -84,8 +84,8 @@ body{
     display: block;
     width:100%;
 	position: fixed;
-
-	margin-right:30px;
+    max-width: 1250px;
+	margin: 0 auto;
 	padding:0px 35px 0px;
 }
 
@@ -543,3 +543,16 @@ margin-right: 60px;
      -moz-user-select: text;
      -ms-user-select: text; 
     }
+
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+    fill:white;
+}
+.icon-ins {
+  background-image: url(icons/instagram.svg);
+}
+}

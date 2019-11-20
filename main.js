@@ -20,13 +20,3 @@ $(document).bind('click', function(e)  {
   $("#dotbg").css("display", "none");
 });
 
-
-
-$(function(){
-  $("#sidebar").load("sidebar.html");
-});
-
-
-$(function(){
-  $("#rightbar").load("navi.html");
-});
