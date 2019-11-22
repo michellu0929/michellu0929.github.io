@@ -86,7 +86,7 @@ border-right: 1px solid #ff00d8;
 a {text-decoration:none;}
 
 a:hover {
-    color: #0b0b0b; 
+    color: #000; 
 }
 
 
@@ -105,7 +105,17 @@ ol, ul {
 	list-style: none;
 }
 
-#marmar {margin-top: 14px;}
+#marmar {
+    margin-top: 14px;
+}
+
+#marmar li a, #marmar li span, #marmar li, #marmar ul, #marmar #rightbar #dothover, .pa #header a{
+
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; }
 
 #sidebar ul, #rightbar ul, #footer ul {
 
@@ -126,12 +136,14 @@ ol, ul {
     display: block;
     width:100%;
 	position: fixed;
-    max-width: 1250px;
+/*    max-width: 1250px;*/
 	margin: 0 auto;
+   
 	
 }
 
 body, .pa, #bg1 {
+     overflow: hidden;
     font-size:10pt;
     font-family: futura, san-serif;
     letter-spacing: .6px;
@@ -256,9 +268,7 @@ h5 {
     letter-spacing: 2px;
 }
 
-#rightbar span:hover  {
-     background-color: #211920;
-}
+
 
 #rightbar p {font-size: 8pt;
     line-height: 11.5pt;

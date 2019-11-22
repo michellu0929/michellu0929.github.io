@@ -1,12 +1,18 @@
 
 
 function setup() {
-  createCanvas(displayWidth, displayHeight);
+ var cnv = createCanvas(windowWidth, windowHeight);
+    cnv.style('display', 'block');
   strokeWeight(1);
 let colorr = ['#ff00d8', '#66ffca'];
 let colorrr = random(colorr);
     stroke(colorrr);
     
+}
+
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function draw() {

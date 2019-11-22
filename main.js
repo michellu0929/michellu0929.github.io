@@ -2,8 +2,8 @@ $(document).bind('mousemove', function(e){
     $("#dotbg").text("START DRAWING")
 $("#dotbg").css("opacity", "1");
     $('#dotbg').css({
-        left: e.pageX + 5,
-        top: e.pageY - 20
+        left: e.pageX + 20,
+        top: e.pageY 
     });
     
 });
