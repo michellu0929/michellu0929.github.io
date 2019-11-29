@@ -11,10 +11,19 @@ mark {
 
 
 
-canvas {
-    margin: 0;
+#myCanvas {
+    
   display: block;
+    width: 100%;
     z-index: -9999;
+   
+
+    
+}
+
+canvas{
+    margin-top:-385px;
+    position: fixed;
 }
 
 
@@ -195,7 +204,9 @@ border-bottom: 1px solid #ff00d8;
 }
 
 /*Hover*/
-
+.dot:hover{
+    background-color: black
+}
 #dothover:hover  ~ .bg{
 /*
     background-size:cover;
@@ -203,9 +214,22 @@ border-bottom: 1px solid #ff00d8;
 */
     visibility: visible;
      z-index: -1;
-    background-color: #fff;
-     width: 300px;
+    color:white;
+    margin-top: -1px;
+    background-color: #ff00d8;
+     width: auto;
     height: auto;
+    padding-bottom: 30px;
+    
+}
+
+.square{
+    width: 300px;
+    margin-top: 25px;
+    height: 300px;
+    display: block;
+    background-size: cover;
+    background-position: center;  
 }
 
 .current{
@@ -247,13 +271,14 @@ figcaption {
     position: fixed;
     top: 77px;
     left: 164px;
-     padding-left: 29px;
+    margin-left: 30px;
+     padding-left: 31px;
     width: 540px;
-    padding-right:30px;
+    padding-right:31px;
     z-index: -10000;
     visibility: hidden;
     color: black;
-    height: 125px;
+    height: auto;
 
 }
 
@@ -373,7 +398,7 @@ body {
 
 #horiscroll {
 margin-left: 104px;
-    margin-right: 38px;
+    margin-right: 43px;
  overflow-x: scroll;
   overflow-y: hidden;
       display: flex;
@@ -386,10 +411,10 @@ margin-left: 104px;
 #bg1 {
 overflow-y: scroll;
         border: 1px solid #27f0c2;
-    padding: 30px;
+    padding: 29.9px;
 
-margin-right: 30px;
- width: 600px;
+margin-right: 28px;
+ width: 599px;
 height: 448px;
 
     z-index: 1;
