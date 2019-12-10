@@ -131,6 +131,65 @@
                 <div class="flexbox">
                     
                     
+                    
+                    <div id="bg1">
+                        
+                        <iframe class="crop" src="https://youtube.com/embed/AJrREAYBi0I" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                   <figcaption><i>"The World - Music Pattern" (Soundflower doesn't work on Catalina, I'll figure this out for the sound)</i></figcaption>
+                                        
+                        <div class="paragraph" >
+                            <h5>Final Week: Unity - 'The World' Music Pattern</h5>
+                            <br id="2top">
+                            <p> <h6>AR Project with Unity</h6>
+                            I am very inspired by the examples of Foo/Skou that Gabe showed us in class with sound and viusal. I see opportunities of this physicallity and digital world by this "visual to music" concept. This also has always been what I am interested in (I made a simple project for a class 'Code of Music', which sort of demonstrates what I want to focus on > <a href="cofm.html#drawingbeats">Drawing Beats</a>). And from this I see a lot of opportunities for music industry or even music educations. First I was playing with the concept of visualizing lyrics. I use the lyric booklet of one of my favorite Taiwanese Band's album as a tracking target, and create some different scenes to specific songs:<br><br><br><br>
+                             <iframe class="crop" src="https://youtube.com/embed/5e1U26rhXwQ" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            <br><br><br><br>
+                            At first, I wanted to track the lyrics instead of the photography, however... there were no stars on the lyric part... (and I tried to use the zero star ones to track... of course I failed) I wanted to add runing texts of the lyrics (like Kareokes) but importing CHinese characters seem to be way more difficult than I imagined, and I accidentally droped a font file into the assets folder that made me restart my entire project. I call it 'the most regretful thing Michelle had ever done in 2019':
+                            <br><br><br><br>
+                            <img width="100%" src="ITP/anim/final-unity/regret.png" >
+                            <br><br><br><br>
+                            Also, my shader and model building skills aren't good enough to support me building this 'beautifully'. I tried to follow a tutorial on making water ripple effect to mimic ocean, which been mentioned in the lyrics, to create a visual scenary of the song. The second scenary is inspired by the vocalist's talk during concert while singing this song--"take our your phone, call someone that you want the person to listen this song with you", at the time there was no smart phones, which the screen of phone was bright and tiny, creates a illustion of being surrounded by stars. I tried playing with particles in this scenary, but I figured that it is hard to play with physics with image tracking targets. The code I was learning from a tutorial didn't work in this environment. 
+                            <br><br>
+                            When I was doing this, I thoug about this being a new form of music videos (I don't know if this awesome idea has already been done or not) But from this I see how AR is different from VR or other technologies. It supports the physical object while being support by it. Nowadays, due to the conviniency of just downloading a song through spotify/apple music, physical cd album is slowly dying (though, also due to eco-system issues). AR can bring the experience of owning a physical piece more magical. Unlike any other possible technologies, AR make the user feels like the digital elements stays with the physical object, which is physically own by the user, that feels very personal and one-and-only.
+                            <br><br>
+                            Then I thought about, what if when you are playing some sort of puzzle, and it will come up with different pattern of beats or melodies?
+                            <br><br>
+                            So first designed some simple patterns:
+                            <br><br><br><br>
+                            
+                            <img class="twoinrow" src="ITP/anim/final-unity/ocean.png" >
+                            <img class="twoinrow" src="ITP/anim/final-unity/rain.png" >
+                            
+                            <img class="twoinrow" src="ITP/anim/final-unity/snow.png" >
+                            <img class="twoinrow" src="ITP/anim/final-unity/bubble.png" >
+                             <br><br><br><br>
+                            
+                            Idealy, the application can track each icon and generate music when it sees a pattern. However, zero stars again...
+                            <br><br><br><br>
+                            <img width="100%" src="ITP/anim/final-unity/zero.png" >
+                            <br><br><br><br>
+                            So, I made some trick to pretend that it is doing the smart job by using the stupid method... I create all the possible pattern (Not all apply yet, I'm still building this 'for loop').
+                            <br><br><br><br>
+                                   <img class="twoinrow" src="ITP/anim/final-unity/1.jpg" >
+                            <img class="twoinrow" src="ITP/anim/final-unity/2.jpg" >
+                            <img class="twoinrow" src="ITP/anim/final-unity/3.jpg" >
+                            <img class="twoinrow" src="ITP/anim/final-unity/4.jpg" >
+                            <figcaption>Four possible patterns out of 16</figcaption>
+                            
+                            <br><br><br><br>
+                            and four small animation to show which is now active.
+                             <br><br><br><br>
+                            <iframe class="twoinrow" src="ITP/anim/final-unity/rain.mp4" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            <iframe class="twoinrow" src="ITP/anim/final-unity/bubble.mp4" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe class="twoinrow" src="ITP/anim/final-unity/ocean.mp4" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            <iframe class="twoinrow" src="ITP/anim/final-unity/snow.mp4" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe><figcaption>Active Animation</figcaption>
+                            <br><br><br><br>
+                            The video doesn't have sound, but I assign each possible pattern to a certain related ASMR sound. Now this doesn't work as a running music piece, but ideally, when the user changes the order of the icons, the order of the elements changes.
+                            
+                            </p>
+                        </div>
+                    </div>
+             
                     <div id="bg1">
                         
                         <iframe class="crop" src="https://player.vimeo.com/video/375580365" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
