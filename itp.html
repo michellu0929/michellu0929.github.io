@@ -1,0 +1,1845 @@
+<!doctype html>
+<html  lang="">
+    <head>
+        <meta charset="utf-8">
+		<title>
+			Physical Computing
+		</title>
+	</head>
+    <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+	<link type="text/css" href="base.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+       		
+    
+	<body>
+
+
+		<div class="pa">
+  
+			
+            <div id="header">
+                  
+              <a href="index.html" >Pei Yu Sun</a>
+                
+            </div>
+            
+            <div class="hr"></div>
+          <div id="marmar">
+            <div id="sidebar">
+                <nav class="rotate" >
+             <ul>
+                    <li><a href="about.html" class="aboutmi">about</a> </li>
+
+         
+                    <li><a  class="resume" href="resume.pdf" target="_blank">Resume</a></li>
+
+              <li><a href="http://instagram.com/michellusun" target="_blank">
+                        <span class="icon icon-ins"></span> </a></li>
+     
+                    <li><a href="https://www.linkedin.com/in/michelle-pei-yu-sun-bb574669/" target="_blank">
+                        linkedin</a></li>
+   
+                    <li><a href="http://michellusun.com" target="_blank">
+                         Portfolio</a> </li>
+                </ul>
+
+                        </nav>
+                 
+                 
+            </div>
+            </div>
+            
+            <!--         button tag filter navigation     -->
+                 <div class="btnBox">
+                   
+      
+            <button data-filter="flexbox" data-reset="true">Reset</button>
+ <button data-filter="flexbox" data-filter-tag="f2019">Fall 2019</button>                  
+<button data-filter="flexbox" data-filter-tag="phy">Physical Computing</button>
+<button data-filter="flexbox" data-filter-tag="com">Code of Music</button>
+<button data-filter="flexbox" data-filter-tag="fab">Fabrication</button>
+<button data-filter="flexbox" data-filter-tag="ani">Animation</button>
+<button data-filter="flexbox" data-filter-tag="icm">ICM: Media</button>
+      </div>
+            </div>
+        
+        
+<!--         <div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('phy')"> Cars</button>
+  <button class="btn" onclick="filterSelection('hi')"> Animals</button>
+   -->
+    
+<!--    <div id="btnBox">
+    <button data-filter="flexbox" data-reset="true">Reset</button>
+<button data-filter="flexbox" data-filter-tag="phy">Physical Computing</button>
+<button data-filter="flexbox" data-filter-tag="icm">Show B</button>
+<button data-filter="flexbox" data-filter-tag="icm">ICM: Media</button>
+
+    
+</div> -->
+        <div id="horiscroll">
+                <div class="flexbox" >
+                    
+                    
+                    <div class="blogPost" data-tags="ani f2019" >
+                        
+                        <iframe class="crop" src="https://youtube.com/embed/AJrREAYBi0I" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                   <figcaption><i>"The World - Music Pattern" (Soundflower doesn't work on Catalina, I'll figure this out for the sound)</i></figcaption>
+                                        
+                        <div class="paragraph" >
+                            <h5>Final Week: Unity - 'The World' Music Pattern</h5>
+                            <br id="2top">
+                            <p> <h6>AR Project with Unity</h6>
+                            I am very inspired by the examples of Foo/Skou that Gabe showed us in class with sound and viusal. I see opportunities of this physicallity and digital world by this "visual to music" concept. This also has always been what I am interested in (I made a simple project for a class 'Code of Music', which sort of demonstrates what I want to focus on > <a href="cofm.html#drawingbeats">Drawing Beats</a>). And from this I see a lot of opportunities for music industry or even music educations. First I was playing with the concept of visualizing lyrics. I use the lyric booklet of one of my favorite Taiwanese Band's album as a tracking target, and create some different scenes to specific songs:<br><br><br><br>
+                             <iframe class="crop" src="https://youtube.com/embed/5e1U26rhXwQ" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            <br><br><br><br>
+                            At first, I wanted to track the lyrics instead of the photography, however... there were no stars on the lyric part... (and I tried to use the zero star ones to track... of course I failed) I wanted to add runing texts of the lyrics (like Kareokes) but importing CHinese characters seem to be way more difficult than I imagined, and I accidentally droped a font file into the assets folder that made me restart my entire project. I call it 'the most regretful thing Michelle had ever done in 2019':
+                            <br><br><br><br>
+                            <img width="100%" src="ITP/anim/final-unity/regret.png" >
+                            <br><br><br><br>
+                            Also, my shader and model building skills aren't good enough to support me building this 'beautifully'. I tried to follow a tutorial on making water ripple effect to mimic ocean, which been mentioned in the lyrics, to create a visual scenary of the song. The second scenary is inspired by the vocalist's talk during concert while singing this song--"take our your phone, call someone that you want the person to listen this song with you", at the time there was no smart phones, which the screen of phone was bright and tiny, creates a illustion of being surrounded by stars. I tried playing with particles in this scenary, but I figured that it is hard to play with physics with image tracking targets. The code I was learning from a tutorial didn't work in this environment. 
+                            <br><br>
+                            When I was doing this, I thoug about this being a new form of music videos (I don't know if this awesome idea has already been done or not) But from this I see how AR is different from VR or other technologies. It supports the physical object while being support by it. Nowadays, due to the conviniency of just downloading a song through spotify/apple music, physical cd album is slowly dying (though, also due to eco-system issues). AR can bring the experience of owning a physical piece more magical. Unlike any other possible technologies, AR make the user feels like the digital elements stays with the physical object, which is physically own by the user, that feels very personal and one-and-only.
+                            <br><br>
+                            Then I thought about, what if when you are playing some sort of puzzle, and it will come up with different pattern of beats or melodies?
+                            <br><br>
+                            So first designed some simple patterns:
+                            <br><br><br><br>
+                            
+                            <img class="twoinrow" src="ITP/anim/final-unity/ocean.png" >
+                            <img class="twoinrow" src="ITP/anim/final-unity/rain.png" >
+                            
+                            <img class="twoinrow" src="ITP/anim/final-unity/snow.png" >
+                            <img class="twoinrow" src="ITP/anim/final-unity/bubble.png" >
+                             <br><br><br><br>
+                            
+                            Idealy, the application can track each icon and generate music when it sees a pattern. However, zero stars again...
+                            <br><br><br><br>
+                            <img width="100%" src="ITP/anim/final-unity/zero.png" >
+                            <br><br><br><br>
+                            So, I made some trick to pretend that it is doing the smart job by using the stupid method... I create all the possible pattern (Not all apply yet, I'm still building this 'for loop').
+                            <br><br><br><br>
+                                   <img class="twoinrow" src="ITP/anim/final-unity/1.jpg" >
+                            <img class="twoinrow" src="ITP/anim/final-unity/2.jpg" >
+                            <img class="twoinrow" src="ITP/anim/final-unity/3.jpg" >
+                            <img class="twoinrow" src="ITP/anim/final-unity/4.jpg" >
+                            <figcaption>Four possible patterns out of 16</figcaption>
+                            
+                            <br><br><br><br>
+                            and four small animation to show which is now active.
+                             <br><br><br><br>
+                            <iframe class="twoinrow" src="ITP/anim/final-unity/rain.mp4" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            <iframe class="twoinrow" src="ITP/anim/final-unity/bubble.mp4" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe class="twoinrow" src="ITP/anim/final-unity/ocean.mp4" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            <iframe class="twoinrow" src="ITP/anim/final-unity/snow.mp4" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe><figcaption>Active Animation</figcaption>
+                            <br><br><br><br>
+                            The video doesn't have sound, but I assign each possible pattern to a certain related ASMR sound. Now this doesn't work as a running music piece, but ideally, when the user changes the order of the icons, the order of the elements changes.
+                            
+                            </p>
+                        </div>
+                    </div>
+             
+                    <div class="blogPost" data-tags="ani f2019" >
+                        
+                        <iframe class="crop" src="https://player.vimeo.com/video/375580365" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                   <figcaption><i>"Dreamwalk"</i></figcaption>
+                                        
+                        <div class="paragraph" >
+                            <h5>Week 3-4: Collage Animation "Dreamwalk" & <a href="#w2-r">Mirrorworld</a></h5>
+                            <br id="2top">
+                            <p> <h6>AE Collage Animation</h6>
+                                My group member and I want to play with mainly collage and greenscreen. Having a collage landscape and a character moving inside a fictional environment. After disscussing the entire mood of the cilp we wnat to convey, since we have a lot of stuff going on in the collage, we came up with a detailed storyboard with the assets we want to use and transitions between scenes beforehand so that we can save time.
+                            <br><br><br><br>
+                            <img width="100%" src="ITP/anim/w4/Scan%2014.jpeg" >
+                            <img width="100%" src="ITP/anim/w4/Scan%2015.jpeg" >
+                            <img width="100%" src="ITP/anim/w4/Scan%2016.jpeg" ><br><br>
+                             <br><br>
+                            We split up the work into three parts and set up a moodboard so that we work with the same style. And I am incharge of the first part. Until the person starts to walk in the long landscape.
+                            <br><br>
+                            For this specific project, we are relying on the music very much, so as I animates the assets, I first listen to the whole track and mark the beats, climax and attributes that happened in time. <br><br><br><br>
+                            <img width="100%" src="ITP/anim/w4/mark.png" ><br><br><br><br>
+                            
+                            The function that I like the most in AE is parenting. Most of the assets in my work perform well only if it is parent to another main body. However, for the head opening part, I figured that parent is only good for still images but not working as well for the footage. So I tried using the tracking function, but it never worked for my computer...
+                            <br><br><br><br>
+                            <img width="100%" src="ITP/anim/w4/track.png" ><br><br><br><br>
+                            
+                            Fortunatly, this zoomin & opening up part isn't long so I can just manually fix the positioning of the landscape in the brain and the opened cap. <br><br>
+                            I really enjoyed making the landscape in the brain by creating a seperate composition and have muiltiple characters moving in the same frame. But the opening music isn't long enough so I can really have a long scene on this part.
+                            <br><br><br><br>
+                            <img width="100%" src="ITP/anim/w4/land.png" ><br><br><br><br>
+                            And personally, my favorite scene that I've created is this scene of the earth in the univers with a red door sitting on it.<br><br><br><br>
+                            <img width="100%" src="ITP/anim/w4/earth.png" ><br><br><br><br>
+                            I think what can be improved next time is the way we work as a group. Eventhough we've talked through the storyboard many times, and looking at the mood of the collage that we want to carry together, some of us have the assigned part done the last minute and we didn't have time to go through the final piece together as a team and give each other feedback and help. Everyone had different experiences in AE, so we need to know who needs more time to figure out the time schedule and way to teach each other.
+                            <br><br>
+                            
+                            
+                            
+                            
+                            <hr id="w2-r"><figcaption> <a class="bktop" href="#2top">^Top</a></figcaption>
+                            <h6><a href="https://www.wired.com/story/mirrorworld-ar-next-big-tech-platform/">AR Will Spark the Next Big Tech Platform — Call It Mirrorworld</a></h6>
+                          
+                                
+                            In the article by Kevin Kelly, talked about the two parallel world -- the real world and the digital world --  intersects, which driven by the augmented reality, as called the Mirrorworld. This article is really interesting and also he introduced a lot of existing projects. And really make me think about as a designer or artist or even just a consumer, what is the purpose of using AR and how far it can go.<br><br>
+                            The concept of "two parallel world in AR" make me think about, why would people want something digital to appear on a physical real world (in a digital device)? I think it has a great opportunity to become a prototyping tool for designers to cut down wastes and budget. For example, for architect, they can adjust the design in the program, to put it at the actual space they will be building it. Also for fashion designers, before production, dripping, pattern making, fitting can all be down in AR before the real production. Even for designs that required digital printing, can be applyed directly on to it. New job opportunities will be available (to create libraries): AR civil engineerer, AR pattern maker, AR fabric/textile designer and etc. <br><br>
+                            If possible, the customer end should also work like this: fitting using AR and adjust sizes in the program --> data sent to the factory --> ordermade tailoring, no premade and stock so no waste. Also as a customer, it will be a great opportunity for furniture companies to have a interior design AR app online, after the customer designed with the AR furnitures, they can order directly from the app. <br><br>
+                            
+                            
+                            
+
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                     <div class="blogPost" data-tags="ani f2019" >
+                        <iframe class="crop" src="https://www.youtube.com/embed/W94wf53M6JM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            
+                   <figcaption><i>"Love Cut"</i></figcaption>
+                                        
+                        <div class="paragraph" >
+                            <h5>Week 1-2: Stop Motion Animation "Love Cut" & <a href="#w1-r">Reading Response</a></h5>
+                            <br id="1top">
+                            <p> <h6>Stop Motion Animation</h6>
+                                For this week's project, we went through a lot of ideas and stories, and had a 3 mintue long story, which is already a simplified version of the actual story and we think that it will lose its meaning if we simplify it even more, so we instead, inspired by the materials we got: some colorful wools--maybe some hair story? <br><br>
+                            As we started making the characters, we build up the plot for them. I'm very into photography and always wanted to try doing some cinematography for a short story. Inspired by <a href="https://www.youtube.com/watch?v=AcZ2OY5-TeM">Toy Story 4</a> I feel like not only how the entire enviornment for the character feels real or not, but using similar cinematography that's used for actual movie/videos will also help building the characters more. Through this project, I feel strongly that this is sort of where my passion is and also my focus point when watching a anime film (other than the plot).
+                            <br><br>
+                            Also, we do not want to give to much identity to the characters, so we kept them without speaking any lines by only making some emotional sounds, just like Minions.
+                            <br><br>
+                            <img width="100%" src="ITP/anim/w2/IMG_5269.jpg" ><br><br>
+                             
+                            
+                            Even though I feel anxious when I was doing the project, but mostly enjoying it alot. The most struggling part for this project will be using Dragonframe is still kind of unfamiliar for us. We only realized (or remembered) that the 'zoom in' only works as a preview but not a crop until we export the video...
+                            <br><br>
+                            
+                            <hr id="w1-r"><figcaption> <a class="bktop" href="#1top">^Top</a></figcaption>
+                            <h6>Understanding Comics: The Invisible Art</h6>
+                                
+                            This is a very interesting but at the same time a difficult comic book to me. The words are simple but the it makes me read twice in order to understand concepts. Scott Mccloud starting from definding what exactly is comic as an art form, a medium of expression an idea, the 'closure' (design kid happy to see the old friend mentioned here) happened in the gutters, the time and space and etc... We might see similar concepts in other form of arts but all of them can only happen in comics. I'm a comic person, specially I read a lot of mangas. Though, like he mentioned early in the book, there are still a lot of people think it is a "cheap, disposable, kiddie fare". But like books and movies, there are already a lot of people inspired by comics, or experienced some sort of life that they never get to experienced. There are even educational Mangas with proffessional terminology that introduced some occupation, which is not as popular, and increased the interest of public towards that occupation. This I think also proved Mcclound's point on the readers tend to put themselves in the characters.
+                            
+                            <br><br>
+                            Below are some parts that I feel really interesting and could be used for other fields
+                            <br><br>
+                            <img width="100%" src="ITP/anim/w2/cup.png" ><figcaption>When designing, think about why this drawing style and why this form</figcaption>
+                            
+                            <br><br>
+                            <img width="100%" src="ITP/anim/w2/gutter.png" ><figcaption><i>JUST INTERESTING</i></figcaption>
+                            
+                            
+                            <br><br><br><br>
+                            <div class="powr-comments" id="844e3f0f_1569430797"></div>
+                            <br><br>
+                            
+
+                            </p>
+                        </div>
+                    </div>
+    
+                  <div class="blogPost" data-tags="fab f2019">
+                         <img class="crop" src="ITP/fab/w6/IMG_4317.jpg" >
+                   <figcaption><i>Film Roller</i></figcaption>
+                                        
+                        <div class="paragraph" >
+                            <h5>Week 6 - Motor: "Film Roller" & <a href="#kintsugi">Starting kintsugi</a></h5>
+                            <br id="">
+                            <p> 
+                          <h6>Film negatives roller</h6>
+                                For this week's project, the first 'on-shelf' motor that came to my mind is the dog toy that I often see on when I walk through Canal Street:<br><br>
+                            
+                            <img width="100%" src="ITP/fab/w6/doggy.jpg" ><br><br>
+                               
+                            Then, I murdered it and took out the 'heart' of it:<br><br>
+                            <img class="twoinrow" src="ITP/fab/w6/killed.jpg" ><img class="twoinrow" src="ITP/fab/w6/the-thing.jpg" ><figcaption><i>It is moving six parts with only one motor using gears</i></figcaption><br><br>
+                            
+                            
+                            I figured that there are too many moving parts, which make it hard for me to think of any other thing that can attach to it, so I first cleaned up the gears that I do not need. Then, I came up with the idea of a pencil sharpener, however, due to the low energy the motor carries, it is too weak to sharpen a pencil...<br><br>
+                            <img class="twoinrow" src="ITP/fab/w6/clean.jpg" ><img class="twoinrow" src="ITP/fab/w6/pencil.jpg" ><figcaption><i>The sharpener is turning crazily but it stopped moving when I incert the pencil</i></figcaption><br><br>
+                            
+                            
+                            Then, I thought about a thing that I want it to be turning and requires less energy, and I look at my bookshelf and found my film folder, thinking why not a machine that can help me to roll my film negatives:<br><br>
+                            
+                            
+                            <img width="100%" src="ITP/fab/w6/films.jpg" ><figcaption><i>I'm a film-holic</i></figcaption><br><br>
+                            
+                            One thing about film that I want to use in this project is also because there's holes on the side of the negatives that can be held by teeth (which are also how it works in the camera), so to be cohesive with th concept, I made two teeth on to my film negative case:
+                                <br><br>
+                            
+                            <img class="twoinrow" src="ITP/fab/w6/wip-1.jpg" ><img class="twoinrow" src="ITP/fab/w6/the-teeth.jpg" ><figcaption><i>the teeth that can hold the film megatives</i></figcaption><br><br>
+                            
+                            And then, I made some supports to hold the negative: one in the front to hold it paralle to the roller, and one at the back to tighten the rolled negative.<br><br>
+                            
+                            <img class="twoinrow" src="ITP/fab/w6/IMG_4300.jpg" ><img class="twoinrow" src="ITP/fab/w6/IMG_4302.jpg" >
+                            <img class="twoinrow" src="ITP/fab/w6/IMG_4309.jpg" ><img class="twoinrow" src="ITP/fab/w6/IMG_4313.jpg" ><figcaption><i>the supports</i></figcaption><br><br>
+                            
+                                 <br><br>
+                            
+                            And here's the video of it moving, yet, the negative is still to heavy for the motor that it doesn't turn as I espected...
+                            
+                            
+                            <br><br>
+                            
+                            <iframe class="crop" src="https://www.youtube.com/embed/_LF5MbqN3a4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   <figcaption><i>"Film Roller"</i></figcaption>
+                                        
+                            
+                            
+                            <hr id="kintsugi"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
+                            <h6>Pottery Repair - Kintsugi</h6>
+                                
+                            So... This is a sad story... This happened the week that I was doing my two materials project: I received my birthday present from my friend--a cute clay bowl--and I accidentally dropped it, in front of her, while I was rushing to the bus... And I went back home search for pottery repair turtorial on Kintsugi--a way of decorating the 'broken parts' which also symblolizes 'rebirth'. And found out it could be a great two material project by just including another material such as wood... But never trust amazon... I waited to see whether the copper sheet came eailer or the materials of kintsugi came eailer, and the one arrived eailer will be my project. (Both came 2 days later than promised delivered date...) So I decided to just make this a side personal project with only the purpose of repairing it instead of combining two materials. 
+                            <br><br>
+                            I will start sooner this week.
+                            
+                            <br><br>
+                            
+                           <img width="100%" src="ITP/fab/w6/kin.jpg" >
+                            
+                            
+                            
+                            
+                            <br><br><br><br>
+                            
+                     
+
+                            </p>
+                        </div>
+                    </div>
+             
+             
+             
+             
+             
+                    <div class="blogPost" data-tags="fab f2019">
+                         <img class="crop" src="ITP/fab/w5/IMG_4069.jpg" >
+                   <figcaption><i>Jie in Insense Burner Form</i></figcaption>
+                                        
+                        <div class="paragraph" >
+                            <h5>Week 5 - Wooden Jewelery Box / Insense Burner - "Jie" & <a href="#w5-box">Another Box</a></h5>
+                            <br id="">
+                            <p> <h6>"Jie" - The continuation of "Lei"</h6>
+                                For this week's two materials, I always wanted to create a wood version of my lasercut project <a href="#jie-final">"Lei"</a>, and the other material I chose copper, which is one of the material that I always wanted to try, so the design and materials was decided very fast. <br><br>
+                            However, I do sort of redesigned it based on the new materials. Instead of a small drawer that you can remove the tray, I just made the copper stay loose and have a solid wooden base.<br><br>
+                            
+                            <img width="100%" src="ITP/fab/w5/i.png" ><br><br>
+                                While I am waiting for amazon to deliver my copper sheet, I started with the wooden base. I went to get some of my own wood, but I found better ones at ITP:<br><br>
+                            <img width="100%" src="ITP/fab/w5/IMG_3867.jpg" ><figcaption><i>This image is so blurry taht almost feels like my mom took it...</i></figcaption><br><br>
+                            Two will be made into jigs that I will be using to shape the copper sheet and one I started shaping it into my design:
+                                <br><br>
+                            
+                            <img class="twoinrow" src="ITP/fab/w5/IMG_3915.jpg" ><img class="twoinrow" src="ITP/fab/w5/IMG_3917.jpg" ><figcaption><i>The marks in the image on the right is to make the bottom thinner</i></figcaption><br><br>
+                            
+                            And my jigs:<br><br>
+                            
+                            <img width="100%" src="ITP/fab/w5/IMG_3943.jpg" ><br><br>
+                            
+                            Then I started to shape the bottom part of the base. There isn't any way I could think of to make this organic shape expect drilling it in a "stair" way and than sand it down. <br><br>
+                            
+                            <img class="twoinrow" src="ITP/fab/w5/IMG_3334.jpg" ><img class="twoinrow" src="ITP/fab/w5/IMG_7623.jpg" ><figcaption><i>I forgot to document it before sanding it, but you can still see the drill marks</i></figcaption><br><br>
+                            
+                            Then, I sand it more to make it look polished: <br><br>
+                            
+                            <img class="twoinrow" src="ITP/fab/w5/IMG_3920.jpg" ><img class="twoinrow" src="ITP/fab/w5/IMG_3922.jpg" ><img class="twoinrow" src="ITP/fab/w5/IMG_3923.jpg" ><img class="twoinrow" src="ITP/fab/w5/IMG_3924.jpg" ><figcaption><i>I tried all different polishing tools but still can't get rid of the marks for the inner cutouts</i></figcaption><br><br>
+                            
+                            And finally, the copper sheet arrived, HOWEVER, it was too thick that I cannot cut it properly nor shape it with a hammer:<br><br>
+                            
+                            <img width="100%" src="ITP/fab/w5/no.png" ><figcaption><i>FRAGILE? You must be kidding me... It could've been a weapon...</i></figcaption><br><br>
+                            
+                            So I ran to Bruno's Bruno's... but they only carry the very thin one that could be easily reshaped so was also hard to shape it. If copper can not be a tray, then a design with wood cannot be an insense burner. So I decided to make it a muliti usage item: You can remove parts and have different functionality:
+                            
+                            <br><br>
+                            
+                            <img width="100%" src="ITP/fab/w5/IMG_4051.jpg" ><figcaption><i>Memo clip, Vase and Jewerly Box</i></figcaption><br><br>
+                            
+                            <br><br>
+                            
+                            <img width="100%" src="ITP/fab/w5/IMG_4069.jpg" ><figcaption><i>Insense Burner and Vase</i></figcaption><br><br>
+                                
+                                 <br><br>
+                            
+                            
+                            
+                            <hr id="w5-box"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
+                            <h6>Where's my dollar piano box</h6>
+                                
+                            For this week's Pcomp project, I made a box that's suitable for the project, it is, a 'Coin' Piano Box:
+                            
+                            <br><br>
+                            
+                            <img class="twoinrow" src="ITP/phy/w5/IMG_4037.jpg" ><img class="twoinrow" src="ITP/phy/w5/IMG_4039.jpg" ><img class="twoinrow" src="ITP/phy/w5/IMG_4043.jpg" ><img class="twoinrow" src="ITP/phy/w5/IMG_4047.jpg" ><figcaption><i>Yeahhh</i></figcaption><br><br> The video:<br><br>
+                            
+                            <iframe class="crop" src="https://www.youtube.com/embed/oVewvaD1Kk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            
+                            
+                            
+                            
+                            <br><br><br><br>
+                            
+
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="blogPost" data-tags="fab f2019">
+                         <iframe class="crop" src="https://www.youtube.com/embed/f2Mpl78GbP0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   <figcaption><i>"Beat (hit) it. Beat the Time"「打つ。時を打つ。」-- Gyokusendo</i></figcaption>
+                                        
+                        <div class="paragraph" >
+                            <h5>Week 5 - Japanese Brass Work</h5>
+                            <br id="">
+                            <p> 
+                                For this week's assignment, I want to revisit my previous project, the lasercut project--Lei, and redesign is with a wooden bas and brass details (the cutouts, ash tray and vase tube.) <br><br>
+                                My father used to collaborate with a brass maker and had designed a brass cup (which he made a huge mistake for not adding a handle to it... it conduct heat too well!) so I learned a little (with my eyes) about how brass works were formed. So I already foresee myself holding a hammer and being the annoying neighbor... But I have to share this video, this is too beautiful. It is saying how the brass makers are more in love with the time they spent with the work more than the finished work. I feel them so much when I was watching this video...
+                                
+                                
+                                
+                               
+                                
+                            <br><br><br><br>
+                           
+                            
+
+                            </p>
+                        </div>
+                    </div>
+             
+             
+             
+             
+             <div class="blogPost" data-tags="fab f2019">
+                         <iframe class="crop" src="https://www.youtube.com/embed/oZif-pCt91Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   <figcaption><i>Jo Malone Speaker (Please be aware of the noise)</i></figcaption>
+                                        
+                        <div class="paragraph" >
+                            <h5>Week 4 - Enclosure</h5>
+                            <br id="enclosure">
+                            <p> 
+                                For this week's project, I wanted to actually make a box that works for what we learn in the pcomp class, which is, the <a href="phycom.html#tonebox">tone output</a>! 
+                                <br><br>
+                                When I'm ready heading towards The Container Store, my boxes at home be like "Mom, you don't need more..."<br><br>
+                                <img class="twoinrow" src="ITP/fab/w4/1.jpg"> <img class="twoinrow" src="ITP/fab/w4/2.jpg"><figcaption><i>"Mom, you had enough."</i></figcaption><br><br>
+                                So I decided to work with them. 
+                                <br><br><i id="codetext">I was sick during the week, so I forgot to do the documentaries...</i><br><br>
+                                I made three holes on the cover surface for the following parts: the potentiometer, speaker and the LED light. And one on the side for the USB.<br><br>
+                                <img class="twoinrow" src="ITP/fab/w4/a.jpg"> <img class="twoinrow" src="ITP/fab/w4/b.jpg"><figcaption><i>Details</i></figcaption><br><br>
+                                The cover parts were first connected to the cover, then connected to the breadboard. <br><br>
+                                <img class="twoinrow" src="ITP/fab/w4/d.jpg"> <img class="twoinrow" src="ITP/fab/w4/c.jpg"><figcaption><i>This box itself is really easy to open and close, but connecting the wires to the breadboard took me some time.</i></figcaption><br><br>
+                                And make it workable<br><br>
+                                <img class="twoinrow" src="ITP/fab/w4/6.jpg"> <img class="twoinrow" src="ITP/fab/w4/5.jpg"><img class="twoinrow" src="ITP/fab/w4/4.jpg"> <img class="twoinrow" src="ITP/fab/w4/3.jpg"><figcaption></figcaption><br><br>
+                                
+                            <br><br><br><br>
+                           
+                            
+
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div id="blogPost" data-tags="fab f2019">
+                        <img class="crop" src="ITP/fab/w3/product-photo/DSC_6294.jpg">
+                        <figcaption><i>Insense Burner & Vase: 淚 Lei</i></figcaption>
+                                        
+                        <div class="paragraph" >
+                            <h5>Week 3 - Lasercut incense burner and Vase: Lei (淚)</h5>
+                            <br id="top">
+                            <p> Lei (淚) means Tears - The essence of ones' emotion.
+                                <h6><a href="#jie-ins">Inspiration</a> / <a href="#jie-design">Design</a> / <a href="#jie-draft">cardboard</a> / <a href="#jie-ac">acrylic</a> / <a href="#jie-final">Final</a> </h6>
+                            <br><br>
+                            <hr id="jie-ins">
+                            <h6>Inspiration</h6>
+                            My parents are big fans on artists' pottery art works--they have collected these from places they've travelled. Since I grew up under this environment, I'm also attracted to pottery arts. Whenever I mentioned that I like one of the item in their collection, they will give me as a gift, however, there's exceptions.<br><br>
+                            And it is this:
+                        <br><br>
+                            <img class="crop" src="ITP/fab/w3/ins.JPG">
+                            <br><br>
+                            This might looks 'huh?' from this image, beacuse it is now in Taiwan and my mom took this picture (sorry, mom.) But this is such a beautiful piece—the naturally formed shape incorporate with its function—a vase and incense burner! This is the exact thing that I always wanted! And when I tell my parents they're like "..instead! Do you want that (point to a cup)?"
+                            <br><br>
+                            So, why not make myself?
+                            <br><br>
+                            <hr id="jie-design"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
+                            <h6>Design</h6>
+                            I have been using Illustrator for about 10 yrs already, and when I was in Parsons, I had experience dealing with lasercutter's AI formats.<br><br>
+                            
+                            <img class="twoinrow" src="design/img/sun_peiyu_03.jpg"> <img class="twoinrow" src="ITP/fab/w3/parsons.png"><figcaption><i>Left: Bamboo and Lotus Leaves (<a href="http://www.michellusun.com/#/therefore-zero-2/">Therefore, Zero</a>) / Right: Acrylic</i></figcaption><br><br>
+                                But different from my previous experience, which is also two to three years ago, I rarely do AI for 3D projects. Being a interaction designer that have been living under the screen for so long, to have a 3D mind is challenging for me.<br><br>
+                            I came up with a organic shape, and wanting to have it to look like s miniture Chinese garden.<br><br>
+                                <img class="crop" src="ITP/fab/w3/design.png"><br><br>
+                            And I have different planing on how each section will be contruct:<br><br>
+                            <b>Base</b> —— the organic shape, with two small holes on the left, a hole for vase and two organic cut outs.<br><br>
+                            <b>Ash tray</b> —— different color / material as the base, should be removeable. Thus I will need to make slot that can work like a drawer.<br><br>
+                            <b>Cut out with a hole</b> —— different color / material as the base. Need a hole that has tolerance for incense or flower.<br><br>
+                            <b>Thin vase</b> —— different color / material as the base, should be removeable. I added it later on when I was doing the 3D stuff.<br><br>
+                            
+                            from the above rough planing, I decided to design the height of the burner based on how many layers the ash tray will need.
+                            
+                            so the ash tray itself, need at lease two layers: a wall layer and a bottom layer
+                            <br><br>
+                                <img class="crop" src="ITP/fab/w3/tray.png"><br><br>
+                            and there will be one more layer needed to hold the tray to the base. So including the base, it will be four layers in total.
+                            
+                            <br><br>But just by thinking without having the 3D stuff is a little challenging, so I went to the lasercutter.
+                            
+                            
+                            
+                            
+                            <hr id="jie-draft"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
+                            <h6>Cardboard Drafting</h6>
+                            
+                            <i>*There was an incident happened due to my mistake in setting the power and speed of the lasercutter, and almost cause a fire. I am very sorry and thankful for the help from the Shop staff, Ben and people that were they at the time.</i><br><br>
+                            
+                            Ok, back to the topic.<br><br>
+                            
+                            I have all my parts ready:<br><br>
+                            
+                            <img class="crop" src="ITP/fab/w3/doc/IMG_2944.jpg"> <br><br>
+                            
+                            And build it with glue<br><br>
+                            <img class="twoinrow" src="ITP/fab/w3/doc/IMG_2948.jpg"><img class="twoinrow" src="ITP/fab/w3/doc/IMG_2949.jpg">
+                            <img class="twoinrow" src="ITP/fab/w3/doc/IMG_2950.jpg"><img class="twoinrow" src="ITP/fab/w3/doc/IMG_2952.jpg"> <br><br>
+                            Need to make sure the holes are aligned.
+                            <br><br>
+                            Next, I need to design the slot tha can fit in my tray, and from Ben's advicing, I designed it in 3D first:
+                            <br><br>
+                            <img class="twoinrow" src="ITP/fab/w3/doc/IMG_2959.jpg"><img class="twoinrow" src="ITP/fab/w3/doc/IMG_2963.jpg">
+                            <img class="twoinrow" src="ITP/fab/w3/doc/IMG_2960.jpg"><img class="twoinrow" src="ITP/fab/w3/doc/IMG_2970.jpg">
+                            <iframe class="crop" src="https://www.youtube.com/embed/CwL7vY4tqRA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <figcaption><i>The Tray Worked!</i></figcaption>
+                            <br><br>
+                            Also, I tested the size and position of the holes:<br><br>
+                            <img class="crop" src="ITP/fab/w3/doc/IMG_2981.jpg"> <br><br>After the UX testing, I adjust the position and size a little, and I think I like it very much.
+                            
+                            <br><br>
+                            <hr id="jie-arc"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
+                            <h6>The Real Thing - Arcylic</h6>
+                            <b>AI File</b><br>
+                            -<br><br>Below is how I organized my files and how file that's been sent to the lasercutter looks like:
+                            <img class="twoinrow" src="ITP/fab/w3/doc/1.png"><img class="twoinrow" src="ITP/fab/w3/doc/2.png">
+                            <figcaption><i>I put the layers (in 3D) into different layers in AI so that I can see what went wrong in which layer easily. Also, to not confuse myself which parts I will be using, I did a little dot on the cut outs that I do not need.</i></figcaption><br><br>
+                            <img width="100%" src="ITP/fab/w3/doc/3.png"><figcaption><i>The entire flats</i></figcaption><br><br>
+                            
+                            <b>Materials</b><br>
+                            -<br><br>I bought two color that I have never used before: pearl and holography.<br><br>
+                            
+                            <img class="twoinrow" src="ITP/fab/w3/doc/IMG_3171.jpg"><img class="twoinrow" src="ITP/fab/w3/doc/IMG_3017.jpg">
+                            <img class="crop" src="ITP/fab/w3/doc/IMG_3019.jpg">
+                            
+                            <br><br>Also, I bought all the best buddies for arcylics:<br><br>
+                            <img class="twoinrow" src="ITP/fab/w3/doc/IMG_3173.jpg"><img class="twoinrow" src="ITP/fab/w3/doc/IMG_3174.jpg">
+                            <figcaption><i>However, I don't find the three buddies on the left that useful, maybe it is because I use it wrongly?</i></figcaption><br><br>
+                            
+                            For the removeable vase, I bought the cylinder arcylics from Canal Plastic and cut it into smaller sizes with saw, and sanded it down with sand paper:<br><br>
+                            <img class="twoinrow" src="ITP/fab/w3/doc/IMG_3024.jpg"><img class="twoinrow" src="ITP/fab/w3/doc/IMG_3025.jpg">
+                            <hr id="jie-final"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
+                            <br>
+                            <br>
+                            
+                            And this is how the final product looks like:
+                            <br><br>
+                            <img class="crop" src="ITP/fab/w3/product-photo/DSC_6292.jpg">
+                            <img width="100%" src="ITP/fab/w3/product-photo/3.jpg"><img width="100%" src="ITP/fab/w3/product-photo/DSC_6287.jpg">
+                            <br><br>
+                            
+                            Some details I like about the holography arcylic is that the reflection really reminds me of the pond:<br><br>
+                            <img width="100%" src="ITP/fab/w3/product-photo/DSC_6296.jpg">
+                            <br><br>
+                            The parts:
+                            <br><br>
+                             <img class="twoinrow" src="ITP/fab/w3/doc/IMG_3166.jpg"><img class="twoinrow" src="ITP/fab/w3/doc/IMG_3161.jpg"><br><br><br><br>
+                            
+                            
+
+                            </p>
+                        </div>
+                    </div>
+                    
+                            
+                
+                     <div class="blogPost" data-tags="fab f2019"><img class="crop" src="ITP/fab/w2/fishing-star/IMG_2843.jpg"><figcaption><i>Kids Game, Basswood and Magnets</i></figcaption>
+                                <div class="paragraph" ><h5>Week 2 - Star Fishing (REPEATABILITY)</h5><p>For this repeatability project, I want to be as zerowaste as possible, so it also means that I want all 5 objects to be useful.<br><br>
+                                    I had two directions:<br><br><br>
+                                    <b>1. Something for myself</b><br>
+                                    <br> I always wanted a white modern lantern that looked somehow like this:
+                                    <br><br>
+                                    <img style="width: 50%;float: left;" src="ITP/fab/w2/16-white-even-ribbing-round-paper-lantern-75.jpg"> <img style="width: 50%;" src="ITP/fab/w2/imgrc0077691042.jpg"><figcaption><i>Beauuutiful</i></figcaption><br><br>
+                                    
+                                    The materials will probably be rice paper, wire, lighting system (experience from the flashlight assignment) and wood as the base.<br><br>
+                                    However, not only it is time consuming, but also do I really need 5 of them?<br><br>So I went into the second direction:
+                                    <br><br>
+                                    <br>
+                                    <b>1. Something for my friend's kid</b><br>
+                                    <br> One of my college friend, Nina having this baby, called Arya, has the same birthday as I do. (Not to mention it because it's my birthday, but) It's less than a month to her birthday! I want to make something for this special baby. So I get some inspirations on web and had some sketches:<br><br>
+                                    <img class="crop" src="ITP/fab/w2/Scan-12.jpeg"><br><br>
+                                    From here I figured among all, there's one game that all 5 objects can be used, and that is: The Fishing Game! <br><br>
+                                    I am always amazed by the univers and stars, so instead of fishing fish, I want to create a star fishing game! Also reminded me the DreamWorks Logo:<br><br>
+                                    <img style="width: 100%;" src="ITP/fab/w2/original.gif"><figcaption><i>DreamWorks Openning</i></figcaption><br><br>
+                                    <br><br>
+                                    So here is how I make it--
+                                
+                                    <h6>STEP 1 - Construction of the Star Shape</h6>
+                                    
+                                    Inspired by Ben's story on the wooden houses, I want to also create a system that can help me to get a star shape easily. So I was thinking to do this triangle system:<br><br>
+                                    <img class="crop" src="ITP/fab/w2/trianglestar.png">
+                                    <br><br>
+                                    However, when I was really trying to buy the woods, I figured that 5 is still a fairly low quantaty. If I am really going to do the triangle system, it is actually more cutting that 5 individually cutted stars. So I go for the stupid but simplier way: trace and cut.<br><br>
+                                    <img class="crop" src="ITP/fab/w2/fishing-star/IMG_1954.jpg"><figcaption><i>Sticking the edge of the stars together to try to be as close to zero-wasted as possible</i></figcaption>
+                                    <br><br>
+                                    
+                                    <h6>STEP 2 - Cutting the Shape</h6>
+                                    
+                                    It was not the first time that I had ever done something in the woodshop, but it was the first time in five years. The first star definitly sacrificed due to my out-of-practice hands. And here is my 5 stars before sanding:<br><br>
+                                    <img style="width: 100%;" src="ITP/fab/w2/fishing-star/IMG_2722.jpg">
+                                    <br><br>
+                                    The Star No.1 is really the one that's more off from the trace mark than the others, however, I found out is that my No. 5 isn't in the best, instead, No. 4 seems to be the best in shape. I think I also figured something interesting about myself: I get tired when it comes to the last one.<br><br>
+                                    
+                                    
+                                    
+                                    Same for sanding:
+                                    
+                                    
+                                     <h6>STEP 3 - Sanding</h6>
+                                    <img style="width: 100%;" src="ITP/fab/w2/fishing-star/IMG_1565.jpg">
+                                    <br><br>
+                                    
+                                    
+                                     <h6>STEP 4 - Drilling</h6>
+                                    
+                                    Now I have to apply magnet onto my stars. I found this package that came in 5 different sizes (mm) of magnets:<br><br>
+                                    <img style="width: 100%;" src="ITP/fab/w2/fishing-star/IMG_2774.jpg">
+                                    <br><br>
+                                    
+                                    Before drilling it onto my precious stars (lordofthering-myprecious.gif) I tried the 3 different sizes of the drill bits, which have the closest sizes compare to my magnets, onto the scrap wood:<br><br>
+                                    <img style="width: 100%;" src="ITP/fab/w2/fishing-star/IMG_2779.jpg">
+                                    <br><br>But because the sizes of the magnets that I got were in mm instead of inches, some fit well but some are slightly awkward:<br><br>
+                                    <img style="width: 100%;" src="ITP/fab/w2/fishing-star/IMG_2777.jpg">
+                                    <br><br>
+                                    Since the force of the magnets are pretty strong, I don't want the baby to get hurt by it, I chose the smallest one in the package (6*3mm), which fit perfectly in a 1/4inch hole. It was a little difficult to defined the depth of the hole.
+                                    <br><br>
+                                    (img-of-drilled-holes-on-stars.jpg)
+                                         <br><br>
+                                     <h6>STEP 5 - Gluing the Magnets</h6>
+                                    I was thinking to use super glue for this--it applys fast, strong, and most importantly, it is very thin. However, after my first star and my hand were covered in super glue and the magnet still live on its own, I took out my hot glue gun. The hot glue gun worked for wood and magnet, however, it is very thick, which my drill wasn't prepared for this, that the glue was kind of flooding over the star, yet,the magnet is still not entirly in the hole:<br><br>
+                                    <img style="width: 50%;float: left;" src="ITP/fab/w2/fishing-star/1a.jpg"> <img style="width: 50%;" src="ITP/fab/w2/fishing-star/1b.jpg"><figcaption><i>No.1 - flooded with glue</i></figcaption>
+                                    
+                                    <br><br>
+                                    <img style="width: 33.3%;float: left;" src="ITP/fab/w2/fishing-star/2a.jpg"> <img style="width: 33.3%;float: left;" src="ITP/fab/w2/fishing-star/2b.jpg"><img style="width: 33.3%;float: left;" src="ITP/fab/w2/fishing-star/2c.jpg"><figcaption><i>No.2 - magnet sticking out</i></figcaption>
+                                    
+                                   <br><br>
+                                    <img style="width: 50%;float: left;" src="ITP/fab/w2/fishing-star/3a.jpg"> <img style="width: 50%;" src="ITP/fab/w2/fishing-star/3b.jpg"><figcaption><i>No.3</i></figcaption>
+                                    <br><br>
+                                    <img style="width: 50%;float: left;" src="ITP/fab/w2/fishing-star/4a.jpg"> <img style="width: 50%;" src="ITP/fab/w2/fishing-star/4b.jpg"><figcaption><i>No.4 - Always the best</i></figcaption>
+                                    
+                                    <br><br>
+                                    <img style="width: 50%;float: left;" src="ITP/fab/w2/fishing-star/5a.jpg"> <img style="width: 50%;" src="ITP/fab/w2/fishing-star/5b.jpg"><figcaption><i>No.5 - Always get tired on this one</i></figcaption>
+                                    
+                                    <br><br>
+                                    I also made a smaller version of the star:
+                                    <br><br>
+                                    
+                                    <img class="crop" src="ITP/fab/w2/fishing-star/IMG_2782.jpg">
+                                    <img style="width: 33.3%;" src="ITP/fab/w2/fishing-star/l1.jpg"> <img style="width: 33.3%;float: left;" src="ITP/fab/w2/fishing-star/l2.jpg">
+                                    <img style="width: 33.3%;float: left;" src="ITP/fab/w2/fishing-star/l3.jpg"><figcaption><i>No.A -- Actually the best out of all</i></figcaption>
+                                    
+                                    
+                                    <h6>The Fishing Rod</h6>
+                                    
+                                    The head of the fishing rod are done by two drills:<br><br>
+                                    A. a thin hole where the string goes through<br>
+                                    B. a wider hole for the magnet
+                                    <br><br>
+                                    I tried two different sizes of magnets:<br><br>
+                                    1. the smallest magnet so that it is the safest on such a small piece
+                                    <br>
+                                    2. the largest magnet that can fit into the radius of this wood.
+                                    <br><br>
+                                    <img class="crop" src="ITP/fab/w2/fishing-star/IMG_2780.jpg">
+                                    <img class="crop" src="ITP/fab/w2/fishing-star/IMG_0719.jpg">
+                                    
+                                    <img style="width: 50%;float: left;" src="ITP/fab/w2/fishing-star/IMG_2838.jpg"> <img style="width: 50%;" src="ITP/fab/w2/fishing-star/IMG_2840.jpg">
+                                    <br><br><br><br>
+                           
+                                    </p></div>
+                </div>
+             
+                    
+                            <div class="blogPost" data-tags="fab f2019"><img class="crop" src="ITP/fab/heart.png"><figcaption><i>Do yall see my heart</i></figcaption>
+                                        <div class="paragraph" ><h5>Week 1 - Flashlight</h5><br><p> Documentation<br><br><img style="width: 100%;"  src="ITP/fab/prep-2.png"> <img class="crop" src="ITP/fab/prep-1.png"><img class="crop" src="ITP/fab/non-worked.png">   <video class="crop" width="320" height="240" controls>
+                              <source src="ITP/fab/worked.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                            </video><br><br><br><br>
+                             </p></div>
+</div>
+
+
+                    
+                  <div class="blogPost" data-tags="icm com f2019" >
+                                                        <img width src="ITP/icm/final/cover.png" >
+                            
+                   <figcaption><i>Data of September</i></figcaption>
+                                        
+                        <div class="paragraph" >
+                            <h5>The Sound of Communications, Data 'Music-lizing' <a href="https://glitch.com/edit/#!/shimmering-appendix?path=script.js:483:17">June 9th, 2019</a></h5>
+                            <p> 
+                            This is a project collaborating with Zeyao, working on the data the New York Times collected on HK Protest:
+                                
+                            <br><br>  <br><br>
+                                <img class="crop" src="ITP/icm/final/data.png" ><figcaption><i><a href="https://www.nytimes.com/interactive/2019/world/asia/hong-kong-protests-arc.html?searchResultPosition=1&fbclid=IwAR2l31zD6eo63j3ql1vy1Nf1N-OFGYnDPCCpk2YRhisy-5uYL2COEphxfeY">Six Months of Hong Kong
+Protests. How Did We Get Here?</a></i></figcaption><br><br>  <br><br>
+                                
+                                As a "Taiwan Chinese", my identy seemed never to be freed from political topics. My background is, as what I termed it, a multi-chinese-culture. I grew up in Shanghai, my mom is from Beijing, and I am a Taiwan Passport holder. I found myself uncomfortable to either call myself a Taiwanese or Chinese infront of a crowd. I always call myself as Chinese Taipei.
+                                <br><br>
+                                
+                                When the HK just started, I see how a tiny snow ball slowly became a large one that could be dangerous. 
+                                <br><br>
+                                
+                                Why is the snow ball getting larger and larger but no one notice it could happen, or stopping it. 
+                                <br><br>
+                                By reading both sides' social media posts, I see both sides are not understanding each other (Maybe not they just can't but they don't even want to understand.) 
+                                <br><br>
+                                Inspired by this, what if we put this data into a music piece, as a way to communicate. Since no one will say no to music.
+                                
+                                
+                            </p>
+                        </div>
+                    </div>
+                  
+                   <div class="blogPost" data-tags="com icm f2019" >
+                         <img class="crop" src="ITP/cofm/timbre/cchord.png" >
+                            
+                   <figcaption><i>C Chord on Lines 2.0</i></figcaption>
+                                        
+                        <div class="paragraph" >
+                            <h5>Timber - <a href="https://editor.p5js.org/michellu0929/present/_gwVne680">Lines 2.0</a></h5>
+                        <p>
+                           For this project, I want to continue working on my previous project <a href="https://editor.p5js.org/michellu0929/sketches/WRtbdmdZw">Line 1.0</a>
+                            <br><br>
+                             <iframe class="crop" src="https://www.youtube.com/embed/VtHXIQFwPcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                            
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="blogPost" data-tags="com f2019" >
+                         <iframe class="crop" src="https://www.youtube.com/embed/7rEr3-BLo5g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            
+                   <figcaption><i>Additive Synthesis Maxpat</i></figcaption>
+                                        
+                        <div class="paragraph" >
+                            <h5>Week 7 - 20 - 60'' composition</h5>
+                        <p>
+                           After I updated my Mac, nothing's working... I tried to reinstalled the Soundflower but it still didn't work.
+                            But I think the shape of the envolope is also intriguing.<br><br>
+                             <iframe class="crop" src="https://www.youtube.com/embed/VOU-5yUo-Yw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="crop" src="https://www.youtube.com/embed/R5-QQhDtjUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            
+                            </p>
+                        </div>
+                    </div>
+             
+             <div class="blogPost" data-tags="com icm f2019" >
+                         <iframe class="crop" src="https://www.youtube.com/embed/4dJj22WPlWE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            
+                   <figcaption><i>"Lines that Play Sound" - p5 Guitar</i></figcaption>
+                                        
+                        <div class="paragraph" >
+                            <h5>Week 6 - Melody: Design and <a href="#w6-code">Code</a> / <a href="#w6-pianop">Pcomp - Coin Piano</a></h5>
+                            <br id="">
+                            <p> <h6>Design</h6>
+                             <br><br>
+                            <img class="crop" src="ITP/cofm/w5/haru.png" ><figcaption><i>Sketch for the Interface</i></figcaption><br><br>
+                                Inspired by my sketch last week--the melody sketch of the song 'Haru-yo, Koi'--I started with playing around the tutorial by changing the values of the octave, bars, beats and etc.
+                            
+                            <br><br>
+                                And I came up with this:<br><br>
+                            <iframe class="crop" src="https://www.youtube.com/embed/j5HMPMfYTk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <br><br>
+                                Also, I have a version with guitar chords (I wish I could've recorded my own samples since I couldn't find better ones, but I lent my guitar to my younger brother...) >> <a href="https://editor.p5js.org/michellu0929/sketches/DMlNxSBjI">SKETCH</a>
+                            <br><br>
+                            
+                            And then I want to move forward to the real thing from scratch, but after this line of code, my p5 stopped working (only for that very bottom line of code):
+                            
+                             <br><br>
+                            <img class="twoinrow" src="ITP/cofm/w6/s2.png" > 
+                            <img class="twoinrow" src="ITP/cofm/w6/s1.png" ><figcaption><i>I don't see anything crazy here... but...</i></figcaption><br><br>
+                            
+                            So, instead, I move on to a similar idea...
+                            
+                            
+                            <br><br><br>
+                            
+                            <hr id="w6-code"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
+                            <h6>Lines that play sound: and  <a href="https://editor.p5js.org/michellu0929/sketches/WRtbdmdZw">here's the real thing A.k.a the code</a></h6>
+                            
+                           
+                            I simplified my previous code (which is already pretty simple...) and which it reminds me of a guitar... so I think why not a p5 Guitar... 
+                            
+                            <br><br>
+                            
+                            <img class="twoinrow" src="ITP/cofm/w6/1.png" > 
+                            <img class="twoinrow" src="ITP/cofm/w6/2.png" ><img class="twoinrow" src="ITP/cofm/w6/3.png" > 
+                            <img class="twoinrow" src="ITP/cofm/w6/4.png" ><figcaption><i>Normal state and activated / Open vs. Chords</i></figcaption>
+                            
+                            <br><br>
+                            <b>Concluding and Reflection</b>
+                            <br><br>
+                            
+                            Compare to my last assignment, which was more playful and less informative, I figure that I'm having for fun when the pattern is obvious for melody. For each chord, I try to show the position of the fingers. I take this as a warmup for my original idea, since it is now only playing notes instead of a continuous melody. A major thing that's also missing now is the fingerpicking. The next step will definitly be having a play button that toggles a demonstration or a select DOM that you can choose which of the fingerpicking you want to play.
+                            
+                            
+                            
+                            <br><br><br>
+                            
+                            <hr id="w6-pianop"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
+                            <iframe class="crop" src="https://www.youtube.com/embed/oVewvaD1Kk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            
+                            <figcaption><i>"Where's My Dollar" Piano</i></figcaption>
+                            </p>
+                        </div>
+                    </div>
+             
+                    
+                    <div class="blogPost" data-tags="com f2019" >
+                         <iframe class="crop" src="https://www.youtube.com/embed/gol5dFrv4Ao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            
+                   <figcaption><i>"Haru-yo, Koi"</i></figcaption>
+                                        
+                        <div class="paragraph" >
+                            <h5>Week 5 - Melody <a href="#w5-pencil">Sketch</a>, <a href="#w5-pencil">Interact</a> and <a href="https://editor.p5js.org/michellu0929/sketches/F8H92e94o">Code</a></h5>
+                            <br id="">
+                            <p> <h6>interface Sketch for Haru-yo, koi</h6>
+                                This is an old song that was used in a Japanese drama with a scene of falling cherry blossom that the music fits the speed of the falling flower.
+                            
+                            <br><br>
+                            <img class="crop" src="ITP/cofm/w5/haru.png" ><figcaption><i>Sketch for the Interface</i></figcaption><br><br>
+                            
+                            I do not want to be effect by the visual elements too much, so I listen to it again without any visual interruption, noticing that the opening notes are very recognizable individually. It make me feels like it is glass balls that's tied to strings hanging somewhere and it will ring if someone touches it (I know it physically cannot happen just by tocuhing it, but). The Oblique Strategy I got is "decorate, decorate", so I might want to develope this into something space-like. Maybe turning the hanging glasses into stars? So that it make more sense for it to be floating.
+                            
+                            
+                            <br><br><br>
+                            
+                            <hr id="w5-pencil"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
+                            <h6>Interact with <a href="https://musiclab.chromeexperiments.com/Kandinsky/">Kandinsky</a> and <a href="https://learningmusic.ableton.com/make-basslines">Baseline</a></h6>
+                            
+                           
+                            <b>Kandinsky</b>
+                            <br><br>
+                            
+                            I've learned piano and a little bit of guitar when I was young, so I know some basic relationship of notes. When I was interacting with this interface, I first found interesting since as I mentioned before, I want to do something related to drawing and painting, however, when I started to find the relationship of the melody and the painted line, there isn't much. Only the position (the height) will affect the notes, but neither the lenght nor the postion of x-axis affect any of the melody. I also do not know why the thickness of a line involved in this when it doesn’t belong to any attributes to the melody played. It will be fun for people who didn't notice it. After noticing the magic behind it is only the position of the y-axis it seems less fun. Also, not that educational.
+                            
+                            <br><br>
+                            <b>Baseline</b>
+                            <br><br>
+                            
+                            This one is more educational--all elements are stated clearly--each notes, bars, the source of the sound. There’s also preset melody  that allow the user to base off from something. I like how only the selected elements in the entire page is in vivid color so that after some reading of the text, it feels like it’s saying “here comes the fun part”. 
+                            
+                            
+
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="blogPost" data-tags="com icm f2019" >>
+                   
+                   <iframe id="drawingbeats" class="crop" src="https://www.youtube.com/embed/8FP8LplFfQc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   <figcaption><i>Drawing Beats</i></figcaption>
+                   
+                                <div class="paragraph" id="top">
+                                    <h5>Week 3 - <a href="#sketchw3">Sketches</a>, and <a href="#cii">Documentation on Drawing Beats</a></h5>
+                                    
+                                    <p> <hr id="sketchw3">
+                                        <h6>7 Sketches</h6>
+                                        In n class I discussed with my classmates on what sort of interface or way of interact that has not  usually seen. And we came up with these three:
+                                    <br><br>
+                                    <img width="100%" src="ITP/cofm/w3/IMG_2894.jpg">
+                                    
+                                    <br><br>
+                                    
+                                    The very first one is when the hands are detected by the computer, and you are able to control one rhythm on each hand, so it allows you to simply understand cross-rhythm. The second one, thinking similarly, that the computer detect the human body, and turn each part of you body into the parts of an instrument, in this case the drum. We want to input and the output still be very physical and straight forward. In this interactivity, it also shows how the rhythms can be understood by our body. The third one is thinking about beats in real life, such as doing basketball, all kinds of sports and also the beat when we eat. In this interface, all different kinds of food in one category will be laid out (for example, only fruits / all sorts of chips / candies). So if we have fruits as our theme this time, every one who participated will be contributing one chewing sound, and each different kind of fruits will represent one track. (People who eats apple will all contribute one apple sound, and that will be the apple track.)
+
+                                    <br><br>
+                                    <img width="49%" src="ITP/cofm/w3/IMG_3261.jpg">
+                                    <img width="49%" src="ITP/cofm/w3/IMG_3260.jpg">
+                                    
+                                    <br><br>
+                                    
+                                    Here are some more thoughts that I had when I went back home, starting from top to bottom, left to right:
+                                    <br>1. The Bubble Beat - where the size, position and state of the bubble decide the sound of beat. For example,  the sound might be deep and slow if a bubble  had just been blew and is big and near to the ground. When the bubble pops, it gives a slightly higher pitch and sharper beat.
+                                    <br>2. Face as Instrument - as shown in the image, each part of the face will be attached to one sound, and when you move each part accordingly, it will create beats.
+                                    <br>3. Drawing Beat - I always wanted to combine drawing and music within an interface. Different color each represent different sound of beats and the position our the mouse decide the bmp of the beats.
+                                    <br>4. Balloons - This is also a web interface where when you press the mouse, the longer you press, the bigger the circle and faster the beat will be.
+                                    <br><br>
+                                    
+                                    <hr id="cii"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
+                                        <h6>Drawing Beats</h6>
+                                    As I mentioned earlier, I always wanted to combine drawing and music into one interface. I want to connect colors, sizes and shapes to different attribute of music. I want to make beats to draw and to use the rythme music to create pattern in visuals.
+                                    <br><br>
+                                    <h6>How it works:</h6>
+                                    
+                                    1. Hihat - the background and 'd' on keyboard.<br>
+                                    2. Kick - 'a' on keyboard.<br>
+                                    3. Synth - 's' on keyboard.<br>
+                                    4. BPM - controlled by the slider, from slow to fast<br>
+                                    5. Pause - button on the left bottom corner or space key
+                                    <br><br>
+                                    And I had this at first:
+                                    <br><br>
+                                    <iframe class="crop" src="https://www.youtube.com/embed/1-hTUZayEek" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   <figcaption><i>Drawing Beats -- 1</i></figcaption>
+                                    <br><br>
+                                    When you download the image
+                                    <br><br>
+                                    <img width="100%" src="ITP/cofm/w3/download%20(1).png">
+                                    <br><br>
+                                    However, this is a little too much black, which make it hard to see the circles that represents the beats, so I changed the visual a little bit.
+                                    
+                                    <img width="100%" src="ITP/cofm/w3/download%20(2).png">
+                                    
+                                    <br><br>
+                                     <a href="https://editor.p5js.org/michellu0929/sketches/hLdrvtJ_6">See the code here!</a>
+                                    
+                                    
+                                    </p>
+                                    
+                                </div>
+                    </div>
+                    
+             
+                <div class="blogPost" data-tags="com f2019" ><img class="crop" src="ITP/cofm/w2/rhythm-toy.png"><figcaption>Interactive Rhythm System - <i>Rhythm Toy</i></figcaption>
+                                <div class="paragraph" ><h5>Week 2 - Analyze rhythm interfaces</h5><p> I did four instead of two because I feel very uncertain on how to do this. I found myself constantly changing my standards as I moved on to the next interactive webpage. Below is a graph with my self understanding of each criteria:<br><br>
+                                    <img style="width: 100%;"src="ITP/cofm/w2/graph.jpg">
+                                    <br><br>Everthing will be high in "Distribution in Space" since they are all web-based interactive interfaces.
+                                    
+                                    
+                                    
+                                    <a href="https://codepen.io/teropa/full/RMGxOQ/"><h6>1.Neural Drum Machine</h6></a>
+                                    <img style="width: 100%;"src="ITP/cofm/w2/drum.jpg">
+                                    <br><br>
+                                    This is the first one that I interacted with. Personally, I like how simple and straight forward the interface is. The learning of this web was fast--only some simple clicking on the shapes, simple adjustment on each attributes, and clear looping animation. However, I do found the output is way too simple, which the only animation is sort of explanatory (showing you where the loop is going). You are only able to control one set of rhythm that goes in loop. I like the rhythm generated from this interface--it is clean, logical, easy to understand just like its interface, but lack of playfulness and diversity. 
+                                    
+                                    
+                                    
+                                    <a href="https://musiclab.chromeexperiments.com/Rhythm/"><h6>2.Rhythm Toy</h6></a>
+                                    <img style="width: 100%;"src="ITP/cofm/w2/toy.jpg">
+                                    <br><br>
+                                    I want to talk about this Rhythm Toy interface the next is because it also has a simple user controls, yet, lesser freedoms but higher output than the Neutral Drum Machine. The animation correspond with the beat you put in, which also provides a bit more diversity in timbral level (I'm not sure if it is corresponding with the diversity of instrument used), creates more fun than the previous one even though the music is still educational / a safe play. 
+                                    
+                                    
+                                    
+                                    <a href="https://apps.musedlab.org/groovepizza/?source=pub&museid=By-1nLePB&show-grid=true&multi-lock=&brainpop=false&midimap=&"><h6>3.Groove Pizza</h6></a>
+                                    <img style="width: 100%;"src="ITP/cofm/w2/pizza.jpg">
+                                    <br><br>
+                                    The third one, I anaylsed is this Groove Pizza. I was attractived by the visual of this interface--very logically distributed (the pie graph like system, corresponding with the 7 coloum beat adjustor) at the same time very abstractive (how it has shapes on the left hand side--instead of creating music by the sound, but also how it can be visually related). Even though the visual output seemed very interesting, I didn't put it as a high output because the visuals were there already as an input, and nothing more that it produced that expected. Also, I feel the default setting of the tempo was a little fast. I found it difficult to use when was trying to adjust the beats while playing. I think it is always good to have a rather slower default, have the user get familliar with the system first and then they can adjust it themselfs.
+                                    
+                                    
+                                     <a href="https://experiments.withgoogle.com/ai/beat-blender/view/"><h6>4.Beat Blender</h6></a>
+                                    <img style="width: 100%;"src="ITP/cofm/w2/beat.jpg">
+                                    <br><br>
+                                    Last but not least, the Beat Blender. This is a very interesting interface than sort of hide the magic of music behind the four-color-gradient. Each corner has one loop of beat, and at the sections that the colors mixed together, the beat also sort of mixed--this compare to the rest of the interfaces is a more experimental project, specially from the music standards--when the user has been given more freedom. Eventhough I found it was pretty complicated when you try to adjust the beat of each corner (it gives a lot of default beat options), you don't need to adjust and you will still found intriguing beacuse of the "Drag / Draw" at the left bottom corner. It is definitly a very new way to combine loops together. it almost looks very random, but each loop are somehow related to each other because they are in 'gradient'.
+                                    
+                                    </p>
+                    <br><br><br><br>
+                            <div class="powr-comments" id="844e3f0f_1569430797"></div>
+                            <br><br>
+                    
+                    
+                    
+                    
+                    </div>
+                </div>
+             
+             <div class="blogPost" data-tags="com f2019" >
+                    <iframe class="crop" src="https://www.youtube.com/embed/n4HQb7DZI0I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><figcaption><i>Clipping - INTRO</i></figcaption>
+                                <div class="paragraph" ><h5>Week 1 - Anxiety of Machination (Concept)
+</h5><figcaption>Project w/ Sylvan Zheng</figcaption><br><p>In a room of crowd, people stopped to see this—a transparent cube with a man inside, who is standing in the middle of running machines, trying to stop the noises that the machines create.  Outside of the cube there’s typewriters; that connects to the AI system that has a voice liabrary of  on each side of the cube facing towards the audience—The Anxiety Of Machination is an interactive installation piece and performance tool inspired by the track “Intro” by the experimental hiphop group clipping.<br><br>This piece aims to explore the relationship between human and machine; the anxiety produced by their interaction and the power dynamics between them.
+                                    <h6>Installation Overview</h6>
+                                    
+The installation features a small space, roughly 10’ by 10’ square in the center of the stage or a gallery space. <br><br><img class="crop" src="ITP/cofm/anxiety_of_machination_1.jpg"><img class="crop" src="ITP/cofm/Untitled-2.jpg"><figcaption>The floorplan of the space</figcaption><br><br>The space is delineated with glass walls and is filled with industrial machinery - gears, floor levers, steam pipes, etc. The participant enters and can freely play with the machinery, adjusting the levers, spinning gears, and so on. The different pieces of machinery control different elements of sound, some primarily through the physical vibrations created by the machine pieces rubbing or clanking, but others may trigger changes to audio being played by a computer-controlled speaker system. The participant can control the tempo, abrasiveness of the background instrumental, internal rhythm of the computer-generated hip-hop vocal part, and can also choose to trigger the breakdown/self-destruct sequence which will end the piece. However, aside from this self-destruct mechanism there is no way for the participant to actually calm or slow the musical tension being built; like a runaway train the participant’s choices are limited to various stylistic adjustments within the larger narrative arc of rising tension followed by (destructive) release.
+                                    <img style="width: 100%;" src="ITP/cofm/week1-a.jpg"> <figcaption>The "Instruments"</figcaption>
+
+
+                                    <br><br>
+                                   <img style="width: 50%;float: left;" src="ITP/cofm/week1.gif"> <img style="width: 50%;" src="ITP/cofm/week1-01.gif">
+                                    <br><br><br><br>
+                            <div class="powr-comments" id="844e3f0f_1569430797"></div>
+                            <br><br>
+
+</p></div>
+                    
+                </div>
+
+
+                    
+                    
+                    <div class="blogPost" data-tags="icm f2019" >
+                         <iframe class="crop" src="https://www.youtube.com/embed/Q7DffobVHpE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            
+                   <figcaption><i>The Symbol Mirrors</i></figcaption>
+                                        
+                        <div class="paragraph" >
+                            <h5>Video on P5: <a href="https://editor.p5js.org/michellu0929/present/j3ZciB8Ve">Text</a> and <a href="https://editor.p5js.org/michellu0929/present/Z49ClodQA">Emoji</a></h5>
+                            <p> 
+                            The first thing came to my mind when I thought about pixels, were the 'text drawings' sometimes you can see on the twitter timeline that might look something like this:<br><br>
+                            <img width="100%" src="http://cara-apex-2016.weebly.com/uploads/3/8/4/0/38408733/5418018_orig.jpg">
+                            <br><br>
+                            I want to play with the only the negative/positive space of each letter or symbol to create shape and line out of it without change the oppacity/brightness of the elements. To do this, I will need to get the brightness instead of the color for each pixel, and assign a certain range to different text by using if statement.
+                            <br>
+                            <br>
+                            I made the negative space black, so that means the the darker pixels will be assigned to the symbols that has the least possitive spaces. And I have the following statement:
+<br><br><i id="codetext">
+let brit = int(brightness(img.get(x, y)));
+
+
+
+if (brit >= 0 && brit <= 10) {
+updateText('.', x, y);
+
+} else if (brit >= 11 && brit <= 20) {
+updateText('*', x, y);
+
+} else if (brit >= 21 && brit <= 30) {
+updateText('!', x, y);
+
+} else if (brit >= 31 && brit <= 40) {
+updateText('/', x, y);
+
+} else if (brit >= 41 && brit <= 50) {
+updateText('+', x, y);
+
+} else if (brit >= 51 && brit <= 60) {
+updateText('=', x, y);
+
+} else if (brit >= 61 && brit <= 70) {
+updateText('o', x, y);
+
+} else if (brit >= 71 && brit <= 90) {
+updateText('O', x, y);
+
+} else if (brit >= 91 && brit <= 100) {
+updateText('@', x, y);
+
+}<br>
+</i><br><br>
+                            
+                                I'm pretty satisfied with the look already, but I still sort of wanted to play with color that is relevant to the color of the capture. I first tested out the range for red (it should be 255, 0, 0, 1 for rgba, but I know the lightness will affect the color). I called out the values of each pixel and give it the range of R > 200, G < 50, B < 50, A > 0. However, eventhough I was wearing a red hoodie, it still didn't get any red. So I made the range even wider:
+                      <br><br><i id="codetext">          
+let c = img.get(x, y);
+
+if (c[0] >= 170 && 
+c[1] <= 100 && 
+c[2] <= 100 && 
+c[3] >= 0) {
+                                
+fill('red');
+                                
+} else {
+                                
+fill('white');
+
+};
+                                </i>                       
+                                And this is what I got:<br><br>
+                                
+                                <iframe class="crop" src="https://www.youtube.com/embed/dOCYTVrpddA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                
+                                <br><br>
+                                I love to zooming in to the symbol pixels to see them wiggling. Also like this visual esthic a lot and it's pretty accurate:<br><br>
+                                <img class="crop" src="ITP/icm/week1/coke.png" ><figcaption><i>"Coca-cola" in Japanese</i></figcaption><br><br>
+                                
+                                And I was having fun playing with this by creating a slider that you can change the colors: <a href="https://editor.p5js.org/michellu0929/sketches/NB7vYY16W">Code</a><br><br>
+                                
+                                <iframe class="crop" src="https://www.youtube.com/embed/Mh6wW7INxWk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br><br>
+                                
+                                After played with pure text, talking about my initial insipiration--visuals done by text, recently, people were also using emojis as pixels.
+                                <br><br>
+                                <img width="50%" src="ITP/icm/week1/emoji.png">
+                                <img width="49%" src="ITP/icm/week1/emoji2.png">
+                                <figcaption><i>Tweets</i></figcaption><br><br>
+                                
+                                Seeing the potential of this becoming a video filter, I chose the two emoji that came to my mind straight when I planned to make this: 🌚 and 🌝, which are perfect for bright and dark pixels. Then I tested out with some emojis that will give a good transition inbetween the two (that also carries a similar 'meme(?) vibe') and the alien work out the best! It is pretty interesting that from far the color scheme actually looks like a decent (well, it should be) color choice, but when zoomed in, you will see faces...
+                                
+                                <br><br>
+                                <img width="100%" src="ITP/icm/week1/emoji-mirror.png">
+                            
+                            
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="blogPost" data-tags="phy f2019" >
+                         <img class="crop" src="ITP/phy/final/d2.jpg">
+                            
+                        
+                   <figcaption><i>Interactive Sculpture - The Pale Blue Dot</i></figcaption>
+                                        
+                        <div class="paragraph" >
+                            <h5>Proposal for Final: Planning, <a href="#fp-doc">Diagram and Userflow </a> </h5>
+                            <br id="fp-doc">
+                            
+                            <p>
+                              
+                              
+                              <br><br>
+                                <h6>Links to</h6>
+                                <br>
+                                <h6><a href="#fp-i">Inspiration</a> / <br><br><a href="#mt-d">Design</a> /<br><br> <a href="#mt-p">P and Comp</a> / <br><br><a href="#mt-f">Final Look</a></h6><br><br>
+                            
+                            <hr id="fp-i"><figcaption> <a class="bktop" href="#mt-doc">^Top</a></figcaption>
+                            
+                            <h6>Inspiration</h6>
+                  
+
+                          
+                      
+                          </p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="blogPost phy hi" data-tags="phy f2019" >
+                         <iframe class="crop" src="https://www.youtube.com/embed/scdiTL0pfO4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            
+                   <figcaption><i>"Pumpkin, UR BFF" Interactive Halloween Candy Bucket</i></figcaption>
+                                        
+                        <div class="paragraph" >
+                            <h5>Midterm - "Pumpkin, UR BFF": <a href="#mt-doc">Documentation</a> and <a href="https://editor.p5js.org/michellu0929/sketches/y-d-dBMmg">Code</a></h5>
+                            <br id="mt-doc">
+                            
+                            <p> <br><br>
+                                <h6>Links to</h6>
+                                <br>
+                                <h6><a href="#mt-i">Inspiration</a> / <br><br><a href="#mt-d">Design</a> /<br><br> <a href="#mt-p">P and Comp</a> / <br><br><a href="#mt-f">Final Look</a></h6><br><br>
+                            
+                            <hr id="mt-i"><figcaption> <a class="bktop" href="#mt-doc">^Top</a></figcaption>
+                            
+                            <h6>Inspiration</h6>
+                                I remembered when I was young I often go trick or treating with my younger brother and my friends during halloweens. There was an unofficial rule for that day, which was the houses that will be offering treats will  tied a ribbon to the door handle, so that other families who does want to get involved can avoid from this event. When I first moved there, I didn't know the 'rule' on that day, and remembering the 12-year-old Michelle Sun and 'her crew' being yelled by a young married couple after ringing the bell with a harmonized "Trick or Treat!"... We were so upset that we were planing for a water balloon trick, though we ended up forgetting the water ballwoon plan after the hyperness of received candies from other families, I still think a harmless but naughty trick is always what a kid wants during halloween.<br><br>
+                            So what if, a water spraying candie bucket?
+                            <br><br>
+                            
+                            
+                            
+                           <hr id="mt-d"><figcaption> <a class="bktop" href="#mt-doc">^Top</a></figcaption>
+                            
+                            <h6>Design</h6>
+                             For this project, I want to connected to P5JS to play around with the serial communication between web and arduino. There are several parts that I think should be added for the interactive experience--<br><br>
+                            <b>Physical Parts:</b><br>
+                            1. Spraying water (the main output)<br>
+                            2. Sensor for the candie - light sensor (input)<br>
+                            3. LED for the sensor (the input data will be low since it will be dark in the bucket)<br>
+                            4. Alerting LEDs (output - blinking)
+                            5. A box to hide the sensing part (to hide 2 and 3)<br>
+                            <br><br>
+                            
+                            <b>P5JS Parts:</b><br>
+                            1. A 'Start' action (input)<br>
+                            2. Timer (input/output?)<br>
+                            3. Showing successful sensing from light sensor (output)<br><br>
+                            
+                            
+                            <img class="crop" src="ITP/phy/midterm/design.png" ><figcaption><i>Planning</i></figcaption><br><br>
+                            
+                            
+                           <hr id="mt-p"><figcaption> <a class="bktop" href="#mt-doc">^Top</a></figcaption>
+                            
+                            <h6>P and Comp</h6>
+                            At first, I wanted to 3D print a bucket that has customized following parts:
+                            <br><br>
+                            1. two holes at the bottom for LED and Sensor. <br>
+                            2. a mouth with a hole and mount for water pump.<br>
+                            3. a rather thin layer for the eyes and two holders for blinking LEDs.<br>
+                            4. a thick layer at the bottom to hide and organize the wires.<br><br>
+                            
+                            However, as I asked for help on 3D printing, I noticed it will take almost a day to print a bucket and which might not even be working, also with a limited time on this project. So I decided to just save my time for the interactive part instead of the design for the bucket.<br><br>
+                            
+                            I made a wooden base at the bottom to hide all the wires, and drilled several holes inside that looks like this:
+                            <br><br>
+                            
+                            <img class="crop" src="ITP/phy/midterm/IMG_4478.jpg" ><figcaption><i>three holes for the main components</i></figcaption><br><br>
+                            
+                            <img class="crop" src="ITP/phy/midterm/IMG_4560.jpg" ><figcaption><i>the wooden base</i></figcaption><br><br>
+                            
+                            Before I mount everything, I need to make sure my 'comp' part works. I spent most of my time figuring out which data will be sent from p5 to Arduino and from Aruino to p5, and to make it clear I did this:<br><br>
+                            
+                            
+                            <img width="100%" src="ITP/phy/midterm/2.png" ><figcaption><i>planning</i></figcaption><br><br>
+                            
+                            My story with water pump was sort of a nightmare... Not only because of I spent sometime setting up DC Motor driver and give up then go to the TIP120 transistor, but also playing with water wasn't a good choice... <br><br>
+                            However, here's my documentation of the treat:<br><br>
+                        
+                            
+                            <iframe class="crop" src="https://www.youtube.com/embed/O_Kb7fJl_cU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+                            
+                            And trick (the response takes 14s... but it is working):<br><br>
+                            
+                            <iframe class="crop" src="https://www.youtube.com/embed/DKqY8J_YMeg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+                            
+                             <hr id="mt-f"><figcaption> <a class="bktop" href="#mt-doc">^Top</a></figcaption>
+                            
+                            <h6>Final Look</h6>
+                            
+                            Last but not least, the code in my <a href="https://editor.p5js.org/michellu0929/sketches/y-d-dBMmg">p5 page</a> and arduino code could be find <a href="#mt-ar">below</a> or in the p5 page as well. And I will end here with some documentary photography. Thank you!<br><br>
+                            
+                            <img width="100%" src="ITP/phy/midterm/DSC_6478.jpg" ><br>
+                            <img width="100%" src="ITP/phy/midterm/DSC_6480.jpg" ><br>
+                            
+                            <img width="100%" src="ITP/phy/midterm/DSC_6483.jpg" ><br>
+                            
+                            
+                            <h6 id="mt-ar">Arduino Code</h6>
+                            <br><br><i id="codetext">
+#define lightSensor A0
+#define sensorLED 2
+#define waterPump 6
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(sensorLED, OUTPUT);
+  pinMode(lightSensor, OUTPUT);
+  pinMode(waterPump, OUTPUT);
+}
+void loop() {
+  // analogWrite(waterPump, 0);
+  if(Serial.available() > 0 ){
+  int byteFromSerial = Serial.read();
+  
+  analogWrite(sensorLED, 255);
+  if (byteFromSerial == 1){
+
+    analogWrite(waterPump, 255);
+    delay(500);
+    analogWrite(waterPump, 0);
+    delay(5000000);
+    
+    } else if (byteFromSerial == 2){
+     analogWrite(waterPump, 0);
+}
+
+    
+}
+
+  int lightLevel = analogRead(lightSensor); 
+  Serial.println(lightLevel);
+  delay(50);
+
+}
+                                </i><br><br>
+                            
+                            
+
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+                     <div id="blogPost" class="hi" data-tags="phy f2019" >
+                         <iframe class="crop" src="https://www.youtube.com/embed/oVewvaD1Kk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            
+                   <figcaption><i>"Where's My Dollar" Piano</i></figcaption>
+                                        
+                        <div class="paragraph" >
+                            <h5>Week 5 - Phototransistor and CapacitiveSensor with <a href="#w5-pencil">Pencil</a> and <a href="#w5-coin">Coin</a></h5>
+                            <br id="">
+                            <p> <h6>Light Sensor - The Phototransistor</h6>
+                                I always wanted to try this light sensor when I see it in the kit. It is a little hard to control because the voltage is too low to have a larger range of data, but I created this little night light that will automatically turnon when the room is dark: <br><br>
+                            
+                            <iframe class="crop" src="https://www.youtube.com/embed/ZA3Ez68WpUE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            
+                            After fullfilled my 'light sensor dream', which I want to continue work on my piano project, decide to use other input as the keyboard instead of light sensors.
+                            
+                            
+                            
+                            <hr id="w5-pencil"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
+                            <h6>CapacitiveSensor Library with Pencil</h6>
+                            
+                           I somehow remembered from my middle school science class that the led in our pencil also is conductive for electricity. So I searched on it to see if it will also work for arduino and how can I use it. Then, this <a href="https://playground.arduino.cc/Main/CapacitiveSensor/">'CapacitiveSensor'</a> library grabbed my attention. 
+                            With the example that the page gaves, I did a little try on it:
+                            
+                            <br><br>
+                            
+                            <iframe class="crop" src="https://www.youtube.com/embed/M7X_yS5Kqn8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+                            
+                            This is how to include the library:
+                            <br><br><i id="codetext">
+#include <CapacitiveSensor.h>
+
+CapacitiveSensor   cs_4_8 = CapacitiveSensor(4,8);
+void setup()                    
+{
+   cs_4_8.set_CS_AutocaL_Millis(0xFFFFFFFF);
+   Serial.begin(9600);
+   pinMode(2,OUTPUT);
+}
+
+void loop()                    
+{
+long sensor1 =  cs_4_8.capacitiveSensor(50);
+    Serial.println(sensor1);  // print sensor output
+    if(sensor1 >= 49)
+   {
+      digitalWrite(2,HIGH);
+
+   }
+   else {
+
+    digitalWrite(2,LOW);
+   } 
+}
+                                </i><br><br>
+                            
+                            
+                            WOohoo! It is so interesting! I'm gonna make a piano out of it..... WAIT! Someone on youtube already did it and it was super good looking... hmmmmm... maybe something else.
+                            
+                            <hr id="w5-coin"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
+                            <h6>CapacitiveSensor Library with Coin</h6>
+                            
+                            So, I looked around my room, and for someone like me who never carries around cash, has a lot of coins at home... Since they conduct electricity, I played around with them:
+                            
+                            <br><br>
+                            
+                            <iframe class="crop" src="https://www.youtube.com/embed/\z-D55PF71IY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <figcaption><i>High-end, High Tech Sercurity System - "Marry has a Little Lamp"</i></figcaption>
+                            <br><br>
+                            Last week when I was trying to make a piano, the tone didn't play as expected. This time, I made each note into a void function with a delay and noTone in each:
+                            
+                            
+                            <br><br><i id="codetext">#include <CapacitiveSensor.h>
+
+void loop()                    {
+long sensor1 =  cs_3_7.capacitiveSensor(50);
+long sensor2 =  cs_4_8.capacitiveSensor(50);
+
+if(sensor1 >= 49){
+  digitalWrite(2,HIGH);
+  doPlay();
+}
+else if(sensor2 >= 49){
+  digitalWrite(2,HIGH);
+  rePlay();
+} else {
+
+digitalWrite(2,LOW);
+} 
+}
+
+
+void doPlay() {
+tone(12, 262);
+delay(250);
+noTone(12);
+
+}
+
+void rePlay() {
+tone(12, 294);
+delay(250);
+noTone(12);
+
+}
+                                </i><br><br>
+                            And then, this inspired me to make my "Where's My Dollar" Piano. The concept is, the coins on it is not even a dollar when it adds up...
+                            <br><br>
+                            
+                            <img class="twoinrow" src="ITP/phy/w5/IMG_4037.jpg" ><img class="twoinrow" src="ITP/phy/w5/IMG_4039.jpg" ><img class="twoinrow" src="ITP/phy/w5/IMG_4043.jpg" ><img class="twoinrow" src="ITP/phy/w5/IMG_4047.jpg" ><figcaption><i>Yeahhh</i></figcaption><br><br> The video:<br><br>
+                            
+                            <iframe class="crop" src="https://www.youtube.com/embed/oVewvaD1Kk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            
+                            
+                            
+                            
+
+                            </p>
+                        </div>
+                    </div>
+                    
+                     <div class="blogPost" data-tags="phy f2019" >
+                         <iframe class="crop" src="https://www.youtube.com/embed/oZif-pCt91Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   <figcaption><i>Jo Malone Speaker (Please be aware of the noise)</i></figcaption>
+                                        
+                        <div class="paragraph" >
+                            <h5>Week 4 - Tone Output in a Box and <a href="#piano1">Piano Wannabe</a></h5>
+                            <br id="tonebox">
+                            <p> 
+                                For this week's project, I combined with my fabrication <a href="fabri.html#enclosure">box project</a>! 
+                                <br><br>
+                                
+                                <br><br>
+                                <img width="100%" src="ITP/phy/w4/Untitled%20Sketch_bb.png"> <br><br>
+                                And the code for this: 
+                                <br><br><i id="codetext">
+void setup() {
+pinMode(5, OUTPUT);
+Serial.begin(9600);
+}
+
+void loop() {
+
+int potValue = analogRead(A7);
+Serial.println(potValue);
+
+int brightness = map(potValue, 0, 1023, 0, 255);
+analogWrite(5, brightness);
+
+int frequency = map(potValue, 0, 1023, 100, 4000);
+tone(6, frequency);
+delay(100);
+}</i><br><br>
+                                
+                                <img class="twoinrow" src="ITP/fab/w4/a.jpg"> <img class="twoinrow" src="ITP/fab/w4/b.jpg"><img class="twoinrow" src="ITP/fab/w4/4.jpg"> <img class="twoinrow" src="ITP/fab/w4/3.jpg"><figcaption><i>Details</i></figcaption><br><br><br><br>
+                                
+                                <hr id="piano1"><figcaption> <a class="bktop" href="#tonebox">^Top</a></figcaption>
+                            After this, I wanted to make a small piano with basic "Do, Re, Mi" using three buttons. I have the set up like this:<br><br>
+                            <img width="100%" src="ITP/phy/w4/piano1.png"> <br><br>
+                            And the code looked like this: 
+                                <br><br>
+                            <i id="codetext">
+#define MI_PIN 4
+#define RE_PIN 3
+#define DO_PIN 2
+#define soundPin 6
+                                
+void setup() {
+pinMode(DO_PIN, INPUT);
+digitalWrite(DO_PIN, 0);
+pinMode(RE_PIN, INPUT);
+digitalWrite(RE_PIN, 0);
+pinMode(MI_PIN, INPUT);
+digitalWrite(MI_PIN, 0);
+Serial.begin(9600);
+}
+
+void loop() {
+Serial.println( digitalRead(DO_PIN) ); 
+
+
+while(digitalRead(DO_PIN) ==1 ) { 
+
+tone(soundPin, 262);
+
+} 
+while(digitalRead(RE_PIN) ==1 ){
+
+tone(soundPin, 294);
+
+}
+while(digitalRead(MI_PIN) ==1 ){
+ 
+tone(soundPin, 330);
+
+} 
+noTone(6);
+}
+                            </i><br><br>
+                                HOWEVER! It didn't work... The push button pins isn't even sending back 0 and 1s while another application with the same programming for the button pins works.
+
+                                
+                                
+                            <br><br><br><br>
+                            <div class="powr-comments" id="844e3f0f_1569430797"></div>
+                            <br><br>
+                            
+
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="blogPost" data-tags="phy f2019" >
+                   
+                   <iframe class="crop" src="https://www.youtube.com/embed/tSUepDJcGNE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   <figcaption><i>Controlling LED Lights using a Potentiometer</i></figcaption>
+                   
+                                <div class="paragraph" id="top">
+                                    <h5>Week 3 - <a href="#dInput">Digital</a> and <a href="#aInput">Analog Input</a>, <a href="#servo">Servo</a> and <a href="#obs">Observations</a></h5>
+                                    
+                                    <p> <hr id="dInput">
+                                        <h6>Digital Input</h6>
+                                        As I am playing with the LEDs, I feel anxious to see them being constantly lighted up so brightly--I want to make them dimmer--inspired me to look for a way to control the brightness level. I tried by playing with <i id="codetext1">digitalWrite</i> 0.5 and figured that this wont happen since it is still the digital signal (since there is no in between values, values under 0.5 will always be 0 and above will always be 1.) So to make it analog I watched a tutorial on generating analog signals and the solution is <i id="codetext1">analogWrite</i>! (yeah! changing the word from 'digital' to 'analog' took me so long!) But to make it loop in different brightness level, the code looks like this:<br><br>
+                                    
+                                    <i id="codetext">
+#define whiteLEDPin 5
+
+void setup() {
+pinMode(whiteLEDPin, OUTPUT);
+
+}
+
+void loop() {
+for(int value = 0; value<=255; value++){
+analogWrite(whiteLEDPin, value);
+delay(30);
+}
+
+delay(50);
+
+for(int value = 255; value>=0; value--){
+analogWrite(whiteLEDPin, value);
+delay(30);
+}
+
+delay(50); 
+
+}</i>
+                                    
+                                    <br><br>
+                                    
+                                        So first thing first, connect to the LED pin, always. In the loop section, I created a interger called <i id="codetext1">value</i>, <br><br>
+                                    
+                                    <i id="codetext">for(int value){<br>}</i>
+                                    
+                                    <br><br>which the initial value of 'value' will be 0 (LED turned off) 
+                                    <br><br>
+                                    
+                                    <i id="codetext">
+for(int value = 0;){
+}
+                                    
+                                    </i>
+                                    
+                                    <br><br>
+                                    and when <i id="codetext1">value</i> is smaller or equals to 255 (bits), the <i id="codetext1">value</i> increases:
+                                    <br><br>
+                                    
+                                    <i id="codetext">
+                                        for(int value = 0; value<==255; value++){
+                                        <br>}
+                                    
+                                    </i>
+                                    <br><br>
+                                    After that, use analogWrite to light up the LED:
+                                    
+                                    <br><br>
+                                    
+<i id="codetext">
+for(int value = 0; value<=255; value++){
+analogWrite(whiteLEDPin, value);
+delay(30);
+}
+
+</i>
+                                    <br><br>
+                                    This will light up the LED with a smooth gradient in brightness, but to make it a loop back to off, we will need this:
+                                    <br><br>
+                                    
+<i id="codetext">
+for(int value = 255; value>=0; value--){
+analogWrite(whiteLEDPin, value);
+delay(30);
+}
+
+</i>
+                                    <br><br>
+                                    and now it is a smooth looping in brightness, yay!
+                                        <br><br> 
+                                       <iframe class="crop" src="https://www.youtube.com/embed/VVLfR5bgzvo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+                                    <hr id="aInput"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
+                                    
+                                    <h6 >Analog Input   </h6>
+                                        
+                                        The first try I had with analog input was the sensor. I saw it and always wanted to use it, but the connection wasn't challenging at all (cocky), I just connect the sensor to the board and it worked with the same code we did in class.
+                                    
+                                        <br><br> 
+                                       <iframe class="crop" src="https://www.youtube.com/embed/UqJicdXblnM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <br id="ledparty"><br>
+                                    
+                                    And so my attention goes to the potentiometer instead--I want to create a LED party--being able to control more than one LED with the potentiometer. Knowing that LED has 255bits, to detect a analog signal, I will also need to set integer for the bits of a potentialmeter. But before that, define the pin of the LEDs: there are more than one LED, so set a integer that states the initial output pin as the first LED that you want to light up.In my case it is Pin 2:
+                                    <br><br>
+                                    
+<i id="codetext">
+
+void setup() {
+for(int i=2;){}
+}
+
+</i>
+                                    <br><br>
+                                    Then, like the <i id="codetext1">value</i> integer from the previous application, we tell it to increase when it is smaller and equals to 7. And we have the LEDs connected:
+                                    
+                                    <br><br>
+
+<i id="codetext">
+
+void setup() {
+for(int i=2;i<=7;i++)
+{
+pinMode(i,OUTPUT);}
+}
+
+</i>
+                                    <br><br>
+                                    
+                                    Next, by knowing that the value for a potentiometer is 0-1023, we need some sort of 'translation' to make 0-1023 = 2-7. And this can be done by the <i id="codetext1">map()</i>. I set an ineger for this value:
+                                    
+                                    
+                                    <br><br>
+                                    
+<i id="codetext">
+void loop() {
+int pot = map();
+}
+
+</i>
+                                    <br><br>
+                                    
+                                    Afterwards, we tell map about where to read, translate what 'low and max' value into what 'low and max' value. 
+                                    
+                                    
+                                    
+                                     <br><br>
+<i id="codetext">
+void loop() {
+int pot = map(analogRead(A5), 0, 1023, 2, 7);
+
+}
+</i>
+                                    <br><br>
+                                    
+                                    Now, set integer<i id="codetext1"> i</i> as off, and when<i id="codetext1"> i</i> is increasing when it is smaller and equals to pot, <i id="codetext1">i</i> is HIGH (on). And then set the<i id="codetext1"> i</i> as 'just bypassed' the LED to make a turning off loop.
+                                    
+                                     <br><br>
+<i id="codetext">
+void loop() {
+int pot = map(analogRead(A5), 0, 1023, 2, 7);
+for (int i=0;i<=pot;i++)
+{
+digitalWrite(i,HIGH); 
+}
+
+for (int i=pot+1;i<=7;i++)
+{
+digitalWrite(i,LOW ); 
+}
+}
+</i>
+                                    <br><br>
+                                    
+                                    So the entire code looks like this:
+                                    <br><br>
+                                    
+<i id="codetext">
+
+void setup() {
+for(int i=2;i<=7;i++)
+{
+pinMode(i,OUTPUT);
+}}
+
+void loop() {
+int pot = map(analogRead(A5), 0, 1023, 2, 7);
+for (int i=0;i<=pot;i++)
+{
+digitalWrite(i,HIGH); 
+}
+
+for (int i=pot+1;i<=7;i++)
+{
+digitalWrite(i,LOW ); 
+}
+
+}
+
+</i>
+                                    <br><br>
+                                    And work like this:
+                                    <br><br>
+                                    <iframe class="crop" src="https://www.youtube.com/embed/khuKSggrovE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <figcaption><i>Controlling LED Lights using a Potentiometer</i></figcaption>
+                                    <br><br>
+                                    In the cover video, I change the value of the initial LED pin to that is one before the initial LED, so that all lights can be off at the initial and when switched off.<br><br>
+                                    <hr id="servo"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
+                                        <h6>Servo</h6>
+                                    
+                                    Now, I know how to use a potentiometer, I know how to connect it to a servo! I THINK!
+                                    <br><br>
+                                    First, I tell it the existence of my servo, name my servo as <i id="codetext1">myservo</i>, and have it setted up to pin 9:
+                                    <br><br>
+                                    
+                                    <i id="codetext">
+                                    
+#include <Servo.h>
+
+Servo myservo;
+                                        
+void setup() {
+myservo.attach(9);
+}
+                                    </i>
+                                    <br><br>
+                                        
+                                        
+                                        Then, like what I have did in the <a href="#ledparty">LED party</a> application, translate the signals of servo and the potentiometer using the <i id="codetext1">map()</i> function. In this case, I heard that it is better to set the initial of servo as 4 and highest at 176 even though the value is 0-180, because servo kind of vibrates even when you turn the potentiometer to 0. But this value still didn't stop my servo from vibrating. However, this is how the code looks like:
+                                        
+                                        <br><br>
+                                    
+<i id="codetext">
+#include <Servo.h>
+
+Servo myservo;
+
+void setup() {
+myservo.attach(9);
+}
+
+void loop() {
+int val = analogRead(A5);
+int i = map(val, 1, 1023, 4, 176);
+myservo.write(i);
+delay(15);
+
+}
+</i>
+                                    <br><br>
+                                    
+                                    And here is my beautiful servo controlled by the potentiometer:
+                                        <br><br>
+                                        
+                                        
+                                     <iframe class="crop" src="https://www.youtube.com/embed/tTrzpR4nQFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    
+                                        <hr id="obs"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
+                                        <h6>Observation - Lasercutter</h6>
+                                        
+                                        Laser-cutter is the technology that I 'interacted' the most for the past week, and also the technology that I observed it 'interact' with people the most. The input will be from the computer, to the laser-cutter, just like any printer will work, the output is physical. The language you use to communicate with laser-cutter is to use Adobe Illustrator (vector files) with either a stroke of 0.001pt (for the itp one) and a power set to 85-100%, a speed of 15%-20% to cut through, or a fill with a power of 30-50% and a speed of 80-100% to engrave. This digital to physical transition seems really fascinating. However, these numbers and your vector files doesn't promise you the preciseness. The physics of how laser works and the material you use always creates uncertainties. Below are some stories happened with laser-cutter that I observed while I was suffering at the shop area:
+                                        <br><br>
+                                        <b>Scene: "It didn't cut through"</b><br><br>
+                                        
+                                        My classmate had been standing in front of the laser cutter for 20 mins with some acrylics in different colors that had been cut and engraved on the side, and he had been sending the same job three times already to same piece of acrylic. Finally, he can’t do it anymore on the piece that already had several same cuts that are all slightly off, he went to the shop staffs and asked for help. The power setting and everything else are all the same, the only difference is the color—which laser is basically a beam of light—will act differently when it shoots to different color or transparency. <br><br>
+
+                                        <i><u>Comment:</u></i> 
+                                        The uncertainty always exist due to behavior of lights—when the beam hits the material, it will be reflect/bent due to PHYSICS (aka just-how-things-work-on-earth), however, this uncertainty was never really officially stated in the input system nor the on the machine itself. Also, even on the same  piece in one round, the power will be different depending on how far the beam head need to travel from its initial position. So if the head need to travel to the opposite corner, it might not cut through while the one that is closer to its starting point successfully cut through. That is, a bad communication or we say, bad user experience. It is almost feels like a fraud when you submitted a perfect file and ended up with that. Next, talking about this happening mention previously, it is obvious to notice how different the machine will react when it is treating different materials, however, due to the special characteristic of light reacting to color, it is hard to calculate how you should put it the power, this without and explanation or educational support, assumed everyone being an expert in physics (at the same time fabrication and possibly design). This means, instead of parallel communication, it requires the user to be well educated to be able to interact with the technology, which is no-longer an efficient nor high interactivity. Also, another evidence of low interactivity is that the machine only considered one side of the input, which is the vector file and settings you sent from the computer, yet not the material been putted on the machine—I think this is a big drawback. <br><br>
+
+                                        But, I still love it <br><br><img class="crop" src="ITP/fab/w3/product-photo/DSC_6294.jpg"><figcaption><i><a href="fabri.html">Lasercut incense burner and Vase: Lei (淚)</a></i></figcaption>
+                                        <br><br><br><br>
+                            <div class="powr-comments" id="844e3f0f_1569430797"></div>
+                            <br><br>
+                                    
+                                    </p>
+                                    
+                                </div>
+                    </div>
+                    
+                    
+                    
+             
+             <div id="blogPost" data-tags="phy f2019" >
+                 <iframe class="crop" src="https://www.youtube.com/embed/MaC0gVSMOZ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                 <figcaption><i>Welcome to Hogwarts</i></figcaption>
+                                <div class="paragraph" >
+                                    
+                                    <h5>Week 2 - Lumos Maxima Switch</h5>
+                                    
+                                    <p> <i>Led Light Switch on Arduino</i>
+                                        <br><br><br><br>
+                                        It is all done by Magic.
+                                        <br><br>Try:<br>Lumos Maxima...<br>Lumos MaxiMa...<br>Lumos MAXIMA!!
+                                        <br><br><br><br><br><br><br><br>
+                                        
+                                        Hi... So the inspiration came from the material--magnet, which I intend to get it for another class, that also conduct electricity. I wanted to make a switch that happen to looks like:
+                                        
+                                        <br><br>       
+                                    <img class="crop" src="ITP/phy/w2/light.jpg">
+                                    
+                                    <br><br>
+                                    
+                                    Yet, when I was trying to connect the thin wire to the magnet, I figured that, unlike the on ein the image, every material need to be nude and touching each other inorder to have the current flow. However, when magnet are touching each other, their force are too big to have the circuit open again. Facing the truth of my lack of knowledge in this field (only for now), I need to think of another way since I do not want to give up on the material.
+                                    <br><br>
+                                    So, instead of having the magnet as one of the connections, I used the ability of magnet as the force to close the circuit. By using a material that can be attracted to magnet and one that only conduct electricity but not attracted to magnet. I had some help with google, and I had this 
+                                    <br><br>
+                                    
+                                    <video class="crop" width="320" height="240" controls>
+                                    <source src="ITP/phy/w2/try1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                    </video>
+                                    
+                                    <br><br>
+                                    After the first try, I made a new, cleaner version of the system:
+                                    <br><br>
+                                    
+                                    <img style="width: 33.3%;float: left;" src="ITP/phy/w2/1.jpg">
+                                    <img style="width: 33.3%;" src="ITP/phy/w2/2.jpg">
+                                    <img style="width: 33.3%;float: left;" src="ITP/phy/w2/3.jpg"> 
+                                    
+                                    <br><br>
+                                    And then, I want to hide the magic so I covered up everything with a film case, with a wand that has hidden magnets at the tip of it:
+                                    <br><br>
+                                    
+                                    <img style="width: 50%;float: left;" src="ITP/phy/w2/a.jpg"> <img style="width: 50%;" src="ITP/phy/w2/b.jpg">
+<!--
+                                    <br><br>And here, is a 2 min video of me practicing my spell (though I stil have it pronouced as luMINOs maxima...):<br><br>
+                                    <video class="crop" width="320" height="240" controls>
+  <source src="ITP/phy/w2/cuts.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video><br><br>
+--><br><br><br><br>
+                            <div class="powr-comments" id="844e3f0f_1569430797"></div>
+                            <br><br>
+                                    </p>
+                                </div>
+                </div>
+             
+             
+               
+                    <div id="blogPost" data-tags="phy f2019" >
+                            <img id="week-1" class="crop" alt="A image of a lady standing infront of the mirror seeing it reflecting two of her own. This is a scene from the immersive show called then she fell." src="ITP/phy/thenshefell5-photo-by-chad-heird.jpg">
+                            <figcaption>Immersive Show - <i>Then She Fell</i></figcaption>
+
+                                <div class="paragraph" ><h5>Week 1 - <a href="#art-of-interactive-design">art-of-interactive-design</a> and <a href="#the-future">the future</a> of it</h5><p> 
+                                    <br>
+                                    <hr id="art-of-interactive-design"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
+                                    <h6 >The Art of Interactive Design: A Euphonious and Illuminating Guide to Building Successful Software</h6>
+
+
+
+                                    Chris gives his definition of interactivity, that is interactivity involves the an alternately process of listening, thinking and speaking of two actors. It’s very interesting how he deny the ‘activities’ (such as reading, dancing, watching movies and etc.) that people tend to mention as interactivity to be interactivity. Also, as an interaction (not interactivity) designer, how he differentiate Human-Factor Design, UI design and Interactivity Design really gives me an idea but I feel I still need to read more on this to learn his idea more solidly.
+                                    <br><br>
+                                    After reading the first chapter made me tend to rethink about the immersive shows: Sleep No More and Then She Fell.
+                                    <br><br>
+                                    
+                                    <img class="crop" alt="A image of two performers performing infront of a crowd of audience with masks on. This is a scene from the immersive show called sleep no more." src="ITP/phy/origin.jpg">
+                                    <figcaption>Immersive Show - <i>Sleep No More</i></figcaption>
+                                    <br><br>
+                                    
+                                    Whereas people mention them as the ineractive shows. Whether they are truly interactive or they are just an audience-participative show. My experience at Sleep No More is definitely a participation, never a interaction. Where you get to step into the performing area (since the entire building is their stage) and have little touches with the performers. Some lucky audience might be selected for 1 on 1 performances, but rather than “two actors alternatively listen, think and speak”, it’s more likely the performer do the speaking (only to you, with set lines), and the audience react. But my experience in Then She Fell could be in the degree of interactivity, a low to medium interactivity happened. The scale of the audience is way smaller than the one mentioned previously, that might also be what he mentioned in the first chapter “as audience size shrinks, the statistical factors become less adamant.” For every show there will only be 15 audience, with the similar (or maybe more) amount of performer. Most of the scenes I experienced in this show are 1 on 1 or two audiences with four of the performers. The most memorable part in the entire show, also, the part I considered as a medium interaction happening, is when I’m having a 1 on 1 scene with the heroine and we had a conversation about relationship. Her opening question might be a set line, but whatever comes after that involved both of our listening, thinking and speaking. Yet, I call it a low-to-medium interactivity is because we were strangers and it is hard to give good feedback for such personal topics, so it was not an useless (cliche) conversation (but it was still fun as it appeared in the show).
+                                    <br><br>
+                                    
+                                    In the next chapter he mentioned the relationship of computer and interactivity, which he suggested that the main "selling point" of a computer is its interactivity, by giving the example of ViSiCalc--the very first spreadsheet software on personal computers that allows the user to see the result/output directly on screen. This high efficiency indicates a sucessful, productive interactivity that a computer can provide. Thus, interactivity surely is the competitive advantage for computers.
+                                    
+                                    <br><br>
+                                    <hr id="the-future"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
+                                    
+                                    <a href="http://worrydream.com/ABriefRantOnTheFutureOfInteractionDesign/">    
+                                    <h6>A Brief Rant on the Future of Interaction Design</h6></a>
+                                    
+                                    Victor talked about how our activity had been limited down to Pictures Under Glass. He start by defining a  good tool is designed to fit both sides (capability vs. need). Talking about human capability, the thing that we use to interact with future technologies will be our hands. Our hands receive feedbacks from almost everything in this world—we notice when we grabbed two pages at once when we are reading and trying to slip apart by rubbing them; we feel the change in weight of a glass of water when it’s getting lesser and lesser; we feel the different texture of tissue papers and select each for different usages. However, our technology devices nowadays, which we spend most of our tactile experience with, are all so-called the Pictures Under Glass. Victor deny the saying of touchscreen devices to be the future of interaction, instead, sort of a backward in interaction (I felt it actually sounded too esthetically when he mentioned black and white in photography. I like film and black and white <3 ). 
+                                    <br><br>
+                                    Now, almost every services had been shrinken down to the size of the “glass brick” we carry in hand. The “User-Friendly” we mentioned nowadays are also only up to the extend of how hands handle this glass, but not about our hands. After reading this, I really feel even though these digital products provide us conveniency to almost every service just by clicking on this glass, but it limits the potential interaction that our hand can have to things in the world. Also, this concept of smart device generation limits our capability as a designer. We thought that accessibility lives in that tiny glass brick, and ignored the subject that we are doing this for—us.<br><br>
+                                    <img style="width: 100%;" src="ITP/phy/2017-02-01-21-03-36-740x1029.jpg">
+                                    <figcaption>Get your glass brick today!</figcaption>
+                                    <br><br><br><br>
+                            <div class="powr-comments" id="844e3f0f_1569430797"></div>
+                            <br><br>
+                                    </p>
+                            </div>
+            </div>
+             
+             
+                    
+                </div>
+                </div> 
+        <script src="script.js"></script>
+	</body>
+
+</html>
