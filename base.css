@@ -111,6 +111,11 @@ body {
   margin-top: 40px;
 }
 
+
+#s2020, #f2019 {
+    display: none;
+}
+
 ol,
 ul {
   list-style: none;
@@ -674,6 +679,10 @@ button {
 
   margin: auto;
   border: solid 1px black;
+/*
+    border-bottom: solid 5px magenta;
+    border-right: solid 5px magenta;
+*/
   color: black;
   font-family: futura;
   letter-spacing: 2px;
@@ -703,5 +712,9 @@ button:focus {
 .btnBox {
   
   margin-left:105px;
-  margin-top: 84px;
+  margin-top: 64px;
+}
+
+.btnBox button{
+    margin-bottom: 5px;
 }
