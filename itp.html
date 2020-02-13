@@ -23,6 +23,7 @@
     
 	<link type="text/css" href="base.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="btnscript.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
@@ -105,91 +106,7 @@
                           </div>
       </div>
                         </div>
-        <script>
-//function sPring() {
-//  var x = document.getElementById("s2020");
-//  if (x.style.display === "block") {
-//    x.style.display = "none";
-//  } else {
-//    x.style.display = "block";
-//  }
-//}
-//
-//function fAll() {
-//  var y = document.getElementById("f2019");
-//  if (y.style.display === "block") {
-//    y.style.display = "none";
-//  } else {
-//    y.style.display = "block";
-//  }
-//}
-            
-            
-filterSelection("all");
-            
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("blogPost");
-  if (c == "all") c = "";
-
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-// Show filtered elements
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
-    }
-  }
-}
-
-// Hide elements that are not selected
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-// Add active class to the current control button (highlight it)
-var btnContainer = document.getElementById("btnBox");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-</script>
         
-        
-<!--         <div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('phy')"> Cars</button>
-  <button class="btn" onclick="filterSelection('hi')"> Animals</button>
-   -->
-    
-<!--    <div id="btnBox">
-    <button data-filter="flexbox" data-reset="true">Reset</button>
-<button data-filter="flexbox" data-filter-tag="phy">Physical Computing</button>
-<button data-filter="flexbox" data-filter-tag="icm">Show B</button>
-<button data-filter="flexbox" data-filter-tag="icm">ICM: Media</button>
-
-    
-</div> -->
         <div id="horiscroll-itp">
                 <div class="flexbox" >
                     
