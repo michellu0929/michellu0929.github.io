@@ -159,6 +159,7 @@ ul {
 
 body,
 .pa,
+
 .blogPost {
   overflow: hidden;
   font-size: 10pt;
@@ -396,6 +397,19 @@ body {
   padding-bottom: 28px;
 }
 
+#horiscroll-itp{
+    margin-left: 374px;
+    margin-right: 43px;
+      overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  z-index: 1;
+
+  padding-top: 155px;
+  padding-bottom: 28px;
+}
+
 .blogPost {
   overflow-y: scroll;
   border: 1px solid #27f0c2;
@@ -455,6 +469,9 @@ body {
     width: 270px;
     height: 80%;
   }
+    #btnBox{
+    width: 100px;
+}
 
   .twoinrow {
     height: 250px;
@@ -546,6 +563,8 @@ body {
     height: 500px;
     overflow-y: scroll;
   }
+    
+    
 
   .flexbox {
     overflow-y: scroll;
@@ -672,13 +691,14 @@ body {
 }
 
 
-button {
+button, btn {
   background: none;
   height:20px;
   padding: 0 10px;
 
   margin: auto;
   border: solid 1px black;
+    cursor: pointer;
 /*
     border-bottom: solid 5px magenta;
     border-right: solid 5px magenta;
@@ -693,28 +713,49 @@ button {
   font-size: 8px;
 }
 
-button:hover {
+button:hover, btn:hover {
   background: magenta;
   border: solid 1px magenta;
   color: #fff;
 }
 
-button:active {
+button.active, .btn.active {
   background: #000;
   color: #fff;
+    border: dotted 1px cyan;
 }
 
-button:focus {
+
+
+button:focus, btn:focus {
   background: #000;
   color: #fff;
 }
 
 .btnBox {
-  
+  font-size: 10px;
+    letter-spacing: 2px;
+overflow: hidden;
+text-transform: capitalize;
+    font-weight: 600;
   margin-left:105px;
   margin-top: 64px;
 }
 
-.btnBox button{
-    margin-bottom: 5px;
+.btnBox .btn{
+    margin-bottom: 10px;
+}
+
+
+
+
+.show {
+  display: block;
+}
+
+#btnBox{
+    width: 218px;
+    padding: 10px;
+    border: solid 1px;
+    margin-bottom: 10px;
 }

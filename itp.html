@@ -6,6 +6,17 @@
 			ITP Projects
 		</title>
 	</head>
+    <style>
+    .blogPost {
+    display: none;
+}
+        
+        .flexbox{
+            margin-top:-61px;
+        }
+        
+        
+    </style>
     <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -57,51 +68,110 @@
             </div>
             
             <!--         button tag filter navigation     -->
-                 <div class="btnBox">
+                 
+
+        
+        
+        <div class="btnBox" >
                    
       
-<button data-filter="flexbox" data-reset="true">Reset</button>
-<button onclick="sPring()">Spring 2020</button>   
-<button  onclick="fAll()">Fall 2019</button>   
+<!--<button data-filter="flexbox" data-reset="true">Reset</button>-->
+<button class="btn active" onclick="filterSelection('all')">ALL</button>
+<!--
+<button class="btn" onclick="sPring()">Spring 2020</button>   
+<button class="btn" onclick="fAll()">Fall 2019</button>   
+-->
                      
-                     <div id="s2020" >
+                     <div id="btnBox" >
                          SPRING 2020
-<button data-filter="flexbox" data-filter-tag="comics">Comics</button>
-<button data-filter="flexbox" data-filter-tag="bio">Future Food</button>
-<button data-filter="flexbox" data-filter-tag="ar">AR</button>
-<button data-filter="flexbox" data-filter-tag="pd">product design</button>
-<button data-filter="flexbox" data-filter-tag="ii">Intangible Interaction</button>
-<button data-filter="flexbox" data-filter-tag="ux">UX design</button>
+<button class="btn" onclick="filterSelection('comics')">Comics</button>
+                         <button class="btn" onclick="filterSelection('ar')">AR</button>
+<button class="btn" onclick="filterSelection('bio')">Future Food</button>
+<button class="btn" onclick="filterSelection('ux')">UX Design</button>    
+<button class="btn" onclick="filterSelection('pd')">Product Design</button>
+<button class="btn" onclick="filterSelection('ii')">Intangible Interaction</button>
+                   
                          </div>
                      
-                     <div id="f2019" >
+                     <div id="btnBox" >
                          FALL 2019
-<button data-filter="flexbox" data-filter-tag="phy">Physical Computing</button>
-<button data-filter="flexbox" data-filter-tag="com">Code of Music</button>
-<button data-filter="flexbox" data-filter-tag="fab">Fabrication</button>
-<button data-filter="flexbox" data-filter-tag="ani">Animation</button>
-<button data-filter="flexbox" data-filter-tag="icm">ICM: Media</button>
+
+<button class="btn" onclick="filterSelection('com')">Code of Music</button>
+<button class="btn" onclick="filterSelection('phy')">Physical Computing</button>
+<button class="btn" onclick="filterSelection('fab')">Fabrication</button>
+<button class="btn" onclick="filterSelection('ani')">Animagtion</button>
+<button class="btn" onclick="filterSelection('icm')">ICM: Media</button>
+
                           </div>
       </div>
-            </div>
-        
+                        </div>
         <script>
-function sPring() {
-  var x = document.getElementById("s2020");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
+//function sPring() {
+//  var x = document.getElementById("s2020");
+//  if (x.style.display === "block") {
+//    x.style.display = "none";
+//  } else {
+//    x.style.display = "block";
+//  }
+//}
+//
+//function fAll() {
+//  var y = document.getElementById("f2019");
+//  if (y.style.display === "block") {
+//    y.style.display = "none";
+//  } else {
+//    y.style.display = "block";
+//  }
+//}
+            
+            
+filterSelection("all");
+            
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("blogPost");
+  if (c == "all") c = "";
+
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
 }
 
-function fAll() {
-  var y = document.getElementById("f2019");
-  if (y.style.display === "block") {
-    y.style.display = "none";
-  } else {
-    y.style.display = "block";
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
   }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("btnBox");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
 }
 </script>
         
@@ -120,10 +190,10 @@ function fAll() {
 
     
 </div> -->
-        <div id="horiscroll">
+        <div id="horiscroll-itp">
                 <div class="flexbox" >
                     
-                    <div class="blogPost" data-tags="comics" >
+                    <div class="blogPost comics" >
                         <img width="100%" src="ITP/comics/2panels.gif" >
                    <figcaption><i>Combinations of Words and Imagery </i></figcaption>
                                         
@@ -137,7 +207,7 @@ to be updated
                         </div>
                     </div>
                     
-                    <div class="blogPost" data-tags="ii" >
+                    <div class="blogPost ii" data-tags="ii" >
                         <img width="100%" src="ITP/ii/w1/IMG_0032.PNG" >
                    <figcaption><i>Automatic-flush </i></figcaption>
                                         
@@ -153,7 +223,7 @@ to be updated
                     </div>
                     
                     
-                    <div class="blogPost" data-tags="bio" >
+                    <div class="blogPost bio" data-tags="bio" >
                         <img width="100%" src="ITP/bio/vertical-farming-banner.jpg" >
                    <figcaption><i>Verticle Farming </i></figcaption>
                                         
@@ -192,7 +262,7 @@ I researched on a little about 3D printed food, and knowing the need of longer j
                     
                     
                     
-                    <div class="blogPost" data-tags="ani f2019" >
+                    <div class="blogPost ani" data-tags="ani" >
                         
                         <iframe class="crop" src="https://youtube.com/embed/AJrREAYBi0I" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                    <figcaption><i>"The World - Music Pattern" (Soundflower doesn't work on Catalina, I'll figure this out for the sound)</i></figcaption>
@@ -250,7 +320,7 @@ I researched on a little about 3D printed food, and knowing the need of longer j
                         </div>
                     </div>
              
-                    <div class="blogPost" data-tags="ani f2019" >
+                    <div class="blogPost ani" data-tags="ani" >
                         
                         <iframe class="crop" src="https://player.vimeo.com/video/375580365" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                    <figcaption><i>"Dreamwalk"</i></figcaption>
@@ -304,7 +374,7 @@ I researched on a little about 3D printed food, and knowing the need of longer j
                     
                     
                     
-                     <div class="blogPost" data-tags="ani f2019" >
+                     <div class="blogPost ani" data-tags="ani f2019" >
                         <iframe class="crop" src="https://www.youtube.com/embed/W94wf53M6JM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             
                    <figcaption><i>"Love Cut"</i></figcaption>
@@ -347,7 +417,7 @@ I researched on a little about 3D printed food, and knowing the need of longer j
                         </div>
                     </div>
     
-                  <div class="blogPost" data-tags="fab f2019">
+                  <div class="blogPost fab" data-tags="fab f2019">
                          <img class="crop" src="ITP/fab/w6/IMG_4317.jpg" >
                    <figcaption><i>Film Roller</i></figcaption>
                                         
@@ -421,7 +491,7 @@ I researched on a little about 3D printed food, and knowing the need of longer j
              
              
              
-                    <div class="blogPost" data-tags="fab f2019">
+                    <div class="blogPost fab" data-tags="fab f2019">
                          <img class="crop" src="ITP/fab/w5/IMG_4069.jpg" >
                    <figcaption><i>Jie in Insense Burner Form</i></figcaption>
                                         
@@ -493,7 +563,7 @@ I researched on a little about 3D printed food, and knowing the need of longer j
                     
                     
                     
-                    <div class="blogPost" data-tags="fab f2019">
+                    <div class="blogPost fab" data-tags="fab f2019">
                          <iframe class="crop" src="https://www.youtube.com/embed/f2Mpl78GbP0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                    <figcaption><i>"Beat (hit) it. Beat the Time"「打つ。時を打つ。」-- Gyokusendo</i></figcaption>
                                         
@@ -519,7 +589,7 @@ I researched on a little about 3D printed food, and knowing the need of longer j
              
              
              
-             <div class="blogPost" data-tags="fab f2019">
+             <div class="blogPost fab" data-tags="fab f2019">
                          <iframe class="crop" src="https://www.youtube.com/embed/oZif-pCt91Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                    <figcaption><i>Jo Malone Speaker (Please be aware of the noise)</i></figcaption>
                                         
@@ -548,13 +618,13 @@ I researched on a little about 3D printed food, and knowing the need of longer j
                         </div>
                     </div>
                     
-                    <div id="blogPost" data-tags="fab f2019">
-                        <img class="crop" src="ITP/fab/w3/product-photo/DSC_6294.jpg">
-                        <figcaption><i>Insense Burner & Vase: 淚 Lei</i></figcaption>
+                    <div class="blogPost fab">
+                    <img class="crop" src="ITP/fab/w3/product-photo/DSC_6294.jpg">
+                        <figcaption><i>Insense Burner and Vase: 淚 Lei</i></figcaption>
                                         
-                        <div class="paragraph" >
+                        <div id="top" class="paragraph" >
                             <h5>Week 3 - Lasercut incense burner and Vase: Lei (淚)</h5>
-                            <br id="top">
+                            <br>
                             <p> Lei (淚) means Tears - The essence of ones' emotion.
                                 <h6><a href="#jie-ins">Inspiration</a> / <a href="#jie-design">Design</a> / <a href="#jie-draft">cardboard</a> / <a href="#jie-ac">acrylic</a> / <a href="#jie-final">Final</a> </h6>
                             <br><br>
@@ -569,11 +639,17 @@ I researched on a little about 3D printed food, and knowing the need of longer j
                             <br><br>
                             So, why not make myself?
                             <br><br>
-                            <hr id="jie-design"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
+                            <hr id="jie-design">
+                            <figcaption> 
+                            <a class="bktop" href="#top">^Top</a></figcaption>
                             <h6>Design</h6>
                             I have been using Illustrator for about 10 yrs already, and when I was in Parsons, I had experience dealing with lasercutter's AI formats.<br><br>
                             
-                            <img class="twoinrow" src="design/img/sun_peiyu_03.jpg"> <img class="twoinrow" src="ITP/fab/w3/parsons.png"><figcaption><i>Left: Bamboo and Lotus Leaves (<a href="http://www.michellusun.com/#/therefore-zero-2/">Therefore, Zero</a>) / Right: Acrylic</i></figcaption><br><br>
+                            <img class="twoinrow" src="design/img/sun_peiyu_03.jpg"> 
+                            <img class="twoinrow" src="ITP/fab/w3/parsons.png">
+                            <figcaption>
+                                <i>Left: Bamboo and Lotus Leaves 
+                                    (<a href="http://www.michellusun.com/#/therefore-zero-2/">Therefore, Zero</a>) / Right: Acrylic</i></figcaption><br><br>
                                 But different from my previous experience, which is also two to three years ago, I rarely do AI for 3D projects. Being a interaction designer that have been living under the screen for so long, to have a 3D mind is challenging for me.<br><br>
                             I came up with a organic shape, and wanting to have it to look like s miniture Chinese garden.<br><br>
                                 <img class="crop" src="ITP/fab/w3/design.png"><br><br>
@@ -625,7 +701,8 @@ I researched on a little about 3D printed food, and knowing the need of longer j
                             <hr id="jie-arc"><figcaption> <a class="bktop" href="#top">^Top</a></figcaption>
                             <h6>The Real Thing - Arcylic</h6>
                             <b>AI File</b><br>
-                            -<br><br>Below is how I organized my files and how file that's been sent to the lasercutter looks like:
+                            -<br><br>
+                            Below is how I organized my files and how file that's been sent to the lasercutter looks like:
                             <img class="twoinrow" src="ITP/fab/w3/doc/1.png"><img class="twoinrow" src="ITP/fab/w3/doc/2.png">
                             <figcaption><i>I put the layers (in 3D) into different layers in AI so that I can see what went wrong in which layer easily. Also, to not confuse myself which parts I will be using, I did a little dot on the cut outs that I do not need.</i></figcaption><br><br>
                             <img width="100%" src="ITP/fab/w3/doc/3.png"><figcaption><i>The entire flats</i></figcaption><br><br>
@@ -659,15 +736,16 @@ I researched on a little about 3D printed food, and knowing the need of longer j
                             <br><br>
                              <img class="twoinrow" src="ITP/fab/w3/doc/IMG_3166.jpg"><img class="twoinrow" src="ITP/fab/w3/doc/IMG_3161.jpg"><br><br><br><br>
                             
-                            
-
-                            </p>
+                           
+                
+                           
+                            </p></div>
                         </div>
-                    </div>
                     
                             
                 
-                     <div class="blogPost" data-tags="fab f2019"><img class="crop" src="ITP/fab/w2/fishing-star/IMG_2843.jpg"><figcaption><i>Kids Game, Basswood and Magnets</i></figcaption>
+                     <div class="blogPost fab" data-tags="fab f2019">
+                         <img class="crop" src="ITP/fab/w2/fishing-star/IMG_2843.jpg"><figcaption><i>Kids Game, Basswood and Magnets</i></figcaption>
                                 <div class="paragraph" ><h5>Week 2 - Star Fishing (REPEATABILITY)</h5><p>For this repeatability project, I want to be as zerowaste as possible, so it also means that I want all 5 objects to be useful.<br><br>
                                     I had two directions:<br><br><br>
                                     <b>1. Something for myself</b><br>
@@ -784,7 +862,7 @@ I researched on a little about 3D printed food, and knowing the need of longer j
 
 
                     
-                  <div class="blogPost" data-tags="icm com f2019" >
+                  <div class="blogPost icm com" data-tags="icm com f2019" >
                                                         <img width src="ITP/icm/final/cover.png" >
                             
                    <figcaption><i>Data of September</i></figcaption>
@@ -815,7 +893,7 @@ Protests. How Did We Get Here?</a></i></figcaption><br><br>  <br><br>
                         </div>
                     </div>
                   
-                   <div class="blogPost" data-tags="com icm f2019" >
+                   <div class="blogPost com icm" data-tags="com icm f2019" >
                          <img class="crop" src="ITP/cofm/timbre/cchord.png" >
                             
                    <figcaption><i>C Chord on Lines 2.0</i></figcaption>
@@ -833,7 +911,7 @@ Protests. How Did We Get Here?</a></i></figcaption><br><br>  <br><br>
                     </div>
                     
                     
-                    <div class="blogPost" data-tags="com f2019" >
+                    <div class="blogPost com" data-tags="com f2019" >
                          <iframe class="crop" src="https://www.youtube.com/embed/7rEr3-BLo5g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             
                    <figcaption><i>Additive Synthesis Maxpat</i></figcaption>
@@ -850,7 +928,7 @@ Protests. How Did We Get Here?</a></i></figcaption><br><br>  <br><br>
                         </div>
                     </div>
              
-             <div class="blogPost" data-tags="com icm f2019" >
+             <div class="blogPost com icm" data-tags="com icm f2019" >
                          <iframe class="crop" src="https://www.youtube.com/embed/4dJj22WPlWE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             
                    <figcaption><i>"Lines that Play Sound" - p5 Guitar</i></figcaption>
@@ -912,7 +990,7 @@ Protests. How Did We Get Here?</a></i></figcaption><br><br>  <br><br>
                     </div>
              
                     
-                    <div class="blogPost" data-tags="com f2019" >
+                    <div class="blogPost com" data-tags="com f2019" >
                          <iframe class="crop" src="https://www.youtube.com/embed/gol5dFrv4Ao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             
                    <figcaption><i>"Haru-yo, Koi"</i></figcaption>
@@ -954,7 +1032,7 @@ Protests. How Did We Get Here?</a></i></figcaption><br><br>  <br><br>
                     
                     
                     
-                    <div class="blogPost" data-tags="com icm f2019" >>
+                    <div class="blogPost com icm" data-tags="com icm f2019" >>
                    
                    <iframe id="drawingbeats" class="crop" src="https://www.youtube.com/embed/8FP8LplFfQc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                    <figcaption><i>Drawing Beats</i></figcaption>
@@ -1020,7 +1098,7 @@ Protests. How Did We Get Here?</a></i></figcaption><br><br>  <br><br>
                     </div>
                     
              
-                <div class="blogPost" data-tags="com f2019" ><img class="crop" src="ITP/cofm/w2/rhythm-toy.png"><figcaption>Interactive Rhythm System - <i>Rhythm Toy</i></figcaption>
+                <div class="blogPost com" data-tags="com f2019" ><img class="crop" src="ITP/cofm/w2/rhythm-toy.png"><figcaption>Interactive Rhythm System - <i>Rhythm Toy</i></figcaption>
                                 <div class="paragraph" ><h5>Week 2 - Analyze rhythm interfaces</h5><p> I did four instead of two because I feel very uncertain on how to do this. I found myself constantly changing my standards as I moved on to the next interactive webpage. Below is a graph with my self understanding of each criteria:<br><br>
                                     <img style="width: 100%;"src="ITP/cofm/w2/graph.jpg">
                                     <br><br>Everthing will be high in "Distribution in Space" since they are all web-based interactive interfaces.
@@ -1063,7 +1141,7 @@ Protests. How Did We Get Here?</a></i></figcaption><br><br>  <br><br>
                     </div>
                 </div>
              
-             <div class="blogPost" data-tags="com f2019" >
+             <div class="blogPost com" data-tags="com f2019" >
                     <iframe class="crop" src="https://www.youtube.com/embed/n4HQb7DZI0I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><figcaption><i>Clipping - INTRO</i></figcaption>
                                 <div class="paragraph" ><h5>Week 1 - Anxiety of Machination (Concept)
 </h5><figcaption>Project w/ Sylvan Zheng</figcaption><br><p>In a room of crowd, people stopped to see this—a transparent cube with a man inside, who is standing in the middle of running machines, trying to stop the noises that the machines create.  Outside of the cube there’s typewriters; that connects to the AI system that has a voice liabrary of  on each side of the cube facing towards the audience—The Anxiety Of Machination is an interactive installation piece and performance tool inspired by the track “Intro” by the experimental hiphop group clipping.<br><br>This piece aims to explore the relationship between human and machine; the anxiety produced by their interaction and the power dynamics between them.
@@ -1086,7 +1164,7 @@ The installation features a small space, roughly 10’ by 10’ square in the ce
 
                     
                     
-                    <div class="blogPost" data-tags="icm f2019" >
+                    <div class="blogPost icm" data-tags="icm f2019" >
                          <iframe class="crop" src="https://www.youtube.com/embed/Q7DffobVHpE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             
                    <figcaption><i>The Symbol Mirrors</i></figcaption>
@@ -1183,7 +1261,7 @@ fill('white');
                     </div>
                     
                     
-                    <div class="blogPost" data-tags="phy f2019" >
+                    <div class="blogPost phy" data-tags="phy f2019" >
                          <img class="crop" src="ITP/phy/final/d2.jpg">
                             
                         
@@ -1349,7 +1427,7 @@ void loop() {
                     </div>
                     
                     
-                     <div id="blogPost" class="hi" data-tags="phy f2019" >
+                     <div class="blogPost phy" data-tags="phy f2019" >
                          <iframe class="crop" src="https://www.youtube.com/embed/oVewvaD1Kk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             
                    <figcaption><i>"Where's My Dollar" Piano</i></figcaption>
@@ -1469,7 +1547,7 @@ noTone(12);
                         </div>
                     </div>
                     
-                     <div class="blogPost" data-tags="phy f2019" >
+                     <div class="blogPost phy" data-tags="phy f2019" >
                          <iframe class="crop" src="https://www.youtube.com/embed/oZif-pCt91Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                    <figcaption><i>Jo Malone Speaker (Please be aware of the noise)</i></figcaption>
                                         
@@ -1560,7 +1638,7 @@ noTone(6);
                         </div>
                     </div>
                     
-                    <div class="blogPost" data-tags="phy f2019" >
+                    <div class="blogPost phy" data-tags="phy f2019" >
                    
                    <iframe class="crop" src="https://www.youtube.com/embed/tSUepDJcGNE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                    <figcaption><i>Controlling LED Lights using a Potentiometer</i></figcaption>
@@ -1837,7 +1915,7 @@ delay(15);
                     
                     
              
-             <div id="blogPost" data-tags="phy f2019" >
+             <div class="blogPost phy" data-tags="phy f2019" >
                  <iframe class="crop" src="https://www.youtube.com/embed/MaC0gVSMOZ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                  <figcaption><i>Welcome to Hogwarts</i></figcaption>
                                 <div class="paragraph" >
@@ -1895,7 +1973,7 @@ Your browser does not support the video tag.
              
              
                
-                    <div id="blogPost" data-tags="phy f2019" >
+                    <div class="blogPost phy" data-tags="phy f2019" >
                             <img id="week-1" class="crop" alt="A image of a lady standing infront of the mirror seeing it reflecting two of her own. This is a scene from the immersive show called then she fell." src="ITP/phy/thenshefell5-photo-by-chad-heird.jpg">
                             <figcaption>Immersive Show - <i>Then She Fell</i></figcaption>
 
