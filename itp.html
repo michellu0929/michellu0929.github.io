@@ -12,7 +12,7 @@
 }
         
         .flexbox{
-            margin-top:-61px;
+            margin-top:-91px;
         }
         
         
@@ -23,7 +23,7 @@
     
 	<link type="text/css" href="base.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-<script src="btnscript.js"></script>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
@@ -71,19 +71,19 @@
             <!--         button tag filter navigation     -->
                  
 
+      
         
-        
-        <div class="btnBox" >
+        <div id="btnBox" >
                    
       
 <!--<button data-filter="flexbox" data-reset="true">Reset</button>-->
-<button class="btn active" onclick="filterSelection('all')">ALL</button>
+
 <!--
 <button class="btn" onclick="sPring()">Spring 2020</button>   
 <button class="btn" onclick="fAll()">Fall 2019</button>   
 -->
                      
-                     <div id="btnBox" >
+                     <div class="btnBox" >
                          SPRING 2020
 <button class="btn" onclick="filterSelection('comics')">Comics</button>
                          <button class="btn" onclick="filterSelection('ar')">AR</button>
@@ -94,21 +94,58 @@
                    
                          </div>
                      
-                     <div id="btnBox" >
+                     <div class="btnBox" >
                          FALL 2019
-
+<button class="btn" onclick="filterSelection('ani')">Animation</button>
 <button class="btn" onclick="filterSelection('com')">Code of Music</button>
 <button class="btn" onclick="filterSelection('phy')">Physical Computing</button>
 <button class="btn" onclick="filterSelection('fab')">Fabrication</button>
-<button class="btn" onclick="filterSelection('ani')">Animagtion</button>
+
 <button class="btn" onclick="filterSelection('icm')">ICM: Media</button>
 
                           </div>
+            <button class="btn active" onclick="filterSelection('all')">ALL</button><br>
       </div>
                         </div>
         
         <div id="horiscroll-itp">
                 <div class="flexbox" >
+                    
+                    
+                    
+                    
+                    <div class="blogPost ii" >
+                        <iframe class="crop" src="https://youtube.com/embed/TUrADA9gI9s" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                   <figcaption><i>Demo for Redesigning Restroom Interaction</i></figcaption>
+                                        
+                        <div class="paragraph" >
+                            <h5>Project#1: Redesigning Interaction</h5>
+                            <br id="2top">
+                            <p>
+                                Based on the previous week's analysis, we decided to work on the part that was interactive: the toilet doors. 
+                                <br><br>
+                                <img width="100%" src="ITP/ii/w1/IMG_0034.PNG">
+                                <br><br><br><br>
+                                The main two state of the interactive door will be, occupied and vacant outputs.
+                                The two sensors that we are using are the IR Beam Breaker and the VL53L0X. 
+                                To improve the experience, the first thing to eliminate is 'pushing' the door, which VL53L0X will be the right fit for this, by connecting it to a motor, when VL53L0X detects anyone happen to be in the distance, the door opens automatically.<br><br>
+                                Another sensor: IR BEAM BREAKER will be detecting if there's anyone inside. And this will have an output (only when VL53L0X detects) to be informing that it is vacant to the user outside of the door and the the motor won't be moving.
+                                <br><br>
+                                Below is the Flow Diagram of the logic:
+                                <br><br>
+                                <img width="100%" src="ITP/ii/w2/logic.jpg">
+                                <br><br><br><br>
+                                And the Installation Diagram:<br><br>
+                                <img width="100%" src="ITP/ii/w2/diagram.jpg">
+                                
+                            
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+     
+                    
                     
                     <div class="blogPost comics" >
                         <img width="100%" src="ITP/comics/2panels.gif" >
@@ -124,7 +161,7 @@ to be updated
                         </div>
                     </div>
                     
-                    <div class="blogPost ii" data-tags="ii" >
+                    <div class="blogPost ii" >
                         <img width="100%" src="ITP/ii/w1/IMG_0032.PNG" >
                    <figcaption><i>Automatic-flush </i></figcaption>
                                         
@@ -1937,7 +1974,9 @@ Your browser does not support the video tag.
                     
                 </div>
                 </div> 
+                        
         <script src="script.js"></script>
+        <script src="btnscript.js"></script>
 	</body>
 
 </html>

@@ -398,7 +398,7 @@ body {
 }
 
 #horiscroll-itp{
-    margin-left: 374px;
+    margin-left: 344px;
     margin-right: 43px;
       overflow-x: scroll;
   overflow-y: hidden;
@@ -713,7 +713,7 @@ button, btn {
   font-size: 8px;
 }
 
-button:hover, btn:hover {
+button:hover, .btn:hover {
   background: magenta;
   border: solid 1px magenta;
   color: #fff;
@@ -727,12 +727,12 @@ button.active, .btn.active {
 
 
 
-button:focus, btn:focus {
+button:focus, .btn:focus {
   background: #000;
   color: #fff;
 }
 
-.btnBox {
+#btnBox {
   font-size: 10px;
     letter-spacing: 2px;
 overflow: hidden;
@@ -753,8 +753,8 @@ text-transform: capitalize;
   display: block;
 }
 
-#btnBox{
-    width: 218px;
+.btnBox{
+    width: 188px;
     padding: 10px;
     border: solid 1px;
     margin-bottom: 10px;
