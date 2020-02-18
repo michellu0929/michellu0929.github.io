@@ -194,7 +194,7 @@ body,
 
 #rightbar li {
   height: 30px;
-  width: 30px;
+
 }
 
 .crop {
@@ -713,7 +713,7 @@ button, btn {
   font-size: 8px;
 }
 
-button:hover, .btn:hover {
+button:hover, .btn:hover, .btnTag .btn:hover {
   background: magenta;
   border: solid 1px magenta;
   color: #fff;
@@ -755,7 +755,18 @@ text-transform: capitalize;
 
 .btnBox{
     width: 188px;
-    padding: 10px;
+    padding: 10px 10px 0px 10px;
     border: solid 1px;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 }
+
+.btnTag {
+    float: right;
+    margin: -40px -32px 0 0;
+}
+
+.btnTag .btn {
+    background: black;
+    color: white;
+}
+
