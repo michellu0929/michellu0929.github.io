@@ -1,0 +1,254 @@
+body,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+mark {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+    color:#000;
+}
+
+body {
+
+  font-size: 10pt;
+  font-family: futura, san-serif;
+  letter-spacing: 0.6px;
+  font-weight: 100;
+  color: #414141;
+}
+
+figcaption {
+  font-size: 9pt;
+  letter-spacing: 0.5pt;
+  text-align: right;
+}
+
+h6 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h5 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+a,
+a:active,
+a:visited {
+  color: #ff00d8;
+}
+a:hover {
+  color: black;
+}
+
+
+
+
+.frame{
+    padding-top: 50px;
+    margin:auto;
+    display: block;
+    width: 800px;
+    
+    
+}
+
+/*
+.showBox{
+    border: 5px black solid;
+
+
+    width: 900px;
+    height: 700px;
+  position: fixed;
+    overflow: scroll;
+
+}
+*/
+
+.title{
+     z-index: 999;
+width: 500px;
+    margin-top: 100px;
+
+    position: absolute;
+    display: block;
+}
+
+.element-to-hide{
+
+} 
+
+.overflow{
+ 
+    width: 100%;
+    height: 5000px;
+}
+
+#p0,#p1,#p2,#p3,#p4,#p5,#p6,#p7,#p8,#p9,#p10,#p11,#p12,#p13,#p14,#p15,#p16,#p17,#p18,#p19,#p20,#p21,#p22,#p23{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    margin-top: 50px;
+  width: 50%;
+background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.red{color: red;}
+
+img {
+
+opacity: 0;
+   
+}
+
+
+@font-face {
+font-family: "Hanyi";
+src: url("fonts/HanyiSenty Candy-color-mono.ttf");
+}
+
+
+p{font-family: "Hanyi";
+    font-size: 30pt;
+    font-weight: 600; 
+}
+
+
+
+#p0 img{ width: 300px;}
+#p1 img{ padding-left:  100px;
+    padding-top: 400px;
+    width:200px;}
+
+#p1 p, #p2 p{margin-top: 650px; 
+}
+
+#p2 img{ padding-left:  80px;
+    padding-top: 440px;
+    width:250px;}
+
+
+#p3 img, #p4 img{ margin-left:  -300px;
+    padding-top: 300px;
+    width:800px;}
+
+#p3 p, #p4 p{ margin-top: 100px; width: 350px;}
+
+#p5 img{ 
+    margin-left: -300px; 
+    margin-top: 1100px;
+    width: 800px;z-index: -1;}
+
+#p5 p{margin-top: 300px; margin-left: -200px;}
+
+#p6 img{ margin-left: -650px; width: 1300px;margin-top:-200px;}
+
+#p6 p{font-size: 70pt; color: #9d00ff;margin-top: 500px;margin-left: -100px; text-align: center;}
+
+#p7 img,#p8 img,#p9 img,#p10 img,#p11 img,#p12 img,#p13 img{
+    width: 800px;
+    margin-left: -200px;
+}
+
+#p7 img{
+    z-index: -1;
+}
+
+#p7 p{
+    color: #fff;
+    margin-top: 600px;
+    margin-left: -100px;
+}
+#p8 p{
+    color: #fff;
+    margin-left: 160px; margin-top: 600px;
+}
+#p9 p{
+    color: #fff;
+    margin-left: 360px; margin-top: 600px;
+    color: #fdfd16
+}
+/*
+#p10 img{
+    margin-top: -200px;
+}
+#p11 img{
+    margin-top: -300px;
+}
+#p12 img{
+    margin-top: -400px;
+}
+
+#p13 img{
+    margin-top: -500px;
+}
+*/
+
+#p14 img,#p15 img,#p16 img,#p17 img,#p19 img,#p20 img,#p21 img,#p22 img,#p23 img{
+  width: 800px;
+    margin-left: -200px; 
+}
+#p18 img{bottom: 0;width: 800px;margin-left: -200px}
+
+#p18 p,#p23 p{
+    color: white;
+    margin-top: 500px;
+    margin-left: 300px;
+}
+#p21 p,#p22 p{
+    color: #479aed;
+    text-align: center;
+    width: 400px;
+    margin-top: 600px;
+}
+/*
+
+#p2{background-image: url(img/2.PNG);}
+
+#p3{background-image: url(img/3.PNG);}
+
+#p4{background-image: url(img/4.PNG);}
+
+#p5{background-image: url(img/5.PNG);}
+
+#p6{background-image: url(img/6.PNG);}
+
+#p7{background-image: url(img/7.PNG);}
+
+#p8{background-image: url(img/8.PNG);}
+
+#p9{background-image: url(img/9.PNG);}
+
+#p10{background-image: url(img/10.PNG);}
+
+#p11{background-image: url(img/11.PNG);}
+
+#p12{background-image: url(img/12.PNG);}
+
+#p13{background-image: url(img/13.PNG);}
+
+#p14{background-image: url(img/14.PNG);}
+
+#p15{background-image: url(img/15.PNG);}
+
+#p16{background-image: url(img/16.PNG);}
+#p17{background-image: url(img/17.PNG);}
+#p18{background-image: url(img/18.PNG);}
+#p19{background-image: url(img/19.PNG);}
+#p20{background-image: url(img/20.PNG);}
+#p21{background-image: url(img/21.PNG);}
+*/
+
+

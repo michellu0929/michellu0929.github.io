@@ -1,0 +1,321 @@
+<!doctype html>
+<html  lang="">
+    <head>
+        <meta charset="utf-8">
+		<title>
+			Last Trip to the Moon
+		</title>
+	</head>
+    <meta name="description" content="">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link type="text/css" href="base.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  
+    <script>
+//  AOS.init();
+//window.onscroll = function() {scrollFunction()};
+//
+//function scrollFunction() {
+//  if (document.body.scrollTop >= 20 || document.documentElement.scrollTop >= 20 && document.body.scrollTop <= 100 || document.documentElement.scrollTop <= 100) {
+//    document.getElementById("test").removeClass("red");
+//  } else {
+//    document.getElementById("test").addClass("red");
+//  }
+//}
+//        
+        $(window).scroll(function() {    
+
+
+
+    var scroll = $(window).scrollTop();
+
+      if (scroll > 50) {
+        $(".title").css({"position": "fixed","margin-top": "-50px","margin-left": "0"});
+    } else {
+        $(".title").css({"position": "absolute" ,"margin-top": "0px"});
+    }
+            
+            if (scroll >=0 && scroll <= 400) {
+        $("#p0 img").css({"position": "fixed","opacity": "1"});
+    } else {
+        $("#p0 img").css({"position": "absolute","opacity": "0" });
+    }
+       
+            
+    if (scroll > 40 && scroll <= 200) {
+        $("#p1 img").css({"position": "fixed","opacity": "1"});
+       $("#p1 p").css({"position": "fixed","opacity": "1"});
+    } else {
+        $("#p1 img").css({"position": "absolute","opacity": "0" });
+     $("#p1 p").css({"position": "absolute","opacity": "0" });
+    }
+            
+ 
+    if (scroll > 200 && scroll <= 400) {
+        $("#p2 img").css({"position": "fixed","opacity": "1" });
+         $("#p2 p").css({"position": "fixed","opacity": "1"});
+    } else {
+        $("#p2 img").css({"position": "absolute","opacity": "0" });
+        $("#p2 p").css({"position": "absolute","opacity": "0" });
+    }
+            
+    if (scroll > 400 && scroll <= 600 ) {
+        $("#p3 img").css({"position": "fixed","opacity": "1" });
+        $("#p3 p").css({"position": "fixed","opacity": "1"});
+    } else {
+        $("#p3 img").css({"position": "absolute","opacity": "0" });
+        $("#p3 p").css({"position": "absolute","opacity": "0" });
+    }
+    
+    if (scroll > 600 && scroll <= 1200) {
+       $("#p4 img").css({"position": "fixed","opacity": "1" });
+        $("#p4 p").css({"position": "fixed","opacity": "1"});
+    } else {
+        $("#p4 img").css({"position": "absolute","opacity": "0" });
+        $("#p4 p").css({"position": "absolute","opacity": "0" });
+    }
+            
+            
+    
+            
+    if (scroll > 800 && scroll <= 1800 ) {
+          $("#p5 img").css({"position": "absolute","opacity": "1" });
+        $("#p5 p").css({"position": "fixed","opacity": "1"});
+    } else {
+        $("#p5 img").css({"position": "absolute","opacity": "0" });
+        $("#p5 p").css({"position": "absolute","opacity": "0" });
+    }
+            
+    if (scroll > 1800 && scroll <= 2000) {
+        $("#p6 img").css({"position": "fixed","opacity": "1" });
+        $("#p6 p").css({"position": "fixed","opacity": "1"});
+    } else {
+        $("#p6 img").css({"position": "absolute","opacity": "0" });
+        $("#p6 p").css({"position": "absolute","opacity": "0" });
+    }
+            
+  
+            if (scroll > 2100 && scroll <= 2400) {
+     $("#p8 img").css({"position": "fixed","opacity": "1" });
+        $("#p7 p").css({"position": "fixed","opacity": "1"});
+    } else {
+      $("#p8 img").css({"position": "absolute","opacity": "0" });
+        $("#p7 p").css({"position": "absolute","opacity": "0" });
+    }
+            
+               if (scroll > 2200 && scroll <= 2400) {
+     $("#p9 img").css({"position": "fixed","opacity": "1" });
+        $("#p8 p").css({"position": "fixed","opacity": "1"});
+    } else {
+      $("#p9 img").css({"position": "absolute","opacity": "0" });
+        $("#p8 p").css({"position": "absolute","opacity": "0" });
+    }
+        
+              if (scroll > 2000 && scroll <= 3400) {
+        $("body").css({"background": "#4b2ea0"});
+         $(".title").css({"color": "#fff"});
+         $("#p7 img").css({"position": "fixed","opacity": "1" });
+    } else {
+        $("body").css({"background": "#fff"});
+        $(".title").css({"color": "#000"});
+        $("#p7 img").css({"position": "absolute","opacity": "0" });
+    }
+            
+      
+    if (scroll > 2100 && scroll <= 2200) {
+        
+         $("#p11 img").css({"position": "fixed","opacity": "1" });
+        
+    } else {
+        
+        $("#p11 img").css({"position": "absolute","opacity": "0" });
+    }
+         
+    if (scroll > 2200 && scroll <= 2300) {
+     
+        $("#p12 img").css({"position": "fixed","opacity": "1" });
+        
+    } else {
+     
+        $("#p12 img").css({"position": "absolute","opacity": "0" });
+    }
+    
+            
+    if (scroll > 2300 && scroll <= 2400) {
+        $("#p9 p").css({"position": "fixed","opacity": "1"});
+        $("#p10 img").css({"position": "fixed","opacity": "1" });
+        $("#p13 img").css({"position": "fixed","opacity": "1" });
+        
+    } else {
+        $("#p10 img").css({"position": "absolute","opacity": "0" });
+        $("#p13 img").css({"position": "absolute","opacity": "0" });
+        $("#p9 p").css({"position": "absolute","opacity": "0" });
+    }
+    
+    if (scroll > 2400 && scroll <= 3400) {
+        $("#p14 img").css({"position": "fixed","opacity": "1"});
+    
+    $("#p20 img").css({"position": "fixed","opacity": "1"});
+    } else {
+        $("#p20 img").css({"position": "absolute","opacity": "0" });
+     
+        $("#p14 img").css({"position": "absolute","opacity": "0" });
+    }
+    
+            
+    if (scroll > 2400 && scroll <= 2600) {
+   
+     $("#p15 img").css({"position": "fixed","opacity": "1"});
+    } else {
+        $("#p15 img").css({"position": "absolute","opacity": "0" });
+    }
+    
+    if (scroll > 2600 && scroll <= 2800) {
+        $("#p16 img").css({"position": "fixed","opacity": "1"});
+    } else {
+        $("#p16 img").css({"position": "absolute","opacity": "0" });
+    }
+    
+    if (scroll > 2800 && scroll <= 3400) {
+        $("#p17 img").css({"position": "fixed","opacity": "1"});
+    } else {
+        $("#p17 img").css({"position": "absolute","opacity": "0" });
+    }
+            
+    if (scroll > 3000 && scroll <= 3200) {
+        $("#p18 img").css({"position": "fixed","opacity": "1"});
+        $("#p18 p").css({"position": "fixed","opacity": "1"});
+    } else {
+        $("#p18 img").css({"position": "absolute","opacity": "0" });
+        $("#p18 p").css({"position": "absolute","opacity": "0" });
+    }
+            
+    if (scroll > 3200 && scroll <= 3300) {
+        $("#p23 img").css({"position": "fixed","opacity": "1"});
+       
+    } else {
+        $("#p23 img").css({"position": "absolute","opacity": "0" });
+    }
+            
+     if (scroll > 3200 && scroll <= 3400) {
+   
+        $("#p23 p").css({"position": "fixed","opacity": "1"});
+    } else {
+        $("#p23 p").css({"position": "absolute","opacity": "0" });
+    }
+            
+          
+         
+    if (scroll > 3300 && scroll <= 3400) {
+        $("#p19 img").css({"position": "fixed","opacity": "1"});
+    } else {
+        $("#p19 img").css({"position": "absolute","opacity": "0" });
+        
+    }
+    
+  
+    if (scroll > 3400 && scroll <= 3600) {
+        $("#p21 img").css({"position": "fixed","opacity": "1"});
+        $("#p21 p").css({"position": "fixed","opacity": "1"});
+    } else {
+        $("#p21 img").css({"position": "absolute","opacity": "0" });
+        $("#p21 p").css({"position": "absolute","opacity": "0" });
+    }
+    
+    if (scroll > 3600 && scroll <= 3800) {
+        $("#p22 img").css({"position": "fixed","opacity": "1"});
+        $("#p22 p").css({"position": "fixed","opacity": "1"});
+    } else {
+        $("#p22 img").css({"position": "absolute","opacity": "0" });
+        $("#p22 p").css({"position": "absolute","opacity": "0" });
+    }      
+            
+            
+});
+
+</script>
+	<body>
+        <div  class="frame">
+            
+            <div class="title"><h1>Last Trip to the Moon</h1>
+                <h5>in the Memory of Niuniu, by Michelle Sun</h5></div>
+         
+       
+
+ <div class="overflow">
+            <div id="p0">  
+                <img src="img/0.PNG">
+        </div>      
+            <div id="p1">
+                    <img src="img/1.PNG">
+                <p>Today, too, I am waiting for her.</p>
+        </div>
+            <div id="p2">
+                <img src="img/2.PNG">
+                <p>Today, too, she's not back home.</p>
+        </div>
+            <div id="p3">
+                
+                <img src="img/3.PNG">
+                <p>I wonder where is New York. Why it always took her so long to come back home.. <br><br>Today, too, I feel tired... </p>
+        </div>
+            <div id="p4">
+                <img src="img/4.PNG">
+                <p>Actually, I feel a lot more tired... and sleepy than usual...</p>
+        </div>
+            <div id="p5">
+                
+                <img  src="img/5.PNG">
+                <p>I feel my body so light...</p>
+        </div>
+     
+     
+            <div id="p6"> <img src="img/6.PNG">
+                <p>and super ENERGETIC!</p> </div>
+     
+            <div id="p7">
+      <img src="img/7.PNG">
+                <p>I'm coming to you.</p>
+     </div>
+     
+            <div id="p8">
+      <img src="img/8.PNG">
+                <p>across the skies</p>
+     </div>
+            <div id="p9">
+      <img src="img/9.PNG">
+                <p>and stars</p>
+                
+     </div>
+            <div id="p10">
+     <img src="img/10.PNG">
+     </div>
+     <div id="p11"><img src="img/11.PNG"></div>
+                
+     <div id="p12"><img src="img/12.PNG"></div>
+               
+     <div id="p13"><img src="img/13.PNG"></div>
+                
+            <div id="p14"><img src="img/14.PNG"></div>
+            <div id="p15"><img src="img/15.PNG">
+                
+     </div>
+            <div id="p16"><img src="img/16.PNG"></div>
+            <div id="p17"><img src="img/17.PNG"></div>
+            <div id="p18"><img src="img/18.PNG"><p>I want to be with you</p></div>
+     <div id="p23"><img src="img/23.PNG"><p>I will be always with you</p></div>
+            <div id="p19"><img src="img/19.PNG"></div>
+    
+            <div id="p20"><img src="img/20.PNG"></div>
+            <div id="p21"><img src="img/21.PNG"><p>I want you to be happy</p></div>
+            <div id="p22"><img src="img/22.PNG"><p>I will make you happy</p></div>
+            </div>
+            
+                
+        </div>
+	</body>
+
+</html>
