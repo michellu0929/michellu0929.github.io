@@ -113,6 +113,97 @@
         <div id="horiscroll-itp">
                 <div class="flexbox" >
                     
+                    <div class="blogPost ar" >
+                       <iframe class="crop" src="https://youtube.com/embed/oTzu_Jhyzwg" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        
+                   <figcaption><i>[AR] Cooking Assistant Board: Virtual Button</i></figcaption>
+                                        
+                        <div class="paragraph" >
+                            
+                           <h5>Midterm - AR Cutting Board: Cooking Assistant</h5> 
+                            <div class="btnTag"><button class="btn" onclick="filterSelection('ar')">AR</button></div>
+                            <p>
+                            <br><br>
+                            A cutting board. A product for people who cook. 
+                                <br><br>Never need to worry about dirty hands--easy and intagible interaction for people who like to watch a cooking tutorial when cooking. Also, a more visual way of measuring the amount for each ingredients, inspired by:<br><br>
+                                <img width="100%" src="https://mydesycdn.mydesy.com/wp-content/uploads/2013/09/Guide-to-Foreign-Japanese-Kitchen-5.jpg"><figcaption>Guide to Foreign Japanese Kitchen</figcaption>
+                                <br><br>
+                                At first, I was thinking to have a cooking station that has embeded AR system in it.<br><br>
+                                <img width="100%" src="ITP/ar/mid/01.png">
+                                 <img width="100%" src="ITP/ar/mid/02.png">
+                                <br><br>
+                                <iframe class="crop" src="https://youtube.com/embed/FHzz3ZQkZ10" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe><figcaption>Video Prototype</figcaption>
+                                <br><br>
+                                However, it will increase the price and also when there are some technical issue, it will be harder to fix it.<br><br>
+                                So instead, why not make it something that's portable and affordable? So I came up with a better solution, which is a cutting board, that works better and make much more sense.
+                                <br><br>
+                                New stuff that I learn from this project is virtual button. I first learn from a tutorial:
+                                <br><br>
+                                <iframe class="crop" src="https://youtube.com/embed/g8Hviubg7ko" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe><figcaption>Virtual Button Test</figcaption>
+                                <br><br>
+                                Then, I need to trigger video using the virtual button, I coded (acutally combining two scripts) the following:
+                                <br><br>
+                                <i id="codetext">
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Video;
+using Vuforia;
+
+public class vb_anim : MonoBehaviour, IVirtualButtonEventHandler {
+
+    public GameObject vbBtnObj;
+    public GameObject video;
+
+ void Start () {
+    vbBtnObj = GameObject.Find("playVid");
+    video = GameObject.Find("videoYeah");
+    vbBtnObj.GetComponent<VirtualButtonBehaviour>().RegisterEventHandler(this);
+    video.GetComponent<VideoPlayer>();
+ }
+                                    
+   public void OnButtonPressed(VirtualButtonBehaviour vb){
+        Debug.Log("PLAY");
+        video.GetComponent<VideoPlayer>().Play();
+    }
+
+    public void OnButtonReleased(VirtualButtonBehaviour vb){
+        Debug.Log("STOP");
+        video.GetComponent<VideoPlayer>().Pause();
+    }
+}
+                                </i>
+                                <br><br>
+                                And got the result:
+                                <br><br>
+                                <iframe class="crop" src="https://youtube.com/embed/qhKl09ihHMI" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe><figcaption>Connecting Virtual Button to Video</figcaption>
+                                <br><br>
+                                Problem with the current version: virtual button might not be the best solution for this, which I think the condition for it to be trigger is when it detects shadow? without know ing the depth of the element that covered it. As shown at the end of the video, angle and depth problem still need to be solved. (Also, ideally it shouldn't be my ipad, and I should be cutting on it. But I need an affordable tracker that I can reach for quarantine lives) 
+
+
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="blogPost ii" >
+                       <iframe class="crop" src="https://youtube.com/embed/e3xFIKW2yj8" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        
+                   <figcaption><i>Curious Cube - Music Cube</i></figcaption>
+                                        
+                        <div class="paragraph" >
+                            
+                           <h5>Curious Cube - Music Cube with <a href="https://editor.p5js.org/michellu0929/sketches/JE3c5QLT">p5</a></h5> 
+                            <div class="btnTag"><button class="btn" onclick="filterSelection('ii')">Intangible</button></div>
+                            <p>
+                            <br><br>
+                            
+                            <iframe class="crop" src="https://youtube.com/embed/h0W31Wn_rag" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            
+                        
+                            </p>
+                        </div>
+                    </div>
                     
                     <div class="blogPost ar" >
                        <iframe class="crop" src="https://youtube.com/embed/FHzz3ZQkZ10" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
