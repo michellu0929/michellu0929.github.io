@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 163 91" enable-background="new 0 0 163 91" xml:space="preserve">
+<font horiz-adv-x="1000">
+<!-- Copyright 1997-2008, 2012 Adobe Systems Incorporated. All Rights Reserved. Kozuka Mincho is either a registered trademark or trademark of Adobe Systems Incorporated in the United States and/or other countries. -->
+<font-face font-family="KozMinPro-Light-83pv-RKSJ-H" units-per-em="1000" underline-position="-100" underline-thickness="50"/>
+<missing-glyph horiz-adv-x="1000" d="M100,-120l800,0l0,1000l-800,0M500,421l-318,409l636,0M532,380l318,409l0,-818M182,-70l318,409l318,-409M150,789l318,-409l-318,-409z"/>
+<glyph unicode="&#x540D;" horiz-adv-x="1000" d="M796,322l-411,0l-1,1C540,421 658,546 739,687C764,689 776,691 784,699l-68,67l-45,-40l-290,0C400,751 418,776 433,800C438,799 443,799 447,799C462,799 468,803 471,811l-93,31C316,712 190,565 64,483l12,-15C133,497 189,536 240,580C300,535 371,460 393,404C400,399 407,396 413,396C305,310 177,238 33,186l8,-18C143,199 235,238 318,284l0,-366l9,0C354,-82 372,-67 372,-61l0,42l434,0l0,-56C843,-75 861,-56 861,-54l0,335C881,285 898,293 905,301l-80,58M670,701C615,596 536,500 437,416C438,419 438,423 438,427C438,467 394,538 255,593C293,627 329,664 360,701M372,297l434,0l0,-291l-434,0z"/>
+<glyph unicode="&#x547D;" horiz-adv-x="1000" d="M203,400l-58,27l0,-433C193,-6 198,12 198,13l0,85l173,0l0,-67C407,31 424,48 424,50l0,312C441,365 457,373 463,380l-75,53l-26,-33M198,375l173,0l0,-252l-173,0M30,434C217,517 416,666 508,801C593,665 751,532 924,445C931,469 954,490 983,494l2,15C808,579 632,693 526,812C552,814 563,819 566,830l-115,21C394,712 193,539 23,448M581,545l-297,0l6,-25l366,0C683,520 694,526 703,542l-81,53M605,405l-59,27l0,-515C593,-83 600,-64 600,-63l0,443l198,0l0,-280C798,88 794,85 779,85l-102,0l0,-15C743,65 765,57 765,12C841,21 852,52 852,98l0,267C871,368 887,377 893,384l-78,56l-27,-35z"/>
+</font>
+
+	<font horiz-adv-x="1000">
+<!-- Copyright (c) 2010 by Svetoslav Simov. All rights reserved. -->
+<!-- Copyright: Copyright 2015 Adobe System Incorporated. All rights reserved. -->
+<font-face font-family="NexaLight" units-per-em="1000" underline-position="-100" underline-thickness="50"/>
+<missing-glyph horiz-adv-x="238"/>
+<glyph unicode="D" horiz-adv-x="709" d="M296,700C217,700 138,700 59,700l0,-700C138,0 217,0 296,0C541,0 655,180 651,358C647,530 533,700 296,700M296,649C498,649 594,504 597,358C600,208 504,52 296,52l-183,0l0,597z"/>
+<glyph unicode="E" horiz-adv-x="614" d="M117,649l430,0l0,51l-483,0l0,-700l495,0l0,52l-442,0l0,276l410,0l0,49l-410,0z"/>
+<glyph unicode="I" horiz-adv-x="208" d="M118,0l0,700l-53,0l0,-700z"/>
+<glyph unicode="L" horiz-adv-x="550" d="M64,700l0,-700l448,0l0,51l-394,0l0,649z"/>
+<glyph unicode="T" horiz-adv-x="608" d="M263,0l54,0l0,651l253,0l0,48l-560,0l0,-48l253,0z"/>
+</font>
+
+	<font horiz-adv-x="1000">
+<!-- Copyright 1997-2008, 2012 Adobe Systems Incorporated. All Rights Reserved. Kozuka Mincho is either a registered trademark or trademark of Adobe Systems Incorporated in the United States and/or other countries. -->
+<font-face font-family="KozMinPro-Bold-83pv-RKSJ-H" units-per-em="1000" underline-position="-100" underline-thickness="50"/>
+<missing-glyph horiz-adv-x="1000" d="M100,-120l800,0l0,1000l-800,0M500,421l-318,409l636,0M532,380l318,409l0,-818M182,-70l318,409l318,-409M150,789l318,-409l-318,-409z"/>
+<glyph unicode="&#x672A;" horiz-adv-x="1000" d="M841,491l-65,-82l-225,0l0,222l289,0C868,631 881,635 888,648l-116,82l-62,-79l-159,0l0,159C581,813 589,821 591,835l-149,14l0,-198l-322,0l5,-20l317,0l0,-222l-404,0l6,-20l319,0C297,240 175,85 26,-15l9,-15C209,47 350,160 442,297l0,-387l21,0C504,-90 551,-63 551,-50l0,439l1,0C617,197 729,57 881,-24C895,27 927,60 968,69l3,11C816,128 655,243 572,389l341,0C942,389 954,394 962,406z"/>
+</font>
+
+	<font horiz-adv-x="1000">
+<!-- Copyright (c) 2010 by Svetoslav Simov. All rights reserved. -->
+<!-- Copyright: Copyright 2015 Adobe System Incorporated. All rights reserved. -->
+<font-face font-family="NexaBold" units-per-em="1000" underline-position="-100" underline-thickness="50"/>
+<missing-glyph horiz-adv-x="202"/>
+<glyph unicode="N" horiz-adv-x="713" d="M509,266l-343,434l-107,0l0,-700l132,0l0,472l368,-473l0,1l82,0l0,701l-132,0z"/>
+<glyph unicode="U" horiz-adv-x="743" d="M532,699l0,-401C532,178 470,105 361,105C252,105 180,172 180,298l0,401l-131,0l0,-401C49,87 192,-15 360,-15C536,-15 663,91 663,298l0,401z"/>
+</font>
+
+	<text transform="matrix(1 0 0 1 7.8531 56.7712)" fill="#B7C8D3" font-family="'KozMinPro-Bold-83pv-RKSJ-H'" font-size="48.2927" letter-spacing="1">未</text>
+<text transform="matrix(1 0 0 1 58.5602 56.7712)" fill="#585857" font-family="'KozMinPro-Light-83pv-RKSJ-H'" font-size="48.2927" letter-spacing="1">命名</text>
+<text transform="matrix(1 0 0 1 7.8533 90.9532)"><tspan x="0" y="0" fill="#B7C8D3" font-family="'NexaBold'" font-size="29.5214">UN</tspan><tspan x="44.9" y="0" fill="#585857" font-family="'NexaLight'" font-size="29.5214">TITLED</tspan></text>
+</svg>

@@ -1,0 +1,173 @@
+
+body {
+	background: url(beijing_day.jpg) no-repeat fixed;
+	background-size: cover;
+	height: 100%
+}
+
+
+.footer {
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	width:100%;
+	padding-top:0px;
+	padding-bottom:0px;
+	text-align:center;
+	background-color:rgba(255, 255, 255, 0.5);
+	color:white;
+	font-family:helvetica;
+	font-size:12px;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+	color:white;
+	font-family:helvetica;
+	font-size:12px;
+}
+
+a:hover {
+	color: grey;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+@-webkit-keyframes fogl {
+  0% {background-position: 0px 0%;}
+  100% {background-position: 1268px 0%;}
+}
+
+@keyframes fogl {
+  0% {background-position: 0px 0%;}
+  100% {background-position: 1268px 0%;}
+}
+
+@-webkit-keyframes fog2 {
+  0% {background-position: -768px 0%;}
+  100% {background-position: 500px 0%;}
+}
+
+@keyframes fog2 {
+  0% {background-position: -768px 0%;}
+  100% {background-position: 500px 0%;}
+}
+
+html, body{
+
+  font: 100 16px Roboto;
+}
+.fogg{
+  background: rgba(0,0,0,0.0);
+  background-size: cover;
+  height: 660px;
+  overflow: hidden;
+  text-align: center;
+  		transition:all.8s linear;
+	-webkit-transition:all.8s linear;
+	-moz-transition:all.8s linear;
+	-o-transition:all.8s linear;
+}
+
+
+.text{
+  font-family: Avenir, sans-serif;
+  min-width: 90%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: absolute;
+  padding: 0px 80px;
+  top: 200px;
+  z-index: 1000;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('Avenir.eot');
+  src: url('Avenir.eot?3iefix') format('embedded-opentype'),
+     url('Avenir.woff') format('woff'),
+     url('Avenir.ttf') format('turetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.title{
+  color: rgb(255,255,255);
+  font-size: 70px;
+  font-weight: 300;
+  text-align: right;
+  text-shadow: 0 0 5px grey;
+}
+
+.sub1{
+  padding-top: 10px;
+  color: rgb(255,255,255);
+  font-size: 20px;
+  font-weight: 300;
+  text-align: right;
+  		transition:all 1s ease;
+	-webkit-transition:all 1s ease;
+	-moz-transition:all 1s ease;
+	-o-transition:all 1s ease;
+	text-shadow: 0 0 5px grey;
+}
+
+.sub{
+  padding-top: 10px;
+  color: rgb(255,255,255);
+  font-size: 20px;
+  font-weight: 300;
+  text-align: right;
+  		transition:all 1s ease;
+	-webkit-transition:all 1s ease;
+	-moz-transition:all 1s ease;
+	-o-transition:all 1s ease;
+	text-shadow: 0 0 5px grey;
+}
+
+sub2{
+  padding-top: 10px;
+  color: rgb(255,255,255);
+  font-size: 20px;
+  font-weight: 300;
+  text-align: right;
+      transition:all 1s ease;
+  -webkit-transition:all 1s ease;
+  -moz-transition:all 1s ease;
+  -o-transition:all 1s ease;
+  text-shadow: 0 0 5px grey;
+}
+
+.fog{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../SFczcCK.png);
+  background-size: cover;
+  background-repeat: repeat-x;
+  z-index: 1;
+}
+  
+.foganl{
+  -webkit-animation: fogl 20s linear 0s infinite;
+  animation: fogl 20s linear 0s infinite;
+}
+
+.fogan2{
+  -webkit-animation: fog2 80s linear 0s infinite;
+  animation: fog2 80s linear 0s infinite;
+}
+
+
+
+.fogcon:hover .text{
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
