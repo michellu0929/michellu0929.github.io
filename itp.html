@@ -80,12 +80,23 @@
 
 <!--
 <button class="btn" onclick="sPring()">Spring 2020</button>   
-<button class="btn" onclick="fAll()">Fall 2019</button>   
+<button class="btn" onclick="fAll()">Fall 2019</button> 
+
 -->
+            
+            <div class="btnBox" >
+                         SPRING 2021
+                         <button class="btn" onclick="filterSelection('rtss')">RTSS</button>  
+                <button class="btn" onclick="filterSelection('PD')">Project Development</button>
+                    <button class="btn" onclick="filterSelection('PE')">Playful Experiences</button>     
+
+                   
+                         </div> 
+            
             <div class="btnBox" >
                          FALL 2020
                          <button class="btn" onclick="filterSelection('ML')">ML for web</button>  
-                <button class="btn" onclick="filterSelection('thesis1')">Thesis 1</button>
+               
                          
 
                    
@@ -120,6 +131,31 @@
         
         <div id="horiscroll-itp">
                 <div class="flexbox" >
+                    
+                    <div class="blogPost rtss" >
+                       <iframe class="crop" src="https://youtube.com/embed/7cUOg7BepiE" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                   
+                                        
+                        <div class="paragraph" >
+                            
+                           <h5>THREEJS with <a href="https://evanw.github.io/csg.js/">CSJ.js</a> </h5> 
+                            <div class="btnTag"><button class="btn" onclick="filterSelection('rtss')">RTSS</button></div>
+                            <p>
+                            <br><br>
+                            For this week's assignment, I wanted to bring my experience of the first time me seeing the Pantheon in person--the rounded sunlight came through the hole in the middle of the dome, looks both organic and geometric at the same time. But to achieve this shape, I will need to do hollow shapes. <br><br>
+                                <img width="100%" src="ITP/rtss/Pantheon.jpg">
+                                <br><br>
+                                First, I tried with the easy way (which I think it might be easier), is to import a model.   <br><br>
+                                 <img width="100%" src="ITP/rtss/model2.png">
+                                <img width="100%" src="ITP/rtss/model3.png">
+                                <br><br>
+                                 I created a simple model with C4D, and couldn't figure out a way to import it to my local server. So I searched more on how to create hollow shapes with ThreeJS, and I found CSG. I first created a hollow sphere, then use the same method, I create a hole on the top of the dome. Although I am still not quite satisfied with the lighting, at leaset I figured out how to model a hollow shape. Below is another scene I created:
+                                 <br><br>
+                                <iframe class="crop" src="https://youtube.com/embed/936ik1nrhq8" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        
+                            </p>
+                        </div>
+                    </div>
                     
                     <div class="blogPost ml" >
                        <img width="100%" src="ITP/ml/w7/findsimilar.png">
